@@ -1,38 +1,3 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
-  },
-  "extends": [
-    "next/core-web-vitals",
-    "prettier"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
-  "rules": {
-    "no-console": "off",
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
-    "react/no-unescaped-entities": "off",
-    "import/no-anonymous-default-export": "off",
-    "react/display-name": "off",
-    "react/no-children-prop": "off",
-    "react/react-in-jsx-scope": "off",
-    "no-restricted-imports": [
-      "error",
-      {
-        "paths": [
-          {
-            "name": "react",
-            "importNames": ["default"],
-            "message": "React import is not needed due to new JSX transform"
-          }
-        ]
-      }
-    ]
-  }
+  "extends": ["next/core-web-vitals", "next/typescript"]
 }
