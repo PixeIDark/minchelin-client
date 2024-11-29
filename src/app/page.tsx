@@ -1,95 +1,53 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+import { Button } from 'antd';
+import { center, vstack } from '../../styled-system/patterns';
+import { useState, useEffect } from 'react';
+import { getTheme, injectTheme } from '../../styled-system/themes';
+import { getCookie, setCookie } from '@/utils/clientCookies';
 
-export default function Home() {
+function Home() {
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+
+  const toggleTheme = async () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+
+    // 테마 변경 및 쿠키 저장
+    const themeData = await getTheme(newTheme);
+    injectTheme(document.documentElement, themeData);
+    setCookie('theme', newTheme, 7);
+  };
+
+  useEffect(() => {
+    const savedTheme = getCookie('theme') as 'light' | 'dark';
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, []);
+
+  const width = '120px';
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className={center({ height: '100vh' })}>
+      <div className={vstack()}>
+        <Button style={{ width }} type='primary' onClick={toggleTheme}>
+          {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
+        </Button>
+        <Button style={{ width }} href={'./login'}>
+          ./login
+        </Button>
+        <Button style={{ width }} type='dashed'>
+          Dashed Button
+        </Button>
+        <Button style={{ width }} type='text'>
+          Text Button
+        </Button>
+        <Button style={{ width }} type='link' href='/login'>
+          Link Button
+        </Button>
+      </div>
     </div>
   );
 }
+
+export default Home;
