@@ -38,5 +38,5 @@ export default defineConfig({
     themes: ['light', 'dark'],
   },
 
-  outdir: 'styled-system',
+  outdir: 'src/styled-system',
 });

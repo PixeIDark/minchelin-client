@@ -3,7 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { cookies } from 'next/headers';
-import { getTheme } from '../../styled-system/themes';
+import { getTheme } from '@/styled-system/themes';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
