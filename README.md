@@ -18,7 +18,7 @@
 A. 기본 인증 구조
 
 1. NextAuth 설정 
-  - [] 소셜 로그인 (Google/Github) 연동
+  - [ ] 소셜 로그인 (Google/Github) 연동
   - [] 세션 설정
   - [] 콜백 설정
 2. React Query 셋업
