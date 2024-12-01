@@ -13,3 +13,26 @@
 - 리액트 폼, 주드, 쿼리 써야하나? ㅎㅎㄹㄴㅇㅁ
 - public 폴더 해야함? 말아야함?
 - intercept 와 instance 구현 어떻게 할지.
+
+## 진척 
+A. 기본 인증 구조
+
+1. NextAuth 설정 
+  - [] 소셜 로그인 (Google/Github) 연동
+  - [] 세션 설정
+  - [] 콜백 설정
+2. React Query 셋업
+  - [] QueryClient 프로바이더 설정
+  - [] 세션 관리를 위한 커스텀 훅
+
+B. UI 구현
+
+1. 로그인/회원가입 폼 (React Hook Form + antd)
+  - [] 이메일/패스워드 폼
+  - [] 소셜 로그인 버튼
+  - [] Zod 검증
+2. 보호된 라우트 구현
+  - [] middleware.ts
+  - [] 레이아웃 설정
+
+- react-hook form 이랑 antd 랑 호환성 구데기임 둘 중하나 골라야함.
