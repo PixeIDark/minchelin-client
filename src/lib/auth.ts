@@ -68,4 +68,16 @@ export const authOptions: NextAuthOptions = {
     signIn: '/auth/login',
   },
   secret: process.env.NEXTAUTH_SECRET,
+  // cookies: { 세션 영구히 쿠키에 저장하는 NextAuth의 고유 기능.
+  //   sessionToken: {
+  //     name: `next-auth.session-token`,
+  //     options: {
+  //       httpOnly: true,
+  //       sameSite: 'lax',
+  //       path: '/',
+  //       secure: process.env.NODE_ENV === 'production',
+  //       maxAge: 30 * 24 * 60 * 60 // 30일
+  //     }
+  //   }
+  // }
 };

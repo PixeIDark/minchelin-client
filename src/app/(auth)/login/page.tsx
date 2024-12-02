@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { Button, Form, Input, message } from 'antd';
 import { signIn, useSession } from 'next-auth/react';
-import Link from 'next/link';
 import { z } from 'zod';
 
 const loginSchema = z.object({
@@ -14,7 +13,7 @@ const loginSchema = z.object({
 type LoginFormData = z.infer<typeof loginSchema>;
 
 export default function LoginPage() {
-  const { data: session } = useSession();
+  const { data: session, update } = useSession();
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
 
@@ -34,6 +33,7 @@ export default function LoginPage() {
       }
 
       if (result?.ok) {
+        await update();
         console.log(session);
       }
     } catch (error) {
