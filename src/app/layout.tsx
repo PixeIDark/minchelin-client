@@ -4,9 +4,10 @@ import './globals.css';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { cookies } from 'next/headers';
 import { getTheme } from '@/styled-system/themes';
-import SessionProvider from '@/components/SessionProvider';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
+import SessionProvider from '@/app/providers/SessionProvider';
+import QueryProvider from '@/app/providers/QueryProvider';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -41,9 +42,11 @@ export default async function RootLayout({
         <style type='text/css' id={theme.id} dangerouslySetInnerHTML={{ __html: theme.css }} />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <AntdRegistry>
-          <SessionProvider session={session}>{children}</SessionProvider>
-        </AntdRegistry>
+        <QueryProvider>
+          <AntdRegistry>
+            <SessionProvider session={session}>{children}</SessionProvider>
+          </AntdRegistry>
+        </QueryProvider>
       </body>
     </html>
   );
