@@ -5,9 +5,9 @@ import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { cookies } from 'next/headers';
 import { getTheme } from '@/styled-system/themes';
 import { getServerSession } from 'next-auth';
-import { authOptions } from '@/lib/auth';
 import SessionProvider from '@/app/providers/SessionProvider';
 import QueryProvider from '@/app/providers/QueryProvider';
+import { authOptions } from '@/lib/next-auth';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',

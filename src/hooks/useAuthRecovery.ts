@@ -1,6 +1,7 @@
 import { useSession } from 'next-auth/react';
 import { useEffect } from 'react';
 
+// 세션 초기화 방지(불러오기)
 export const useAuthRecovery = () => {
   const { data: session, status, update } = useSession();
 

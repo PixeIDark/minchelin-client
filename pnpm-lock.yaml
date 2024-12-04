@@ -580,7 +580,7 @@ packages:
 
   '@types/next-auth@3.15.0':
     resolution: {integrity: sha512-ZVfejlu81YiIRX1m0iKAfvZ3nK7K9EyZWhNARNKsFop8kNAgEvMnlKpTpwN59xkK2OhyWLagPuiDAVBYSO9jSA==}
-    deprecated: This is a stub types definition. next-auth provides its own type definitions, so you do not need this installed.
+    deprecated: This is a stub types definition. next-auth-mutation provides its own type definitions, so you do not need this installed.
 
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
@@ -3007,7 +3007,7 @@ snapshots:
     dependencies:
       next-auth: 4.24.10(next@14.2.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
-      - '@auth/core'
+      - '@auth-mutation/core'
       - next
       - nodemailer
       - react

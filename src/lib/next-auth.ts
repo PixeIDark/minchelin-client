@@ -65,12 +65,12 @@ export const authOptions: NextAuthOptions = {
     maxAge: 30 * 60,
   },
   pages: {
-    signIn: '/auth/login',
+    signIn: '/auth-mutation/login',
   },
   secret: process.env.NEXTAUTH_SECRET,
   // cookies: { 세션 영구히 쿠키에 저장하는 NextAuth의 고유 기능.
   //   sessionToken: {
-  //     name: `next-auth.session-token`,
+  //     name: `next-auth-mutation.session-token`,
   //     options: {
   //       httpOnly: true,
   //       sameSite: 'lax',

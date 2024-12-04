@@ -2,9 +2,11 @@
 import { Button } from 'antd';
 import { useToggleTheme } from '@/hooks/useToggleTheme';
 import { center, vstack } from '@/styled-system/patterns';
+import { useLogout } from '@/hooks/auth-mutation/useLogout';
 
 function Home() {
   const { theme, toggleTheme } = useToggleTheme();
+  const { mutate: logout, isPending } = useLogout();
 
   const width = '120px';
 
@@ -23,8 +25,8 @@ function Home() {
         <Button style={{ width }} type='text'>
           Text Button
         </Button>
-        <Button style={{ width }} type='link' href='/login'>
-          Link Button
+        <Button style={{ width }} type='link' onClick={() => logout()} loading={isPending}>
+          로그아웃
         </Button>
       </div>
     </div>

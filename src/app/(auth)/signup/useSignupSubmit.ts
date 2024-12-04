@@ -1,5 +1,5 @@
 import { useRouter } from 'next/navigation';
-import { useSignup } from '@/hooks/auth/useSignup';
+import { useSignup } from '@/hooks/auth-mutation/useSignup';
 import { SignupRequest } from '@/types/auth';
 import { message } from 'antd';
 
