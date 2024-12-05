@@ -1,3 +1,5 @@
+import { getSession } from 'next-auth/react';
+
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 interface FetchOptions extends RequestInit {
@@ -23,11 +25,19 @@ class FetchInstance {
     });
   }
 
+  private async getAuthHeader(): Promise<HeadersInit> {
+    const session = await getSession();
+    const token = session?.accessToken;
+
+    return token ? { Authorization: `Bearer ${token}` } : {};
+  }
+
   private async fetchWithInterceptor<T>(url: string, options: FetchOptions = {}): Promise<T> {
     try {
+      const authHeaders = await this.getAuthHeader();
       const headers: HeadersInit = {
         'Content-Type': 'application/json',
-        ...(options.token && { Authorization: `Bearer ${options.token}` }),
+        ...authHeaders,
         ...options.headers,
       };
 

@@ -19,8 +19,8 @@ function Home() {
         <Button style={{ width }} href={'./login'}>
           ./login
         </Button>
-        <Button style={{ width }} type='dashed'>
-          Dashed Button
+        <Button style={{ width }} type='dashed' href={'./user'}>
+          ./user
         </Button>
         <Button style={{ width }} type='text'>
           Text Button
