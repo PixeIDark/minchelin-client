@@ -1,13 +1,11 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
-import { AntdRegistry } from '@ant-design/nextjs-registry';
-import { cookies } from 'next/headers';
-import { getTheme } from '@/styled-system/themes';
 import { getServerSession } from 'next-auth';
 import SessionProvider from '@/app/providers/SessionProvider';
 import QueryProvider from '@/app/providers/QueryProvider';
 import { authOptions } from '@/lib/next-auth';
+import { getThemeConfig } from '@/utils/getThemeConfig';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -31,11 +29,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // 이새끼 분리해라.
-  const session = await getServerSession(authOptions); // useSession 헤더와 프로필에서 ㄱㄱ
-  const store = cookies();
-  const themeName = (store.get('theme')?.value as 'light' | 'dark') || 'light';
-  const theme = await getTheme(themeName);
+  const session = await getServerSession(authOptions);
+  const { themeName, theme } = await getThemeConfig();
 
   return (
     <html lang='en' data-panda-theme={themeName} suppressHydrationWarning>
@@ -44,9 +39,7 @@ export default async function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <QueryProvider>
-          <AntdRegistry>
-            <SessionProvider session={session}>{children}</SessionProvider>
-          </AntdRegistry>
+          <SessionProvider session={session}>{children}</SessionProvider>
         </QueryProvider>
       </body>
     </html>

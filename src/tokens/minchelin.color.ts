@@ -1,5 +1,5 @@
 export const minchelinColors = {
-  blue: {
+  blue100: {
     100: { value: '#D6E1FD' },
     200: { value: '#B4C4FB' },
     300: { value: '#92A6F8' },

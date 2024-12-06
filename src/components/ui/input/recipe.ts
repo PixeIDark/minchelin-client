@@ -13,7 +13,7 @@ export const input = defineRecipe({
     px: '3',
     py: '2',
     textStyle: 'sm',
-    focusRingOffsetColor: 'background',
+    ringOffset: 'background',
 
     _file: {
       border: 'none',
@@ -29,9 +29,9 @@ export const input = defineRecipe({
     _focusVisible: {
       outline: '2px solid transparent',
       outlineOffset: '2px',
-      focusRingWidth: '2',
-      focusRingColor: 'ring',
-      focusRingOffsetWidth: '2',
+      ring: '2',
+      ringColor: 'ring',
+      ringOffset: '2',
     },
 
     _disabled: {

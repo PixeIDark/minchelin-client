@@ -1,4 +1,3 @@
-import { button } from '@/components/ui/button/recipe';
 import {
   card,
   cardContent,
@@ -13,11 +12,12 @@ import {
   formItem,
   formLabel,
   formMessage,
-} from '@/components/ui/form/form.recipe';
+} from '@/components/ui/form/recipe';
 import { label } from '@/components/ui/label/recipe';
 import { input } from '@/components/ui/input/recipe';
 import { toast } from '@/components/ui/toast/slot-recipe';
 import { toastViewport } from '@/components/ui/toast/recipe';
+import { button } from '@/components/ui/button/recipe';
 
 export const recipes = {
   button,

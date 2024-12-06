@@ -4,7 +4,6 @@ import { colors } from '@/tokens/colors';
 import { recipes } from '@/components/ui/recipes';
 
 export default defineConfig({
-  // Required: Add the preset to your config.
   emitPackage: true,
   preflight: true,
   include: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,jsx,ts,tsx}'],

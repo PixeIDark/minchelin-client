@@ -35,6 +35,7 @@ function LoginForm() {
             display='flex'
             flexDir='column'
             gap='4'
+            noValidate
           >
             <FormField
               control={form.control}

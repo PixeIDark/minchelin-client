@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
-import { HTMLStyledProps } from '@/styled-system/types';
-import { styled } from '@/styled-system/jsx';
+import { styled, type HTMLStyledProps } from '@/styled-system/jsx';
 import { button } from '@/styled-system/recipes';
 
 const BaseButton = React.forwardRef<

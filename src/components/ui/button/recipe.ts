@@ -12,16 +12,16 @@ export const button = defineRecipe({
     fontWeight: 'medium',
     transition: 'colors',
     cursor: 'pointer',
-    focusRingOffsetColor: 'background',
+    ringOffset: 'background',
     gap: '2',
     width: '320px',
 
     _focusVisible: {
       outline: '2px solid transparent',
       outlineOffset: '2px',
-      focusRingWidth: '2',
-      focusRingColor: 'ring',
-      focusRingOffsetWidth: '2',
+      ringWidth: '2',
+      ringColor: 'ring',
+      ringOffset: '2',
     },
 
     _disabled: {
