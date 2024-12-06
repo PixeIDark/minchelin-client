@@ -1,13 +1,18 @@
+// @ts-ignore
 import { defineConfig } from '@pandacss/dev';
 import { colors } from '@/tokens/colors';
+import { recipes } from '@/components/ui/recipes';
 
 export default defineConfig({
+  // Required: Add the preset to your config.
+  emitPackage: true,
   preflight: true,
   include: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,jsx,ts,tsx}'],
   exclude: [],
-
+  jsxFramework: 'react',
   theme: {
     extend: {
+      recipes,
       tokens: {
         colors,
       },

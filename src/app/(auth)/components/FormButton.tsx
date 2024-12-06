@@ -1,5 +1,5 @@
 import { Button } from 'antd';
-import { useLoginSubmit } from '@/app/(auth)/login/useLoginSubmit';
+import { useLoginSubmit } from '@/app/(auth)/login/components/LoginForm/useLoginSubmit';
 
 function FormButton() {
   const { isPending } = useLoginSubmit();

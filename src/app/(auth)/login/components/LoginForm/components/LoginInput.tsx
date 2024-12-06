@@ -1,19 +1,23 @@
 import { z } from 'zod';
 import { Form, Input } from 'antd';
 import { makeZodValidator } from '@/lib/zod/makeZodValidator';
+import { input } from '@/styled-system/recipes';
 
 interface FormInputProps {
-  label: string;
   name: string;
   schema: z.ZodType<any>;
   placeholder: string;
   type?: 'text' | 'password';
 }
 
-function LoginInput({ label, name, schema, placeholder, type = 'text' }: FormInputProps) {
+function LoginInput({ name, schema, placeholder, type = 'text' }: FormInputProps) {
+  const a = {
+    width: '120px',
+    backgroundColor: 'red',
+  };
+
   return (
     <Form.Item
-      label={label}
       name={name}
       validateFirst
       rules={[
@@ -23,9 +27,9 @@ function LoginInput({ label, name, schema, placeholder, type = 'text' }: FormInp
       ]}
     >
       {type === 'password' ? (
-        <Input.Password placeholder={placeholder} />
+        <Input.Password placeholder={placeholder} className={input()} />
       ) : (
-        <Input placeholder={placeholder} />
+        <Input placeholder={placeholder} size='large' />
       )}
     </Form.Item>
   );

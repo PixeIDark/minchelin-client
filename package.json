@@ -10,12 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/icons": "^5.5.2",
-    "@ant-design/nextjs-registry": "^1.0.2",
     "@hookform/resolvers": "^3.9.1",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-toast": "^1.2.2",
+    "@shadow-panda/style-context": "^0.7.1",
     "@tanstack/react-query": "^5.62.0",
     "@types/next-auth": "^3.15.0",
-    "antd": "^5.22.2",
+    "lucide-react": "^0.468.0",
     "next": "14.2.18",
     "next-auth": "^4.24.10",
     "react": "^18",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@pandacss/dev": "^0.48.0",
+    "@shadow-panda/preset": "^0.7.1",
     "@tanstack/react-query-devtools": "^5.62.0",
     "@types/node": "^20",
     "@types/react": "^18",

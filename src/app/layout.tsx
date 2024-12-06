@@ -31,6 +31,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // 이새끼 분리해라.
   const session = await getServerSession(authOptions); // useSession 헤더와 프로필에서 ㄱㄱ
   const store = cookies();
   const themeName = (store.get('theme')?.value as 'light' | 'dark') || 'light';
