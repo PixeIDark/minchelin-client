@@ -7,7 +7,7 @@ export const button = defineRecipe({
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    rounded: 'md',
+    rounded: 'sm',
     textStyle: 'sm',
     fontWeight: 'medium',
     transition: 'colors',
@@ -15,6 +15,7 @@ export const button = defineRecipe({
     ringOffset: 'background',
     gap: '2',
     width: '320px',
+    border: '1px solid token(colors.blue.900)',
 
     _focusVisible: {
       outline: '2px solid transparent',
@@ -32,8 +33,10 @@ export const button = defineRecipe({
   variants: {
     variant: {
       default: {
-        bg: 'primary',
-        color: 'primary.foreground',
+        // bg: 'primary',
+        bg: 'blue.800',
+        // color: 'primary.foreground',
+        color: 'white',
 
         _hover: {
           bga: 'primary/90',
@@ -76,6 +79,18 @@ export const button = defineRecipe({
 
         _hover: {
           textDecoration: 'underline',
+        },
+      },
+      passwordToggle: {
+        position: 'absolute',
+        right: '0',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        bg: 'transparent',
+        border: 'none',
+        _hover: {
+          bg: 'accent',
+          color: 'accent.foreground',
         },
       },
     },

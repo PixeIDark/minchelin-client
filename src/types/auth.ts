@@ -7,6 +7,7 @@ export interface LoginRequest {
 
 export interface SignupRequest extends LoginRequest {
   name: string;
+  passwordConfirm: string;
 }
 
 export interface AuthResponse {

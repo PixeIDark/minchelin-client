@@ -7,13 +7,12 @@ export const input = defineRecipe({
     display: 'flex',
     h: '10',
     w: 'full',
-    rounded: 'md',
-    border: 'input',
+    rounded: 'sm',
+    border: '1px solid token(colors.gray.100)',
     bg: 'background',
     px: '3',
     py: '2',
     textStyle: 'sm',
-    ringOffset: 'background',
 
     _file: {
       border: 'none',
@@ -23,15 +22,16 @@ export const input = defineRecipe({
     },
 
     _placeholder: {
-      color: 'muted.foreground',
+      color: 'place_h',
     },
 
     _focusVisible: {
-      outline: '2px solid transparent',
+      // outline: '2px solid transparent',
+      outline: '2px solid token(colors.gray.300)',
       outlineOffset: '2px',
-      ring: '2',
-      ringColor: 'ring',
-      ringOffset: '2',
+      focusRingWidth: '2',
+      focusRingColor: 'ring',
+      focusRingOffsetWidth: '2',
     },
 
     _disabled: {
