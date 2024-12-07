@@ -40,6 +40,10 @@ export default defineConfig({
   // css 객체를 제거하고 직접 themes 배열을 설정 => styled-system 에 필요한 함수와 객체가 저장되서 꺼내쓸 수 있음.
   staticCss: {
     themes: ['light', 'dark'],
+    recipes: {
+      // from shadow-panda: toast, 토스트가 css 변형하게 해서 ui 나오게 해줌.
+      toast: [{ variant: ['*'] }],
+    },
   },
 
   outdir: 'src/styled-system',

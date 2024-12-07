@@ -125,7 +125,7 @@ export const toast = defineSlotRecipe({
       default: {
         root: {
           border: 'base',
-          bg: 'background',
+          bg: 'white',
         },
       },
       destructive: {

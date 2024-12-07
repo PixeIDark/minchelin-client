@@ -9,10 +9,9 @@ import { Form } from '@/components/ui/form';
 import { styled } from '@/styled-system/jsx';
 import TextField from '@/app/(auth)/components/TextField';
 import PasswordField from '@/app/(auth)/components/PasswordField';
-import { flex } from '@/styled-system/patterns';
-import { css } from '@/styled-system/css';
 import { LoadingButton } from '@/components/common/loading-button';
 import { AuthSecondaryLinks } from '@/app/(auth)/login/components/login-form';
+import styles from './login-form.styles';
 
 function LoginForm() {
   const form = useForm<LoginRequest>({
@@ -22,14 +21,13 @@ function LoginForm() {
       password: '',
     },
   });
-
   const { handleSubmit, isPending } = useLoginSubmit();
 
   return (
     <Form {...form}>
       <styled.form
         onSubmit={form.handleSubmit(handleSubmit)}
-        className={flex({ flexDir: 'column', gap: '4', maxW: '460', mx: 'auto', mt: '40' })}
+        className={styles.formWrapper}
         noValidate
       >
         <TextField
@@ -43,11 +41,7 @@ function LoginForm() {
           name='password'
           placeholder='비밀번호를 입력해주세요'
         />
-        <LoadingButton
-          className={css({ w: 'full', mt: '2' })}
-          text='로그인'
-          isPending={isPending}
-        />
+        <LoadingButton className={styles.loadingButton} text='로그인' isPending={isPending} />
         <AuthSecondaryLinks />
       </styled.form>
     </Form>
