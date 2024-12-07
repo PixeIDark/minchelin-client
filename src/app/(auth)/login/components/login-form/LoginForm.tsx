@@ -4,15 +4,16 @@ import { useForm } from 'react-hook-form';
 import { LoginRequest } from '@/types/auth';
 import { loginSchema } from '@/lib/zod/schemas';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useLoginSubmit } from '@/app/(auth)/login/components/LoginForm/useLoginSubmit';
+import { useLoginSubmit } from '@/app/(auth)/login/components/login-form/useLoginSubmit';
 import { Form } from '@/components/ui/form';
 import { styled } from '@/styled-system/jsx';
 import TextField from '@/app/(auth)/components/TextField';
 import PasswordField from '@/app/(auth)/components/PasswordField';
 import { flex } from '@/styled-system/patterns';
 import { css } from '@/styled-system/css';
-import Link from 'next/link';
 import { LoadingButton } from '@/components/common/loading-button';
+import { AuthSecondaryLinks } from '@/app/(auth)/login/components/login-form';
+
 function LoginForm() {
   const form = useForm<LoginRequest>({
     resolver: zodResolver(loginSchema),
@@ -47,11 +48,7 @@ function LoginForm() {
           text='로그인'
           isPending={isPending}
         />
-        <div className={flex({ gap: '3', color: 'blue_a' })}>
-          <Link href='./signup'>회원가입</Link>
-          <Link href='/'>ID찾기</Link>
-          <Link href='/'>비밀번호 찾기</Link>
-        </div>
+        <AuthSecondaryLinks />
       </styled.form>
     </Form>
   );
