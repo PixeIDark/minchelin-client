@@ -88,10 +88,6 @@ export const button = defineRecipe({
         transform: 'translateY(-50%)',
         bg: 'transparent',
         border: 'none',
-        _hover: {
-          bg: 'accent',
-          color: 'accent.foreground',
-        },
       },
     },
     size: {
