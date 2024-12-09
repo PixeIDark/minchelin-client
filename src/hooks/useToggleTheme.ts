@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { getCookie, setCookie } from '@/utils/clientCookies';
 import { getTheme, injectTheme } from '@/styled-system/themes';
 
-export const useToggleTheme = () => {
+export function useToggleTheme() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   const toggleTheme = async () => {
@@ -22,4 +22,4 @@ export const useToggleTheme = () => {
   }, []);
 
   return { theme, toggleTheme };
-};
+}

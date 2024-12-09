@@ -1,18 +1,14 @@
 'use client';
 
-import { useRouter, useSearchParams } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 import { LoginRequest } from '@/types/auth';
 import { useLogin } from '@/hooks/auth-mutation/useLogin';
 import { useToast } from '@/components/ui/toast/useToast';
 
 export function useLoginSubmit() {
-  const router = useRouter();
   const { toast } = useToast();
   const { update, data: session } = useSession();
   const { mutate: login, isPending } = useLogin();
-  const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get('callbackUrl');
 
   const handleSubmit = (values: LoginRequest) => {
     login(values, {
@@ -24,7 +20,6 @@ export function useLoginSubmit() {
           description: '로그인되었습니다',
           variant: 'default',
         });
-        router.push(callbackUrl || '/');
         console.log(session); // TODO: console.log
       },
       onError: (error) => {
