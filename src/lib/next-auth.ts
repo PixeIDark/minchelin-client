@@ -1,6 +1,8 @@
 import { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import { authApi } from '@/api/auth';
+import KakaoProvider from 'next-auth/providers/kakao';
+import { oauthApi } from '@/api/oauth';
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -34,8 +36,36 @@ export const authOptions: NextAuthOptions = {
         }
       },
     }),
+    KakaoProvider({
+      clientId: process.env.NEXT_PUBLIC_KAKAO_CLIENT_ID!,
+      clientSecret: process.env.KAKAO_CLIENT_SECRET!,
+    }),
   ],
+
   callbacks: {
+    async signIn({ user, account }) {
+      // 카카오
+      if (account?.provider === 'kakao') {
+        try {
+          const response = await oauthApi.saveKakaoUser({
+            providerAccountId: account.providerAccountId,
+            name: user.name || '',
+            accessToken: account.access_token!,
+            refreshToken: account.refresh_token!,
+          });
+
+          user.id = response.user.id;
+          user.accessToken = response.accessToken;
+          user.refreshToken = response.refreshToken;
+
+          return true;
+        } catch (error) {
+          console.error('Failed to save kakao user:', error);
+          return false;
+        }
+      }
+      return true;
+    },
     async jwt({ token, user }) {
       if (user) {
         token.accessToken = user.accessToken;
@@ -63,9 +93,6 @@ export const authOptions: NextAuthOptions = {
   session: {
     strategy: 'jwt',
     maxAge: 30 * 60,
-  },
-  pages: {
-    signIn: '/auth-mutation/login',
   },
   secret: process.env.NEXTAUTH_SECRET,
   // cookies: { 세션 영구히 쿠키에 저장하는 NextAuth의 고유 기능.

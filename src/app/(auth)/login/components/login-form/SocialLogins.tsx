@@ -8,16 +8,7 @@ import { signIn } from 'next-auth/react';
 function SocialLogins() {
   return (
     <div className={flex({ gap: '2', mt: '4' })}>
-      <button
-        onClick={() =>
-          signIn('kakao', {
-            callbackUrl: '/',
-            redirect: true,
-          })
-        }
-      >
-        카카오
-      </button>
+      <Button onClick={() => signIn('kakao', { callbackUrl: '/' })}>카카오로 시작하기</Button>
       <Button asChild>
         <Link href='/user'>네이버</Link>
       </Button>

@@ -1,11 +1,7 @@
-import { AuthResponse } from '@/types/auth';
 import { fetchInstance } from './instance';
-
-interface KakaoLoginRequest {
-  accessToken: string;
-}
+import { AuthResponse } from '@/types/auth';
+import { KakaoUser } from '@/types/oauth';
 
 export const oauthApi = {
-  kakaoLogin: (data: KakaoLoginRequest) =>
-    fetchInstance.post<AuthResponse>('/oauth/callback/kakao', data),
+  saveKakaoUser: (data: KakaoUser) => fetchInstance.post<AuthResponse>('/oauth/kakao/user', data),
 };

@@ -12,6 +12,7 @@ import PasswordField from '@/app/(auth)/components/PasswordField';
 import { LoadingButton } from '@/components/common/loading-button';
 import { AuthSecondaryLinks } from '@/app/(auth)/login/components/login-form';
 import styles from './login-form.styles';
+import SocialLogins from '@/app/(auth)/login/components/login-form/SocialLogins';
 
 function LoginForm() {
   const form = useForm<LoginRequest>({
@@ -24,27 +25,30 @@ function LoginForm() {
   const { handleSubmit, isPending } = useLoginSubmit();
 
   return (
-    <Form {...form}>
-      <styled.form
-        onSubmit={form.handleSubmit(handleSubmit)}
-        className={styles.formWrapper}
-        noValidate
-      >
-        <TextField
-          control={form.control}
-          name='email'
-          type='email'
-          placeholder='이메일 주소를 입력해주세요'
-        />
-        <PasswordField
-          control={form.control}
-          name='password'
-          placeholder='비밀번호를 입력해주세요'
-        />
-        <LoadingButton className={styles.loadingButton} text='로그인' isPending={isPending} />
-        <AuthSecondaryLinks />
-      </styled.form>
-    </Form>
+    <div>
+      <Form {...form}>
+        <styled.form
+          onSubmit={form.handleSubmit(handleSubmit)}
+          className={styles.formWrapper}
+          noValidate
+        >
+          <TextField
+            control={form.control}
+            name='email'
+            type='email'
+            placeholder='이메일 주소를 입력해주세요'
+          />
+          <PasswordField
+            control={form.control}
+            name='password'
+            placeholder='비밀번호를 입력해주세요'
+          />
+          <LoadingButton className={styles.loadingButton} text='로그인' isPending={isPending} />
+          <AuthSecondaryLinks />
+        </styled.form>
+      </Form>
+      <SocialLogins />
+    </div>
   );
 }
 

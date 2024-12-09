@@ -18,7 +18,7 @@ export function useLoginSubmit() {
     login(values, {
       onSuccess: async () => {
         await update();
-        // update 이후 첫 세션이 null인 것은 알려진 이슈이므로 무시
+        // TODO: update 이후 첫 세션이 null인 것은 알려진 이슈이므로 무시
         toast({
           title: '로그인 성공',
           description: '로그인되었습니다',
