@@ -10,9 +10,7 @@ import { styled } from '@/styled-system/jsx';
 import TextField from '@/app/(auth)/components/TextField';
 import PasswordField from '@/app/(auth)/components/PasswordField';
 import { LoadingButton } from '@/components/common/loading-button';
-import { AuthSecondaryLinks } from '@/app/(auth)/login/components/login-form';
 import styles from './login-form.styles';
-import SocialLogins from '@/app/(auth)/login/components/login-form/SocialLogins';
 
 function LoginForm() {
   const form = useForm<LoginRequest>({
@@ -44,10 +42,8 @@ function LoginForm() {
             placeholder='비밀번호를 입력해주세요'
           />
           <LoadingButton className={styles.loadingButton} text='로그인' isPending={isPending} />
-          <AuthSecondaryLinks />
         </styled.form>
       </Form>
-      <SocialLogins />
     </div>
   );
 }

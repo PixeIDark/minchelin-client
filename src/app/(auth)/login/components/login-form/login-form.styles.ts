@@ -5,19 +5,11 @@ const loginFormStyles = {
   formWrapper: flex({
     flexDir: 'column',
     gap: '4',
-    maxW: '460',
-    mx: 'auto',
-    mt: '40',
   }),
 
   loadingButton: css({
     w: 'full',
     mt: '2',
-  }),
-
-  secondaryLinks: flex({
-    gap: '3',
-    color: 'blue_a',
   }),
 } as const;
 

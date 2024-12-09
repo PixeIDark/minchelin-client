@@ -15,7 +15,7 @@ export const Toast = withProvider(styled(ToastPrimitive.Root), 'root', { classNa
 export const ToastAction = withContext(styled(ToastPrimitive.Action), 'action');
 export const ToastClose = withContext(styled(ToastPrimitive.Close), 'close', {
   children: <X />,
-  // children: <X className={icon()} />,
+  // children: <X className={icons()} />,
 });
 export const ToastTitle = withContext(styled(ToastPrimitive.Title), 'title');
 export const ToastDescription = withContext(styled(ToastPrimitive.Description), 'description');

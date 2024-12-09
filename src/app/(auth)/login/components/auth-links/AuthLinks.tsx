@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import styles from '@/app/(auth)/login/components/login-form/login-form.styles';
+import styles from '@/app/(auth)/login/components/auth-links/auth-links.styles';
 
-function AuthSecondaryLinks() {
+function AuthLinks() {
   return (
     <div className={styles.secondaryLinks}>
       <Link href='./signup'>회원가입</Link>
@@ -11,4 +11,4 @@ function AuthSecondaryLinks() {
   );
 }
 
-export default AuthSecondaryLinks;
+export default AuthLinks;
