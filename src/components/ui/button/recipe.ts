@@ -38,8 +38,17 @@ export const button = defineRecipe({
         // color: 'primary.foreground',
         color: 'white',
 
+        // _focus: {
+        //   '&:not(:disabled)': {
+        //     bg: 'blue.900',
+        //   },
+
         _hover: {
           bga: 'primary/90',
+          '&:not(:disabled)': {
+            opacity: '0.9',
+          },
+          boxShadow: 'md',
         },
       },
       destructive: {

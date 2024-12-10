@@ -7,10 +7,10 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useLoginSubmit } from '@/app/(auth)/login/components/login-form/useLoginSubmit';
 import { Form } from '@/components/ui/form';
 import { styled } from '@/styled-system/jsx';
-import TextField from '@/app/(auth)/components/TextField';
-import PasswordField from '@/app/(auth)/components/PasswordField';
 import { LoadingButton } from '@/components/common/loading-button';
 import styles from './login-form.styles';
+import { TextField } from '@/app/(auth)/components/text-field';
+import { PasswordField } from '@/app/(auth)/components/password-field';
 
 function LoginForm() {
   const form = useForm<LoginRequest>({

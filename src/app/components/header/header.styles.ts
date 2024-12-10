@@ -21,7 +21,8 @@ const headerStyles = {
     borderColor: 'gray.200',
   }),
   divider: css({
-    border: '1px solid red',
+    border: '1px solid',
+    borderColor: 'gray.200',
     mx: '-4',
   }),
 } as const;

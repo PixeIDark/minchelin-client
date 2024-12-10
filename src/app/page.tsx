@@ -24,7 +24,9 @@ function Home() {
           <Link href='/user'>./user</Link>
         </Button>
 
-        <Button variant='ghost'>Text Button</Button>
+        <Button variant='ghost' asChild>
+          <Link href='/signup'>./signup</Link>
+        </Button>
 
         <Button variant='destructive' onClick={() => logout()} disabled={isPending}>
           {isPending ? (

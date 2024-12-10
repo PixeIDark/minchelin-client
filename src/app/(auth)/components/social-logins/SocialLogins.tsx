@@ -3,7 +3,7 @@
 import { signIn } from 'next-auth/react';
 import kakaoIcon from '@/assets/icons/kakao.ico';
 import Image from 'next/image';
-import styles from '@/app/(auth)/login/components/social-logins/social-logins.styles';
+import styles from '@/app/(auth)/components/social-logins/social-logins.styles';
 import { useCallbackUrl } from '@/hooks/useCallbackUrl';
 
 // TODO: 모든 소셜 로그인 구현하면 분리.
