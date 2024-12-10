@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -33,6 +33,9 @@
     &quot;accountId&quot;: &quot;980a9a5d-0ac2-45b7-9d0d-5c4fd8b76c23&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/app/(auth)/login/components/social-logins/SocialLogins.tsx" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
@@ -54,7 +57,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-client",
+    "jsx.switch.disabled": "true",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/coding test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -64,7 +68,7 @@
     "nodejs_package_manager_path": "pnpm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save",
+    "settings.editor.selected.configurable": "settings.sync",
     "ts.external.directory.path": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -78,11 +82,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\types" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\login\components\LoginForm" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\styled-system\recipes\input" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\styled-system\recipes" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\signup\components\SignupForm" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -120,6 +124,11 @@
       <workItem from="1733536783515" duration="602000" />
       <workItem from="1733657849262" duration="585000" />
       <workItem from="1733723144806" duration="7000" />
+      <workItem from="1733745649032" duration="118000" />
+      <workItem from="1733746660192" duration="78000" />
+      <workItem from="1733749034095" duration="79000" />
+      <workItem from="1733749138323" duration="311000" />
+      <workItem from="1733815789953" duration="1133000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -169,7 +178,31 @@
       <option name="project" value="LOCAL" />
       <updated>1733504960343</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="컴포넌트 분리">
+      <option name="closed" value="true" />
+      <created>1733733152670</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733733152670</updated>
+    </task>
+    <task id="LOCAL-00008" summary="함수 분리">
+      <option name="closed" value="true" />
+      <created>1733735035958</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733735035958</updated>
+    </task>
+    <task id="LOCAL-00009" summary="컨벤션 수정">
+      <option name="closed" value="true" />
+      <created>1733735195087</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733735195087</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +219,9 @@
     <MESSAGE value="antd =&gt; shadow-panda, custom recipe 설정, 판다 기본 color 와 나의 color 통합" />
     <MESSAGE value="코드, 파일 정리" />
     <MESSAGE value="로그인 ui 완성. 소셜 로그인, 컴포넌트 분리 남음. 컬러변수명 고려하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="로그인 ui 완성. 소셜 로그인, 컴포넌트 분리 남음. 컬러변수명 고려하기" />
+    <MESSAGE value="컴포넌트 분리" />
+    <MESSAGE value="함수 분리" />
+    <MESSAGE value="컨벤션 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="컨벤션 수정" />
   </component>
 </project>

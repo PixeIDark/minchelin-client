@@ -7,6 +7,7 @@ import styles from '@/app/(auth)/login/components/social-logins/social-logins.st
 import { useCallbackUrl } from '@/hooks/useCallbackUrl';
 
 // TODO: 모든 소셜 로그인 구현하면 분리.
+// TODO: ui로 이미지 버튼 분리
 function SocialLogins() {
   const { callbackUrl } = useCallbackUrl();
 

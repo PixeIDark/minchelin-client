@@ -11,7 +11,7 @@ interface LoadingButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 function LoadingButton({ text, isPending, ...props }: LoadingButtonProps) {
   return (
-    <Button disabled={isPending} {...props}>
+    <Button disabled={isPending} {...props} size='lg'>
       {!isPending ? (
         text
       ) : (

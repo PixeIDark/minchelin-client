@@ -5,7 +5,7 @@ const loginPageStyles = {
     flexDir: 'column',
     maxW: '460',
     mx: 'auto',
-    mt: '40',
+    mt: '120px',
     gap: '4',
   }),
 } as const;

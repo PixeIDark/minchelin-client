@@ -98,13 +98,13 @@ export const button = defineRecipe({
       },
       sm: {
         h: '9',
-        rounded: 'md',
+        // rounded: 'md',
         px: '3',
       },
       lg: {
-        h: '11',
-        rounded: 'md',
-        px: '8',
+        h: '52px',
+        // rounded: 'md',
+        // px: '8',
       },
       icon: {
         h: '10',

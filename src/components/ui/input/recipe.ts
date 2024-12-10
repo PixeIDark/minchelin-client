@@ -5,7 +5,7 @@ export const input = defineRecipe({
   description: 'Styles for the input component',
   base: {
     display: 'flex',
-    h: '10',
+    h: '14',
     w: 'full',
     rounded: 'sm',
     border: '1px solid token(colors.gray.100)',

@@ -7,6 +7,7 @@ import SessionProvider from '@/providers/SessionProvider';
 import { authOptions } from '@/lib/next-auth';
 import { getThemeConfig } from '@/utils/getThemeConfig';
 import { Toaster } from '@/components/ui/toast/Toaster';
+import { Header } from '@/app/components/header';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -41,6 +42,7 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <QueryProvider>
           <SessionProvider session={session}>
+            <Header />
             {children}
             <Toaster />
           </SessionProvider>
