@@ -7,6 +7,7 @@ interface TextFieldProps<T extends FieldValues> {
   name: Path<T>;
   type?: 'text' | 'email';
   placeholder?: string;
+  size?: 'sm';
 }
 
 function TextField<T extends FieldValues>({
@@ -14,6 +15,7 @@ function TextField<T extends FieldValues>({
   name,
   type = 'text',
   placeholder,
+  ...props
 }: TextFieldProps<T>) {
   return (
     <FormField
@@ -22,7 +24,7 @@ function TextField<T extends FieldValues>({
       render={({ field }) => (
         <FormItem>
           <FormControl>
-            <Input type={type} placeholder={placeholder} {...field} />
+            <Input type={type} placeholder={placeholder} {...field} {...props} />
           </FormControl>
           <FormMessage />
         </FormItem>

@@ -10,12 +10,14 @@ interface PasswordFieldProps<T extends FieldValues> {
   control: Control<T>;
   name: Path<T>;
   placeholder?: string;
+  size?: 'sm';
 }
 
 function PasswordField<T extends FieldValues>({
   control,
   name,
   placeholder,
+  ...props
 }: PasswordFieldProps<T>) {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -31,6 +33,7 @@ function PasswordField<T extends FieldValues>({
                 type={showPassword ? 'text' : 'password'}
                 placeholder={placeholder}
                 {...field}
+                {...props}
               />
               <Button
                 type='button'

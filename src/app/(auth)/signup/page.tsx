@@ -1,5 +1,11 @@
+import { SignupForm } from '@/app/(auth)/signup/components/signup-form';
+
 function Signup() {
-  return <div>가입</div>;
+  return (
+    <div>
+      <SignupForm />
+    </div>
+  );
 }
 
 export default Signup;

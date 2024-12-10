@@ -5,11 +5,11 @@ export const input = defineRecipe({
   description: 'Styles for the input component',
   base: {
     display: 'flex',
-    h: '14',
     w: 'full',
     rounded: 'sm',
     border: '1px solid token(colors.gray.100)',
     bg: 'background',
+    h: '14',
     px: '3',
     py: '2',
     textStyle: 'sm',
@@ -37,6 +37,23 @@ export const input = defineRecipe({
     _disabled: {
       cursor: 'not-allowed',
       opacity: '0.5',
+    },
+  },
+  variants: {
+    size: {
+      // default: {
+      //   h: '14',
+      // },
+      sm: {
+        h: '38px',
+      },
+      // lg: {
+      //    px: '8',
+      // },
+      // icon: {
+      //   h: '10',
+      //   w: '10',
+      // },
     },
   },
 });
