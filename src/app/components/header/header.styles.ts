@@ -5,11 +5,13 @@ const headerStyles = {
   wrapper: css({
     display: { md: 'none' },
   }),
+
   container: flex({
     my: '2',
     justifyContent: 'space-between',
     alignItems: 'center',
   }),
+
   userIcon: css({
     display: 'flex',
     alignItems: 'center',
@@ -20,6 +22,7 @@ const headerStyles = {
     border: '1px solid',
     borderColor: 'gray.200',
   }),
+
   divider: css({
     border: '1px solid',
     borderColor: 'gray.200',
