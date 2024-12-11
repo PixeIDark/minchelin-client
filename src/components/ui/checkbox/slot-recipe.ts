@@ -10,7 +10,7 @@ export const checkbox = defineSlotRecipe({
       w: '4',
       flexShrink: '0',
       rounded: 'sm',
-      border: '2px solid',
+      border: '1px solid',
       borderColor: 'gray.200',
       cursor: 'pointer',
       focusRingOffsetColor: 'background',

@@ -28,6 +28,10 @@ function Home() {
           <Link href='/signup'>./signup</Link>
         </Button>
 
+        <Button variant='outline' asChild>
+          <Link href='/map'>./map</Link>
+        </Button>
+
         <Button variant='destructive' onClick={() => logout()} disabled={isPending}>
           {isPending ? (
             <>
@@ -38,8 +42,6 @@ function Home() {
             '로그아웃'
           )}
         </Button>
-
-        <Button variant='outline'>Outline Button</Button>
 
         <Button variant='link'>Link Style</Button>
 
