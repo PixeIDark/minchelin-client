@@ -1,8 +1,7 @@
 'use client';
 
 import { useForm } from 'react-hook-form';
-import { LoginRequest } from '@/types/auth';
-import { loginSchema } from '@/lib/zod/schemas';
+import { LoginFormData, loginSchema } from '@/lib/zod/schemas';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useLoginSubmit } from '@/app/(auth)/login/components/login-form/useLoginSubmit';
 import { Form } from '@/components/ui/form';
@@ -13,7 +12,7 @@ import { TextField } from '@/app/(auth)/components/text-field';
 import { PasswordField } from '@/app/(auth)/components/password-field';
 
 function LoginForm() {
-  const form = useForm<LoginRequest>({
+  const form = useForm<LoginFormData>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
       email: '',

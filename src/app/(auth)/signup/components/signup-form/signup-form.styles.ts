@@ -8,7 +8,7 @@ const signupFormStyles = {
   }),
   loadingButton: css({
     w: 'full',
-    mt: '2',
+    mt: '6',
   }),
 } as const;
 

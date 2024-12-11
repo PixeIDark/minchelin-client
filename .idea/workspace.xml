@@ -82,11 +82,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\components\text-field" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\components\password-field" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\components" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\components\header" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\types" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\login\components\LoginForm" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\styled-system\recipes\input" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\styled-system\recipes" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -129,6 +129,8 @@
       <workItem from="1733749034095" duration="79000" />
       <workItem from="1733749138323" duration="311000" />
       <workItem from="1733815789953" duration="1133000" />
+      <workItem from="1733843878768" duration="13124000" />
+      <workItem from="1733896280887" duration="590000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -202,7 +204,31 @@
       <option name="project" value="LOCAL" />
       <updated>1733735195087</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="프사 기능 없는 헤더 완성, 세션 검증 훅 추가">
+      <option name="closed" value="true" />
+      <created>1733850023523</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733850023523</updated>
+    </task>
+    <task id="LOCAL-00011" summary="회원가입 완성. 체크박스, 컴포넌트 분리 만하면됨">
+      <option name="closed" value="true" />
+      <created>1733852805427</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733852805427</updated>
+    </task>
+    <task id="LOCAL-00012" summary="다듬기">
+      <option name="closed" value="true" />
+      <created>1733857391883</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733857391883</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +248,9 @@
     <MESSAGE value="컴포넌트 분리" />
     <MESSAGE value="함수 분리" />
     <MESSAGE value="컨벤션 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="컨벤션 수정" />
+    <MESSAGE value="프사 기능 없는 헤더 완성, 세션 검증 훅 추가" />
+    <MESSAGE value="회원가입 완성. 체크박스, 컴포넌트 분리 만하면됨" />
+    <MESSAGE value="다듬기" />
+    <option name="LAST_COMMIT_MESSAGE" value="다듬기" />
   </component>
 </project>

@@ -6,14 +6,19 @@ const signupPageStyles = {
     flexDir: 'column',
     maxW: '460',
     mx: 'auto',
+    gap: '6',
+  }),
+
+  contentWrapper: flex({
+    flexDir: 'column',
     gap: '4',
+    mt: '3',
   }),
 
   title: css({
-    fontSize: 'xl',
+    fontSize: '24px',
     fontWeight: 'bold',
     textAlign: 'center',
-    mb: '6',
   }),
 } as const;
 

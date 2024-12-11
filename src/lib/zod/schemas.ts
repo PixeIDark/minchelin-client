@@ -20,6 +20,10 @@ export const nameSchema = z
   .max(20, '닉네임은 20자 이하여야 합니다')
   .regex(/^[a-zA-Z0-9가-힣]+$/, '닉네임은 영문, 숫자, 한글만 사용 가능합니다');
 
+export const agreeToTerms = z.boolean().refine((val) => val, {
+  message: '약관에 동의해주세요',
+});
+
 export const loginSchema = z.object({
   email: emailSchema,
   password: passwordSchema,
@@ -31,6 +35,7 @@ export const signupSchema = z
     password: signupPasswordSchema,
     passwordConfirm: z.string().min(1, '비밀번호 확인을 입력해주세요'),
     name: nameSchema,
+    agreeToTerms,
   })
   .refine((data) => data.password === data.passwordConfirm, {
     message: '비밀번호가 일치하지 않습니다',

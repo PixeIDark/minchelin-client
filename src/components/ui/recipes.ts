@@ -18,6 +18,8 @@ import { input } from '@/components/ui/input/recipe';
 import { toast } from '@/components/ui/toast/slot-recipe';
 import { toastViewport } from '@/components/ui/toast/recipe';
 import { button } from '@/components/ui/button/recipe';
+import { icon } from '@/components/ui/icon/recipe';
+import { checkbox } from '@/components/ui/checkbox/slot-recipe';
 
 export const recipes = {
   button,
@@ -27,12 +29,14 @@ export const recipes = {
   cardDescription,
   cardContent,
   cardFooter,
+  checkbox,
   formLabel,
   formItem,
   formControl,
   formDescription,
   formMessage,
   input,
+  icon,
   label,
   toast,
   toastViewport,
