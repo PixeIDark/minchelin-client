@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -131,6 +131,8 @@
       <workItem from="1733815789953" duration="1133000" />
       <workItem from="1733843878768" duration="13124000" />
       <workItem from="1733896280887" duration="590000" />
+      <workItem from="1733908339188" duration="9162000" />
+      <workItem from="1734044782068" duration="912000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -228,16 +230,35 @@
       <option name="project" value="LOCAL" />
       <updated>1733857391883</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="회원가입 체크박스 추가, 스키마 수정, ui 수정">
+      <option name="closed" value="true" />
+      <created>1733914368422</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733914368422</updated>
+    </task>
+    <task id="LOCAL-00014" summary="지도연결">
+      <option name="closed" value="true" />
+      <created>1733917836849</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1733917836849</updated>
+    </task>
+    <task id="LOCAL-00015" summary="위치지도">
+      <option name="closed" value="true" />
+      <created>1733918445909</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1733918445910</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/tokens/colors.d.ts" />
-      </list>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
@@ -251,6 +272,9 @@
     <MESSAGE value="프사 기능 없는 헤더 완성, 세션 검증 훅 추가" />
     <MESSAGE value="회원가입 완성. 체크박스, 컴포넌트 분리 만하면됨" />
     <MESSAGE value="다듬기" />
-    <option name="LAST_COMMIT_MESSAGE" value="다듬기" />
+    <MESSAGE value="회원가입 체크박스 추가, 스키마 수정, ui 수정" />
+    <MESSAGE value="지도연결" />
+    <MESSAGE value="위치지도" />
+    <option name="LAST_COMMIT_MESSAGE" value="위치지도" />
   </component>
 </project>
