@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -58,7 +58,7 @@
     "git-widget-placeholder": "dev",
     "js.linters.configure.manually.selectedeslint": "true",
     "jsx.switch.disabled": "true",
-    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/coding test",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-client",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,11 +82,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\assets\icons\footer" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\components\text-field" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\components\password-field" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\components" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\components\header" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -133,6 +133,7 @@
       <workItem from="1733896280887" duration="590000" />
       <workItem from="1733908339188" duration="9162000" />
       <workItem from="1734044782068" duration="912000" />
+      <workItem from="1734106559077" duration="3636000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -254,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733918445910</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="푸터 ui">
+      <option name="closed" value="true" />
+      <created>1734111819302</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1734111819302</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +284,7 @@
     <MESSAGE value="회원가입 체크박스 추가, 스키마 수정, ui 수정" />
     <MESSAGE value="지도연결" />
     <MESSAGE value="위치지도" />
-    <option name="LAST_COMMIT_MESSAGE" value="위치지도" />
+    <MESSAGE value="푸터 ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="푸터 ui" />
   </component>
 </project>
