@@ -33,7 +33,6 @@ function Header() {
           <div className={css({ width: '40px' })} />
         )}
       </div>
-      <div className={styles.divider} />
     </div>
   );
 }

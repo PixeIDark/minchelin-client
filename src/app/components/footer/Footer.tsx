@@ -1,37 +1,34 @@
+'use client';
+
 import { Atom, BookMarked, Home, Search, Settings } from 'lucide-react';
-import { css } from '@/styled-system/css';
+import styles from './footer.styles';
+import { useSelectedLayoutSegment } from 'next/navigation';
 
 function Footer() {
+  const segment = useSelectedLayoutSegment();
+
+  if (segment === '(auth)') return null;
+
+  const iconColor = {
+    home: segment === null ? '#304DAD' : undefined,
+  };
+
   return (
-    <div
-      className={css({
-        alignItems: 'center',
-        height: '16',
-        mx: '-4',
-        px: '4',
-        display: { base: 'flex', md: 'none' },
-        justifyContent: 'space-between',
-        borderTop: '1px solid',
-        borderColor: 'gray.200',
-        position: 'fixed',
-        bottom: '0',
-        w: 'full',
-      })}
-    >
+    <div className={styles.wrapper}>
       <button>
-        <Home size={28} />
+        <Home size={28} color={iconColor.home} />
       </button>
       <button>
-        <Search size={28} />{' '}
+        <Search size={28} />
       </button>
       <button>
-        <BookMarked size={28} />{' '}
+        <BookMarked size={28} />
       </button>
       <button>
-        <Atom size={28} />{' '}
+        <Atom size={28} />
       </button>
       <button>
-        <Settings size={28} />{' '}
+        <Settings size={28} />
       </button>
     </div>
   );

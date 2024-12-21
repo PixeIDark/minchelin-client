@@ -4,6 +4,8 @@ import { flex } from '@/styled-system/patterns';
 const headerStyles = {
   wrapper: css({
     display: { md: 'none' },
+    borderBottom: '1px solid',
+    borderColor: 'gray.200',
     mx: '-4',
   }),
 
@@ -23,11 +25,6 @@ const headerStyles = {
     border: '1px solid',
     borderColor: 'gray.200',
     mr: '2',
-  }),
-
-  divider: css({
-    border: '1px solid',
-    borderColor: 'gray.200',
   }),
 } as const;
 

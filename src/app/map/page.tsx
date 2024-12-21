@@ -1,4 +1,4 @@
-import { NaverMap } from '@/app/map/NaverMap';
+import NaverMap from '@/app/map/NaverMap';
 
 function MapPage() {
   return (
