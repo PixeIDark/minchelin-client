@@ -1,6 +1,6 @@
 import { useAuthRecovery } from '@/hooks/useAuthRecovery';
-import { useLogout } from '@/hooks/auth-mutation/useLogout';
 import { useEffect } from 'react';
+import { useLogout } from '@/queries/auth';
 
 export function useAuthState() {
   const { session, status } = useAuthRecovery();

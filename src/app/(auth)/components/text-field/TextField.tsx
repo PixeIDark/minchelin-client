@@ -15,7 +15,7 @@ function TextField<T extends FieldValues>({
   name,
   type = 'text',
   placeholder,
-  ...props
+  size,
 }: TextFieldProps<T>) {
   return (
     <FormField
@@ -24,7 +24,7 @@ function TextField<T extends FieldValues>({
       render={({ field }) => (
         <FormItem>
           <FormControl>
-            <Input type={type} placeholder={placeholder} {...field} {...props} />
+            <Input type={type} placeholder={placeholder} size={size} {...field} />
           </FormControl>
           <FormMessage />
         </FormItem>

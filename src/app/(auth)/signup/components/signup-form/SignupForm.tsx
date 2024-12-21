@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { SignupFormData } from '@/lib/zod/schemas';
 import { signupSchema } from '@/lib/zod/schemas';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
+import { Form } from '@/components/ui/form';
 import { styled } from '@/styled-system/jsx';
 import { LoadingButton } from '@/components/common/loading-button';
 import styles from './signup-form.styles';
@@ -12,7 +12,6 @@ import { useSignupSubmit } from '@/app/(auth)/signup/components/signup-form/useS
 import { Label } from '@/components/ui/label';
 import { TextField } from '@/app/(auth)/components/text-field';
 import { PasswordField } from '@/app/(auth)/components/password-field';
-import { Checkbox } from '@/components/ui/checkbox';
 import TermsCheckbox from '@/app/(auth)/signup/components/signup-form/components/TermsCheckbox';
 
 function SignupForm() {

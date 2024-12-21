@@ -25,6 +25,33 @@ class FetchInstance {
     });
   }
 
+  async postFormData<T>(url: string, formData: FormData, options?: FetchOptions): Promise<T> {
+    try {
+      const authHeaders = await this.getAuthHeader();
+      const headers: HeadersInit = {
+        ...authHeaders,
+        ...options?.headers,
+      };
+
+      const response = await fetch(`${this.baseURL}${url}`, {
+        method: 'POST',
+        body: formData,
+        ...options,
+        headers,
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.message || '서버 오류가 발생했습니다');
+      }
+
+      return response.json();
+    } catch (error) {
+      console.error('API 오류:', error);
+      throw error;
+    }
+  }
+
   private async getAuthHeader(): Promise<HeadersInit> {
     const session = await getSession();
     const token = session?.accessToken;

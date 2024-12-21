@@ -2,8 +2,8 @@
 
 import { useSession } from 'next-auth/react';
 import { LoginRequest } from '@/types/auth';
-import { useLogin } from '@/hooks/auth-mutation/useLogin';
 import { useToast } from '@/components/ui/toast/useToast';
+import { useLogin } from '@/queries/auth';
 
 export function useLoginSubmit() {
   const { toast } = useToast();

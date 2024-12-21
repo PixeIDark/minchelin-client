@@ -1,23 +1,26 @@
 import { isServer, QueryClient } from '@tanstack/react-query';
 
-function makeQueryClient() {
+const makeQueryClient = () => {
   return new QueryClient({
     defaultOptions: {
       queries: {
-        // Next.js의 페이지 전환에서도 stale data를 보여주는 것이 좋습니다
-        staleTime: 60 * 1000, // 1분
-        // 서버 컴포넌트에서 prefetch된 데이터가 있을 수 있으므로
+        staleTime: 60 * 1000,
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
+        retry: 1,
+        retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 30000),
+      },
+      mutations: {
+        retry: false,
       },
     },
   });
-}
+};
 
 let browserQueryClient: QueryClient | undefined = undefined;
 
-export function getQueryClient() {
+export const getQueryClient = () => {
   if (isServer) {
     // 서버: 항상 새로운 QueryClient 생성
     return makeQueryClient();
@@ -25,4 +28,4 @@ export function getQueryClient() {
   // 브라우저: 없으면 생성
   if (!browserQueryClient) browserQueryClient = makeQueryClient();
   return browserQueryClient;
-}
+};

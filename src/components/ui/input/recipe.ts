@@ -56,4 +56,5 @@ export const input = defineRecipe({
       // },
     },
   },
+  staticCss: [{ size: ['*'] }],
 });

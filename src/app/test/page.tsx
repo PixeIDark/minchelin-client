@@ -4,9 +4,9 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useToggleTheme } from '@/hooks/useToggleTheme';
 import { center, vstack } from '@/styled-system/patterns';
-import { useLogout } from '@/hooks/auth-mutation/useLogout';
 import { Loader2, ChevronRight, Mail } from 'lucide-react';
 import { css, cx } from '@/styled-system/css';
+import { useLogout } from '@/queries/auth';
 
 function TestPage() {
   const { theme, toggleTheme } = useToggleTheme();

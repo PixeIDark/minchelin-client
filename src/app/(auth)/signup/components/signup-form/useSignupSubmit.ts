@@ -1,9 +1,9 @@
 'use client';
 
 import { SignupRequest } from '@/types/auth';
-import { useSignup } from '@/hooks/auth-mutation/useSignup';
 import { useToast } from '@/components/ui/toast/useToast';
 import { useRouter } from 'next/navigation';
+import { useSignup } from '@/queries/auth';
 
 export function useSignupSubmit() {
   const { toast } = useToast();

@@ -17,7 +17,7 @@ function PasswordField<T extends FieldValues>({
   control,
   name,
   placeholder,
-  ...props
+  size,
 }: PasswordFieldProps<T>) {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -32,8 +32,8 @@ function PasswordField<T extends FieldValues>({
               <Input
                 type={showPassword ? 'text' : 'password'}
                 placeholder={placeholder}
+                size={size}
                 {...field}
-                {...props}
               />
               <Button
                 type='button'
