@@ -7,8 +7,8 @@ import SessionProvider from '@/providers/SessionProvider';
 import { authOptions } from '@/lib/next-auth';
 import { getThemeConfig } from '@/utils/getThemeConfig';
 import { Toaster } from '@/components/ui/toast/Toaster';
-import { HeaderLayout } from '@/app/components/layout/header-layout';
-import { Footer } from '@/app/components/layout/footer';
+import { HeaderLayout } from '@/app/_components/layout/header-layout';
+import { Footer } from '@/app/_components/footer';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',

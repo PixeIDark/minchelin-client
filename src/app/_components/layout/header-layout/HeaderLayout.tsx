@@ -1,8 +1,8 @@
 'use client';
 
-import { Header } from '@/app/components/header';
-import { SearchPanel } from '../../search';
-import { useSearchPanel } from '@/app/components/layout/header-layout/_hooks/useSearchPanel';
+import { Header } from '../header';
+import { SearchPanel } from '../search';
+import { useSearchPanel } from '@/app/_components/layout/header-layout/_hooks/useSearchPanel';
 
 function HeaderLayout() {
   const { isSearchOpen, onSearchToggle } = useSearchPanel();

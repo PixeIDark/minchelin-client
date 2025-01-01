@@ -62,41 +62,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;jsx.switch.disabled&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kiki7/Desktop/repository/coding test&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "jsx.switch.disabled": "true",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-client",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "pnpm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "settings.sync",
+    "ts.external.directory.path": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\components" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\components\layout" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\components\header" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\recipe\[...recipeId]" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\assets\icons\footer" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\components\text-field" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\components\password-field" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\(auth)\components" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -155,6 +155,7 @@
       <workItem from="1734794220847" duration="7000" />
       <workItem from="1734841251716" duration="874000" />
       <workItem from="1735207708989" duration="2151000" />
+      <workItem from="1735704331097" duration="18345000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -308,7 +309,63 @@
       <option name="project" value="LOCAL" />
       <updated>1734783474362</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="SocialLogins.tsx =&gt; callbackUrl 정리">
+      <option name="closed" value="true" />
+      <created>1735705460982</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1735705460982</updated>
+    </task>
+    <task id="LOCAL-00021" summary="잔재 제거, search 쿼리 세팅">
+      <option name="closed" value="true" />
+      <created>1735706594476</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1735706594476</updated>
+    </task>
+    <task id="LOCAL-00022" summary="잔재 제거, search 쿼리 세팅">
+      <option name="closed" value="true" />
+      <created>1735706600734</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1735706600734</updated>
+    </task>
+    <task id="LOCAL-00023" summary="searchApi 파람 기본값 설정">
+      <option name="closed" value="true" />
+      <created>1735706806282</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1735706806282</updated>
+    </task>
+    <task id="LOCAL-00024" summary="잔재 제거">
+      <option name="closed" value="true" />
+      <created>1735707137428</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1735707137428</updated>
+    </task>
+    <task id="LOCAL-00025" summary="헤더 디자인 변경, 플로팅 버튼 제거">
+      <option name="closed" value="true" />
+      <created>1735708014659</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1735708014659</updated>
+    </task>
+    <task id="LOCAL-00026" summary="기본적인 검색 기능 구현, loadingButton 프롭스 변경, button ui 변경">
+      <option name="closed" value="true" />
+      <created>1735733797046</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1735733797046</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,6 +395,12 @@
     <MESSAGE value="header css 수정" />
     <MESSAGE value="9" />
     <MESSAGE value="recipe, 이미지 변환 api 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="recipe, 이미지 변환 api 추가" />
+    <MESSAGE value="SocialLogins.tsx =&gt; callbackUrl 정리" />
+    <MESSAGE value="잔재 제거, search 쿼리 세팅" />
+    <MESSAGE value="searchApi 파람 기본값 설정" />
+    <MESSAGE value="잔재 제거" />
+    <MESSAGE value="헤더 디자인 변경, 플로팅 버튼 제거" />
+    <MESSAGE value="기본적인 검색 기능 구현, loadingButton 프롭스 변경, button ui 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="기본적인 검색 기능 구현, loadingButton 프롭스 변경, button ui 변경" />
   </component>
 </project>
