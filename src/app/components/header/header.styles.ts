@@ -15,7 +15,7 @@ const headerStyles = {
     alignItems: 'center',
   }),
 
-  searchIcon: css({
+  rightItem: css({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

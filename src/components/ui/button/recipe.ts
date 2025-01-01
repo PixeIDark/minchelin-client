@@ -14,7 +14,6 @@ export const button = defineRecipe({
     cursor: 'pointer',
     ringOffset: 'background',
     gap: '2',
-    width: '320px',
     border: '1px solid token(colors.blue.900)',
 
     _focusVisible: {
@@ -102,13 +101,15 @@ export const button = defineRecipe({
     size: {
       default: {
         h: '10',
-        px: '4',
         py: '2',
       },
       sm: {
         h: '9',
         // rounded: 'md',
-        px: '3',
+      },
+      m: {
+        h: '12',
+        py: '3',
       },
       lg: {
         h: '52px',
@@ -125,4 +126,5 @@ export const button = defineRecipe({
     variant: 'default',
     size: 'default',
   },
+  staticCss: [{ size: ['*'] }],
 });

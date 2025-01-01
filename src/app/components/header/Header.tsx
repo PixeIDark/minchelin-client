@@ -2,27 +2,31 @@
 
 import Image from 'next/image';
 import logo from '@/assets/images/logo.svg';
-import { ChevronLeft, Search } from 'lucide-react';
+import { ChevronLeft, Search, X } from 'lucide-react';
 import { css } from '@/styled-system/css';
 import { useRouter } from 'next/navigation';
 import styles from './header.styles';
 
-// TODO: root layout 이 아닌 landing 에서 logo 만들자.
-function Header() {
+interface HeaderProps {
+  onSearchToggle: () => void;
+  isSearchOpen: boolean;
+}
+
+function Header({ onSearchToggle, isSearchOpen }: HeaderProps) {
   const router = useRouter();
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <ChevronLeft
-          size={40}
-          className={css({ color: 'gray.200' })}
-          onClick={() => router.back()}
-        />
+        <button onClick={() => router.back()}>
+          <ChevronLeft size={40} className={css({ color: 'gray.200' })} />
+        </button>
         <button onClick={() => router.push('/')}>
           <Image src={logo} alt={logo} />
         </button>
-        <Search size={36} className={styles.searchIcon} />
+        <button onClick={onSearchToggle} className={styles.rightItem}>
+          {isSearchOpen ? <X size={36} /> : <Search size={36} />}
+        </button>
       </div>
     </div>
   );

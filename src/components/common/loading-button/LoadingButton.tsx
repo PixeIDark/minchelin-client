@@ -5,19 +5,20 @@ import { css } from '@/styled-system/css';
 import { flex } from '@/styled-system/patterns';
 
 interface LoadingButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  text: string;
+  children: React.ReactNode;
   isPending: boolean;
+  size?: 'default' | 'sm' | 'm' | 'lg' | 'icon';
 }
 
-function LoadingButton({ text, isPending, ...props }: LoadingButtonProps) {
+function LoadingButton({ children, isPending, size = 'default', ...props }: LoadingButtonProps) {
   return (
-    <Button disabled={isPending} {...props} size='lg'>
+    <Button disabled={isPending} {...props} size={size}>
       {!isPending ? (
-        text
+        children
       ) : (
         <div className={flex({ alignItems: 'center', gap: '2' })}>
           <Loader2 className={css({ animation: 'spin' })} />
-          <p>Please Wait</p>
+          <p>잠시만 기다려주세요</p>
         </div>
       )}
     </Button>

@@ -73,7 +73,9 @@ function SignupForm() {
             />
           </div>
           <TermsCheckbox control={form.control} />
-          <LoadingButton className={styles.loadingButton} text='회원가입' isPending={isPending} />
+          <LoadingButton className={styles.loadingButton} isPending={isPending} size='lg'>
+            회원가입
+          </LoadingButton>
         </styled.form>
       </Form>
     </div>

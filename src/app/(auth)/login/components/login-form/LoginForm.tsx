@@ -40,7 +40,9 @@ function LoginForm() {
             name='password'
             placeholder='비밀번호를 입력해주세요'
           />
-          <LoadingButton className={styles.loadingButton} text='로그인' isPending={isPending} />
+          <LoadingButton className={styles.loadingButton} isPending={isPending} size='lg'>
+            로그인
+          </LoadingButton>
         </styled.form>
       </Form>
     </div>
