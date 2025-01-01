@@ -1,5 +1,5 @@
 function HomePage() {
-  return <div>ㅗ</div>;
+  return <div>홈</div>;
 }
 
 export default HomePage;

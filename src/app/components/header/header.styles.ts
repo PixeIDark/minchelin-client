@@ -15,15 +15,11 @@ const headerStyles = {
     alignItems: 'center',
   }),
 
-  userIcon: css({
+  searchIcon: css({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '40px',
-    height: '40px',
-    borderRadius: '50%',
-    border: '1px solid',
-    borderColor: 'gray.200',
+    color: 'gray.200',
     mr: '2',
   }),
 } as const;

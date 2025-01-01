@@ -9,7 +9,6 @@ import { getThemeConfig } from '@/utils/getThemeConfig';
 import { Toaster } from '@/components/ui/toast/Toaster';
 import { Header } from '@/app/components/header';
 import { Footer } from '@/app/components/footer';
-import { FloatingButton } from '@/app/components/floating-button';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -46,7 +45,6 @@ export default async function RootLayout({
           <SessionProvider session={session}>
             <Header />
             {children}
-            <FloatingButton />
             <Footer />
             <Toaster />
           </SessionProvider>
