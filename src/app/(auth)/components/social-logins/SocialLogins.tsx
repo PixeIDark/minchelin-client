@@ -13,7 +13,7 @@ function SocialLogins() {
 
   return (
     <div className={styles.linksWrapper}>
-      <button onClick={() => signIn('kakao', { callbackUrl: callbackUrl })}>
+      <button onClick={() => signIn('kakao', { callbackUrl })}>
         <Image src={kakaoIcon} alt='Kakao Login' width={44} height={44} />
       </button>
       <button onClick={() => signIn('kakao', { callbackUrl: '/' })}>
