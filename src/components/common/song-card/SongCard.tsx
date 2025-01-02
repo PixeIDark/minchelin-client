@@ -1,5 +1,5 @@
 function SongCard() {
-  return <div>fdsaa</div>;
+  return <div>SongCard</div>;
 }
 
 export default SongCard;
