@@ -68,7 +68,7 @@
     "git-widget-placeholder": "dev",
     "js.linters.configure.manually.selectedeslint": "true",
     "jsx.switch.disabled": "true",
-    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-client",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/coding test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -92,11 +92,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components\layout" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\components" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\components\layout" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\components\header" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\recipe\[...recipeId]" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\assets\icons\footer" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -156,6 +156,8 @@
       <workItem from="1734841251716" duration="874000" />
       <workItem from="1735207708989" duration="2151000" />
       <workItem from="1735704331097" duration="18345000" />
+      <workItem from="1735733992378" duration="1127000" />
+      <workItem from="1735779391279" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -365,7 +367,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735733797046</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="종속성 폴더 명칭 변경">
+      <option name="closed" value="true" />
+      <created>1735734560288</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1735734560288</updated>
+    </task>
+    <task id="LOCAL-00028" summary="종속성 폴더 위치 변경">
+      <option name="closed" value="true" />
+      <created>1735735126758</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1735735126758</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +395,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1" />
     <MESSAGE value="로그인, 회원가입 훅 추가(불안정)" />
     <MESSAGE value="antd =&gt; shadow-panda, custom recipe 설정, 판다 기본 color 와 나의 color 통합" />
     <MESSAGE value="코드, 파일 정리" />
@@ -401,6 +418,8 @@
     <MESSAGE value="잔재 제거" />
     <MESSAGE value="헤더 디자인 변경, 플로팅 버튼 제거" />
     <MESSAGE value="기본적인 검색 기능 구현, loadingButton 프롭스 변경, button ui 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="기본적인 검색 기능 구현, loadingButton 프롭스 변경, button ui 변경" />
+    <MESSAGE value="종속성 폴더 명칭 변경" />
+    <MESSAGE value="종속성 폴더 위치 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="종속성 폴더 위치 변경" />
   </component>
 </project>
