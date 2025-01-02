@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Loader2 } from 'lucide-react';
-import { ButtonHTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import { css } from '@/styled-system/css';
 import { flex } from '@/styled-system/patterns';
 
@@ -8,6 +8,7 @@ interface LoadingButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   isPending: boolean;
   size?: 'default' | 'sm' | 'm' | 'lg' | 'icon';
+  asChild?: boolean;
 }
 
 function LoadingButton({ children, isPending, size = 'default', ...props }: LoadingButtonProps) {
