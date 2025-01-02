@@ -9,7 +9,7 @@ export const useSearch = (params: SearchParams) => {
   return useQuery({
     queryKey: SEARCH_KEYS.result(params),
     queryFn: () => searchApi(params),
-    enabled: false,
+    enabled: Boolean(params.text),
     placeholderData: keepPreviousSearchData,
   });
 };
