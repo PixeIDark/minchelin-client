@@ -10,7 +10,7 @@ function HeaderLayout() {
   return (
     <div>
       <Header onSearchToggle={onSearchToggle} isSearchOpen={isSearchOpen} />
-      {isSearchOpen && <SearchPanel />}
+      {isSearchOpen && <SearchPanel onSearchToggle={onSearchToggle} />}
     </div>
   );
 }
