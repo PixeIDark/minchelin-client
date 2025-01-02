@@ -1,15 +1,15 @@
 import { fetchInstance } from './instance';
 import { SearchParams, SearchResponse } from '@/types/search';
+import { createQueryString } from '@/utils/createQueryString';
 
-export const searchApi = (params: SearchParams) => {
-  const queryParams = new URLSearchParams({
-    text: params.text,
-    lang: params.lang || 'ko',
-    searchType: params.searchType || 'both',
-    sort: params.sort || 'population',
-    limit: params.limit?.toString() || '10',
-    page: params.page?.toString() || '1',
-  });
-
-  return fetchInstance.get<SearchResponse>(`/search?${queryParams.toString()}`);
+export const searchApi = ({
+  text,
+  lang = 'ko',
+  searchType = 'both',
+  sort = 'popular',
+  limit = 10,
+  page = 1,
+}: SearchParams) => {
+  const params = { text, lang, searchType, sort, limit, page };
+  return fetchInstance.get<SearchResponse>(`/search?${createQueryString(params)}`);
 };
