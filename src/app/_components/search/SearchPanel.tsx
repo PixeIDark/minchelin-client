@@ -6,6 +6,7 @@ import { css } from '@/styled-system/css';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { createQueryString } from '@/utils/createQueryString';
+import { SearchDropdown } from '@/components/common/search-dropdown';
 
 // TODO: dropdown 스타일은 자유롭게, 기능만 정해서 만들기
 // TODO: url 에 데이터 넣고, search 페이지에서 모두 처리
@@ -42,7 +43,7 @@ function SearchPanel({ onSearchToggle }: { onSearchToggle: () => void }) {
         right: '6',
       })}
     >
-      <div>sort-by</div>
+      <SearchDropdown />
       <form className={flex({ alignItems: 'center', w: 'full' })} onSubmit={handleSubmit}>
         <Input
           className={css({ w: 'full', h: 'full', backgroundColor: 'gray.100' })}

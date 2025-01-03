@@ -29,8 +29,8 @@ export const cardTitle = defineRecipe({
   base: {
     textStyle: '2xl',
     fontWeight: 'semibold',
-    leading: 'none',
-    tracking: 'tight',
+    lineHeight: 'none',
+    letterSpacing: 'tight',
   },
 });
 

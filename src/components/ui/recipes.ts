@@ -20,6 +20,7 @@ import { toastViewport } from '@/components/ui/toast/recipe';
 import { button } from '@/components/ui/button/recipe';
 import { icon } from '@/components/ui/icon/recipe';
 import { checkbox } from '@/components/ui/checkbox/slot-recipe';
+import { dropdown } from '@/components/ui/dropdown/slot-recipe';
 
 export const recipes = {
   button,
@@ -30,6 +31,7 @@ export const recipes = {
   cardContent,
   cardFooter,
   checkbox,
+  dropdown,
   formLabel,
   formItem,
   formControl,
