@@ -38,11 +38,12 @@ function SearchPanel({ onSearchToggle }: { onSearchToggle: () => void }) {
         border: '2px solid',
         borderColor: 'gray.600',
         backgroundColor: 'gray.100',
-        p: '1',
+        py: '1',
+        px: '0.5',
         position: 'fixed',
         top: '14',
-        right: '4',
-        left: '4',
+        left: '0',
+        right: '0',
       })}
     >
       <SearchDropdown searchType={searchType} setSearchType={setSearchType} />
