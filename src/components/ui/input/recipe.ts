@@ -29,9 +29,9 @@ export const input = defineRecipe({
       // outline: '2px solid transparent',
       outline: '2px solid token(colors.gray.300)',
       outlineOffset: '2px',
-      focusRingWidth: '2',
-      focusRingColor: 'ring',
-      focusRingOffsetWidth: '2',
+      // focusRingWidth: '2',
+      // focusRingColor: 'ring',
+      // focusRingOffsetWidth: '2',
     },
 
     _disabled: {
