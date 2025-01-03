@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -58,7 +58,7 @@
     "git-widget-placeholder": "dev",
     "js.linters.configure.manually.selectedeslint": "true",
     "jsx.switch.disabled": "true",
-    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/coding test",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,11 +82,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components\search" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-result" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-list" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components\layout" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -151,6 +151,7 @@
       <workItem from="1735786750035" duration="9405000" />
       <workItem from="1735804393441" duration="8000" />
       <workItem from="1735874309465" duration="62000" />
+      <workItem from="1735875860705" duration="13886000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -440,7 +441,47 @@
       <option name="project" value="LOCAL" />
       <updated>1735795357799</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="dropdown ui 완성">
+      <option name="closed" value="true" />
+      <created>1735878896162</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1735878896162</updated>
+    </task>
+    <task id="LOCAL-00038" summary="dropdown ui 타입 수정">
+      <option name="closed" value="true" />
+      <created>1735879184953</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1735879184953</updated>
+    </task>
+    <task id="LOCAL-00039" summary="search dropdown 구현">
+      <option name="closed" value="true" />
+      <created>1735888304378</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1735888304378</updated>
+    </task>
+    <task id="LOCAL-00040" summary="SearchPanel.tsx css 수정">
+      <option name="closed" value="true" />
+      <created>1735888809968</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1735888809968</updated>
+    </task>
+    <task id="LOCAL-00041" summary="input recipe 긴가민가 주석처리">
+      <option name="closed" value="true" />
+      <created>1735888863429</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1735888863429</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,11 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="회원가입 완성. 체크박스, 컴포넌트 분리 만하면됨" />
-    <MESSAGE value="다듬기" />
-    <MESSAGE value="회원가입 체크박스 추가, 스키마 수정, ui 수정" />
-    <MESSAGE value="지도연결" />
-    <MESSAGE value="위치지도" />
     <MESSAGE value="푸터 ui" />
     <MESSAGE value="header css 수정" />
     <MESSAGE value="9" />
@@ -477,6 +513,11 @@
     <MESSAGE value="LoadingButton.tsx 범용성 상향" />
     <MESSAGE value="search api createQueryString 유틸 함수 적용" />
     <MESSAGE value="SearchPage 검색기능 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="SearchPage 검색기능 완성" />
+    <MESSAGE value="dropdown ui 완성" />
+    <MESSAGE value="dropdown ui 타입 수정" />
+    <MESSAGE value="search dropdown 구현" />
+    <MESSAGE value="SearchPanel.tsx css 수정" />
+    <MESSAGE value="input recipe 긴가민가 주석처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="input recipe 긴가민가 주석처리" />
   </component>
 </project>

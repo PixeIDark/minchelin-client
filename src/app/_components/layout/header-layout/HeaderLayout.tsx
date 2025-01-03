@@ -2,7 +2,7 @@
 
 import { useSearchPanel } from '@/app/_components/layout/header-layout/_hooks/useSearchPanel';
 import { Header } from '@/app/_components/header';
-import { SearchPanel } from '@/app/_components/search';
+import { SearchPanel } from '@/app/_components/search-panel';
 
 function HeaderLayout() {
   const { isSearchOpen, onSearchToggle } = useSearchPanel();
@@ -10,7 +10,7 @@ function HeaderLayout() {
   return (
     <div>
       <Header onSearchToggle={onSearchToggle} isSearchOpen={isSearchOpen} />
-      {isSearchOpen && <SearchPanel onSearchToggle={onSearchToggle} />}
+      {isSearchOpen && <SearchPanel />}
     </div>
   );
 }
