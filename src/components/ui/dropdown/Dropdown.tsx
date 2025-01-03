@@ -11,8 +11,8 @@ import { styled } from '@/styled-system/jsx';
 import { dropdown } from '@/styled-system/recipes';
 
 // 드롭다운 variants 타입 정의
-export type DropdownSize = 'sm' | 'md' | 'lg';
-export type DropdownVariant = 'outline' | 'ghost';
+type DropdownSize = 'sm' | 'md' | 'lg' | 'search';
+type DropdownVariant = 'outline' | 'ghost' | 'search';
 
 interface DropdownVariants {
   size?: DropdownSize;
@@ -155,4 +155,4 @@ Dropdown.Menu = StyledMenu;
 Dropdown.Item = StyledItem;
 
 export { Dropdown };
-export type { DropdownProps, DropdownItemProps, DropdownVariants };
+export type { DropdownProps, DropdownItemProps, DropdownVariants, DropdownSize, DropdownVariant };

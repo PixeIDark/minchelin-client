@@ -13,11 +13,14 @@ export const dropdown = defineSlotRecipe({
       cursor: 'pointer',
       display: 'inline-flex',
       alignItems: 'center',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
       gap: '2',
     },
     menu: {
       position: 'absolute',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
       zIndex: '50',
       marginTop: '2',
       width: '56',
@@ -36,7 +39,6 @@ export const dropdown = defineSlotRecipe({
       },
     },
     item: {
-      px: '4',
       py: '2',
       textStyle: 'sm',
       cursor: 'pointer',
@@ -57,36 +59,25 @@ export const dropdown = defineSlotRecipe({
   variants: {
     size: {
       sm: {
-        trigger: {
-          h: '8',
-          px: '3',
-          textStyle: 'sm',
-        },
-        item: {
-          py: '1',
-          textStyle: 'sm',
-        },
+        trigger: { h: '8', px: '3', textStyle: 'sm' },
+        item: { py: '1', textStyle: 'sm' },
       },
       md: {
-        trigger: {
-          h: '10',
-          px: '4',
-          textStyle: 'base',
-        },
-        item: {
-          py: '2',
-          textStyle: 'base',
-        },
+        trigger: { h: '10', px: '4', textStyle: 'base' },
+        item: { py: '2', textStyle: 'base' },
       },
       lg: {
+        trigger: { h: '12', px: '5', textStyle: 'lg' },
+        item: { py: '3', textStyle: 'lg' },
+      },
+      search: {
         trigger: {
-          h: '12',
-          px: '5',
-          textStyle: 'lg',
+          h: 'full',
+          w: '81px',
+          textStyle: 'm',
         },
         item: {
-          py: '3',
-          textStyle: 'lg',
+          textStyle: 'md',
         },
       },
     },
@@ -95,16 +86,26 @@ export const dropdown = defineSlotRecipe({
         trigger: {
           border: '1px solid',
           borderColor: 'gray.200',
-          _hover: {
-            borderColor: 'gray.300',
-          },
+          _hover: { borderColor: 'gray.300' },
         },
       },
       ghost: {
         trigger: {
-          _hover: {
-            backgroundColor: 'gray.100',
-          },
+          _hover: { backgroundColor: 'gray.100' },
+        },
+      },
+      search: {
+        trigger: {
+          px: '0',
+        },
+        menu: {
+          left: '-1.5',
+          w: '88px',
+          marginTop: '1',
+          borderRadius: '0',
+        },
+        item: {
+          justifyContent: 'center',
         },
       },
     },
@@ -113,4 +114,5 @@ export const dropdown = defineSlotRecipe({
     size: 'md',
     variant: 'outline',
   },
+  staticCss: [{ size: ['*'], variant: ['*'] }],
 });

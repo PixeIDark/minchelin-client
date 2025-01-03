@@ -6,22 +6,23 @@ import { css } from '@/styled-system/css';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { createQueryString } from '@/utils/createQueryString';
-import { SearchDropdown } from '@/components/common/search-dropdown';
+import { SearchDropdown } from '@/app/_components/search/search-dropdown';
 
-// TODO: dropdown 스타일은 자유롭게, 기능만 정해서 만들기
-// TODO: url 에 데이터 넣고, search 페이지에서 모두 처리
 // TODO: text 비어 있을 경우 입력 해달라고 아우성 치기
+// TODO: home 과 search 에서만 떠야함.
 function SearchPanel({ onSearchToggle }: { onSearchToggle: () => void }) {
   const router = useRouter();
   // TODO: 완성 후 constant로 분리
+  const [searchType, setSearchType] = useState<SearchParams['searchType']>('both');
+  const [searchText, setSearchText] = useState('');
   const [searchParams, setSearchParams] = useState<SearchParams>({
-    text: '',
+    text: searchText,
     sort: 'latest',
-    searchType: 'both',
+    searchType: searchType,
   });
 
   const handleChangeText = (e: ChangeEvent<HTMLInputElement>) => {
-    setSearchParams((prev) => ({ ...prev, text: e.target.value }));
+    setSearchText((prev) => prev);
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -40,16 +41,26 @@ function SearchPanel({ onSearchToggle }: { onSearchToggle: () => void }) {
         p: '1',
         position: 'fixed',
         top: '14',
-        right: '6',
+        right: '4',
+        left: '4',
       })}
     >
-      <SearchDropdown />
-      <form className={flex({ alignItems: 'center', w: 'full' })} onSubmit={handleSubmit}>
+      <SearchDropdown searchType={searchType} setSearchType={setSearchType} />
+      <form
+        className={flex({
+          alignItems: 'center',
+          w: 'full',
+          borderLeft: '1px solid',
+          borderColor: 'gray.600',
+        })}
+        onSubmit={handleSubmit}
+      >
         <Input
-          className={css({ w: 'full', h: 'full', backgroundColor: 'gray.100' })}
+          className={css({ w: 'full', h: 'full', backgroundColor: 'gray.100', textStyle: 'md' })}
           placeholder='검색'
           value={searchParams.text}
           onChange={handleChangeText}
+          variants='ghost'
         />
         <div>
           <Button

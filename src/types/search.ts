@@ -1,7 +1,7 @@
 export interface SearchParams {
   text: string;
   lang?: 'ko' | 'ja' | 'en';
-  searchType?: 'both' | 'artist' | 'title' | 'lyrics';
+  searchType: 'both' | 'artist' | 'title' | 'lyrics';
   sort?: 'latest' | 'popular';
   limit?: number;
   page?: number;

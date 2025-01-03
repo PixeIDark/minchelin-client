@@ -55,6 +55,14 @@ export const input = defineRecipe({
       //   w: '10',
       // },
     },
+    variants: {
+      ghost: {
+        _focusVisible: {
+          // outline: '2px solid transparent',
+          outline: 'none',
+        },
+      },
+    },
   },
   staticCss: [{ size: ['*'] }],
 });
