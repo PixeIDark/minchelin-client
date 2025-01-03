@@ -11,10 +11,13 @@ import { styled } from '@/styled-system/jsx';
 import { dropdown } from '@/styled-system/recipes';
 
 // 드롭다운 variants 타입 정의
-type DropdownVariants = {
-  size?: 'sm' | 'md' | 'lg';
-  variant?: 'outline' | 'ghost';
-};
+export type DropdownSize = 'sm' | 'md' | 'lg';
+export type DropdownVariant = 'outline' | 'ghost';
+
+interface DropdownVariants {
+  size?: DropdownSize;
+  variant?: DropdownVariant;
+}
 
 // 드롭다운 상태 컨텍스트 타입
 interface DropdownContextType {
@@ -28,15 +31,17 @@ interface DropdownContextType {
 type DropdownBaseProps = {
   onSelect?: (item: string) => void;
   children: React.ReactNode;
-} & DropdownVariants;
+};
 
-type DropdownProps = Omit<ComponentProps<typeof DropdownRoot>, keyof DropdownBaseProps> &
-  DropdownBaseProps;
+type DropdownProps = DropdownBaseProps & {
+  size?: DropdownVariants['size'];
+  variant?: DropdownVariants['variant'];
+};
 
-type DropdownItemProps = Omit<ComponentProps<typeof DropdownItemBase>, 'value'> & {
+type DropdownItemProps = {
   value: string;
   children: React.ReactNode;
-};
+} & Omit<ComponentProps<typeof DropdownItemBase>, 'value'>;
 
 // 스타일 컨텍스트 생성
 const { withProvider, withContext } = createStyleContext(dropdown);
@@ -52,11 +57,11 @@ const useDropdown = () => {
   return context;
 };
 
-// 베이스 컴포넌트들
-const DropdownRoot = styled('div');
-const DropdownTriggerBase = styled('div');
-const DropdownMenuBase = styled('div');
-const DropdownItemBase = styled('div');
+// 베이스 컴포넌트들 - recipe를 적용
+const DropdownRoot = styled('div', dropdown);
+const DropdownTriggerBase = styled('div', dropdown);
+const DropdownMenuBase = styled('div', dropdown);
+const DropdownItemBase = styled('div', dropdown);
 
 // 하위 컴포넌트들
 const Trigger: React.FC<ComponentProps<typeof DropdownTriggerBase>> = ({ children, ...props }) => {
@@ -89,13 +94,7 @@ const Item: React.FC<DropdownItemProps> = ({ children, value, ...props }) => {
 };
 
 // 메인 드롭다운 컴포넌트
-const DropdownComponent: React.FC<DropdownProps> = ({
-  children,
-  onSelect,
-  size,
-  variant,
-  ...props
-}) => {
+const DropdownComponent = ({ children, onSelect, size, variant, ...props }: DropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
@@ -139,10 +138,12 @@ const StyledMenu = withContext(Menu, 'menu');
 const StyledItem = withContext(Item, 'item');
 
 // 최종 드롭다운 컴포넌트 타입
-interface DropdownComponentType extends React.FC<DropdownProps> {
+interface DropdownComponentType {
   Trigger: typeof StyledTrigger;
   Menu: typeof StyledMenu;
   Item: typeof StyledItem;
+
+  (props: DropdownProps): JSX.Element;
 }
 
 // 최종 드롭다운 컴포넌트 생성

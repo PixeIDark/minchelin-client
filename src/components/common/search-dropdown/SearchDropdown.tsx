@@ -1,5 +1,9 @@
 import { Dropdown } from '@/components/ui/dropdown';
 
+interface SearchDropdownProps {
+  size  =
+}
+
 function SearchDropdown() {
   return (
     <Dropdown size='sm' variant='outline'>
