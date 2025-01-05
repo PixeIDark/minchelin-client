@@ -1,8 +1,9 @@
 'use client';
 
-import { Atom, BookMarked, Home, Search, Settings } from 'lucide-react';
+import { BookMarked, History, Home, Search } from 'lucide-react';
 import styles from './footer.styles';
 import { useSelectedLayoutSegment } from 'next/navigation';
+import Link from 'next/link';
 
 function Footer() {
   const segment = useSelectedLayoutSegment();
@@ -15,21 +16,18 @@ function Footer() {
 
   return (
     <div className={styles.wrapper}>
-      <button>
+      <Link href='/'>
         <Home size={28} color={iconColor.home} />
-      </button>
-      <button>
+      </Link>
+      <Link href='/search'>
         <Search size={28} />
-      </button>
-      <button>
+      </Link>
+      <Link href='/'>
         <BookMarked size={28} />
-      </button>
-      <button>
-        <Atom size={28} />
-      </button>
-      <button>
-        <Settings size={28} />
-      </button>
+      </Link>
+      <Link href='/'>
+        <History size={28} />
+      </Link>
     </div>
   );
 }
