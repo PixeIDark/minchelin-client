@@ -1,10 +1,12 @@
+'use client';
+
 import { Input } from '@/components/ui/input';
 import { useState } from 'react';
 import { SearchParams } from '@/types/search';
 import { Button } from '@/components/ui/button';
 import { useSearchParams } from 'next/navigation';
-import { SearchDropdown } from '@/app/_components/search-panel/search-dropdown';
 import styles from './search-panel.styles';
+import { SearchDropdown } from '@/app/search/_components/search-panel/search-dropdown';
 
 // TODO: text 비어 있을 경우 입력 해달라고 아우성 치기
 function SearchPanel() {

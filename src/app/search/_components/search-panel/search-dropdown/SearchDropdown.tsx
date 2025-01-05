@@ -1,7 +1,7 @@
 import { Dropdown } from '@/components/ui/dropdown';
 import { SearchParams } from '@/types/search';
 import { Dispatch, SetStateAction } from 'react';
-import { SEARCH_TYPE_LABEL } from '@/app/_components/search-panel/search-dropdown/constants/searchType';
+import { SEARCH_TYPE_LABEL } from '@/app/search/_components/search-panel/search-dropdown/_constants/searchType';
 
 interface SearchDropdownProps {
   searchType: SearchParams['searchType'];
