@@ -62,6 +62,12 @@ export const input = defineRecipe({
           outline: 'none',
         },
       },
+      imaginary: {
+        border: 'none',
+        _focusVisible: {
+          outline: 'none',
+        },
+      },
     },
   },
   staticCss: [{ size: ['*'] }],

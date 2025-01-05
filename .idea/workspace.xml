@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -52,41 +52,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;jsx.switch.disabled&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kiki7/Desktop/repository/coding test&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "jsx.switch.disabled": "true",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "pnpm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "settings.sync",
+    "ts.external.directory.path": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components\search" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-result" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-result" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components\search" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-list" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components\layout" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -154,6 +158,9 @@
       <workItem from="1735875860705" duration="13886000" />
       <workItem from="1735967846778" duration="1033000" />
       <workItem from="1736045993927" duration="80000" />
+      <workItem from="1736051518428" duration="7444000" />
+      <workItem from="1736060969693" duration="546000" />
+      <workItem from="1736061543622" duration="16510000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -483,7 +490,39 @@
       <option name="project" value="LOCAL" />
       <updated>1735888863429</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Picture.tsx 추가, clg 제거">
+      <option name="closed" value="true" />
+      <created>1736051620086</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1736051620086</updated>
+    </task>
+    <task id="LOCAL-00043" summary="푸터 ui 수정">
+      <option name="closed" value="true" />
+      <created>1736052805573</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1736052805573</updated>
+    </task>
+    <task id="LOCAL-00044" summary="헤더 수정">
+      <option name="closed" value="true" />
+      <created>1736056167632</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1736056167632</updated>
+    </task>
+    <task id="LOCAL-00045" summary="서치바 위치 변경">
+      <option name="closed" value="true" />
+      <created>1736057987101</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1736057987102</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,10 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="푸터 ui" />
-    <MESSAGE value="header css 수정" />
-    <MESSAGE value="9" />
-    <MESSAGE value="recipe, 이미지 변환 api 추가" />
     <MESSAGE value="SocialLogins.tsx =&gt; callbackUrl 정리" />
     <MESSAGE value="잔재 제거, search 쿼리 세팅" />
     <MESSAGE value="searchApi 파람 기본값 설정" />
@@ -520,6 +555,10 @@
     <MESSAGE value="search dropdown 구현" />
     <MESSAGE value="SearchPanel.tsx css 수정" />
     <MESSAGE value="input recipe 긴가민가 주석처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="input recipe 긴가민가 주석처리" />
+    <MESSAGE value="Picture.tsx 추가, clg 제거" />
+    <MESSAGE value="푸터 ui 수정" />
+    <MESSAGE value="헤더 수정" />
+    <MESSAGE value="서치바 위치 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="서치바 위치 변경" />
   </component>
 </project>

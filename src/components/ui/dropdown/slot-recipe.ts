@@ -29,7 +29,6 @@ export const dropdown = defineSlotRecipe({
       borderColor: 'gray.200',
       borderRadius: 'md',
       boxShadow: 'lg',
-      py: '1',
 
       '&[data-state=closed]': {
         display: 'none',
@@ -73,7 +72,6 @@ export const dropdown = defineSlotRecipe({
       search: {
         trigger: {
           h: 'full',
-          w: '81px',
           textStyle: 'm',
         },
         item: {
@@ -97,15 +95,21 @@ export const dropdown = defineSlotRecipe({
       search: {
         trigger: {
           px: '0',
+          color: 'blue_a',
         },
         menu: {
-          left: '-1.5',
-          w: '88px',
-          marginTop: '1',
-          borderRadius: '0',
+          left: '-13px',
+          w: '108px',
+          marginTop: '7px',
+          borderBottomRadius: '8px',
+          borderTopRadius: '0',
+          borderColor: 'blue_a',
         },
         item: {
           justifyContent: 'center',
+          _hover: {
+            color: 'blue_a',
+          },
         },
       },
     },

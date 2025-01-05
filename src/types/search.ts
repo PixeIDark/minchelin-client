@@ -5,22 +5,22 @@ export interface SearchParams {
   limit?: number;
   page?: number;
 }
+
 export interface SearchItem {
   id: number;
+  song_id: number;
+  artist_id: number;
   title_ko: string;
   title_ja?: string;
   title_en?: string;
-  artist_id: number;
-  artist_name_ko: string;
-  artist_name_ja?: string;
-  artist_name_en?: string;
+  artist_ko: string;
+  artist_ja?: string;
+  artist_en?: string;
   release_date?: string;
-  thumbnail_url?: string;
-  karaoke_numbers?: Array<{
-    brand: 'kumyoung' | 'tj';
-    number: string;
-  }>;
   popularity_score: number;
+  thumbnail_url?: string;
+  created_at: string;
+  updated_at: string;
 }
 
 export type SearchItems = SearchItem[];
