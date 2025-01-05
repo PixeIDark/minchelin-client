@@ -2,17 +2,13 @@
 
 import Image from 'next/image';
 import logo from '@/assets/images/logo.svg';
-import { ChevronLeft, Search, X } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 import { css } from '@/styled-system/css';
 import { useRouter } from 'next/navigation';
 import styles from './header.styles';
+import { AuthIconButton } from '@/app/_components/header/auth-icon-button';
 
-interface HeaderProps {
-  onSearchToggle: () => void;
-  isSearchOpen: boolean;
-}
-
-function Header({ onSearchToggle, isSearchOpen }: HeaderProps) {
+function Header() {
   const router = useRouter();
 
   return (
@@ -24,9 +20,7 @@ function Header({ onSearchToggle, isSearchOpen }: HeaderProps) {
         <button onClick={() => router.push('/')}>
           <Image src={logo} alt={logo} />
         </button>
-        <button onClick={onSearchToggle} className={styles.rightItem}>
-          {isSearchOpen ? <X size={36} /> : <Search size={36} />}
-        </button>
+        <AuthIconButton />
       </div>
     </div>
   );

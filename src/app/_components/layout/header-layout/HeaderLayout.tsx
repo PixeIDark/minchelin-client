@@ -9,15 +9,13 @@ import { EXCLUDED_SEGMENTS } from '@/app/_components/layout/header-layout/_const
 // const excludedSegments = new Set(EXCLUDED_SEGMENTS);
 
 function HeaderLayout() {
-  const { isSearchOpen, onSearchToggle } = useSearchPanel();
   // const segment = useSelectedLayoutSegment();
   //
   // if (segment && excludedSegments.has(segment)) return null;
 
   return (
     <div>
-      <Header onSearchToggle={onSearchToggle} isSearchOpen={isSearchOpen} />
-      {isSearchOpen && <SearchPanel />}
+      <Header />
     </div>
   );
 }
