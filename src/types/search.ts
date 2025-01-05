@@ -19,6 +19,8 @@ export interface SearchItem {
   release_date?: string;
   popularity_score: number;
   thumbnail_url?: string;
+  tj_number?: string;
+  kumyoung_number?: string;
   created_at: string;
   updated_at: string;
 }

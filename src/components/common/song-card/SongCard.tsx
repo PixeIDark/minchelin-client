@@ -24,19 +24,19 @@ function SongCard({ song }: SongCardProps) {
       })}
     >
       <Picture className={css({ w: '11', h: '11', borderRadius: '10px' })} src={img} />
-      <div>
-        <div>
+      <div className={flex({ flexDir: 'column', w: 'full' })}>
+        <div className={flex({ justifyContent: 'space-between', w: 'full' })}>
           <h1>{song.title_ko}</h1>
-          <div>
+          <div className={flex({})}>
             <div />
-            <p></p>
+            <p>{song.tj_number}</p>
           </div>
         </div>
-        <div>
+        <div className={flex({ justifyContent: 'space-between', w: 'full' })}>
           <h2 className={css({ color: 'gray.400' })}>{song.artist_ko}</h2>
-          <div>
+          <div className={flex({})}>
             <div />
-            <p></p>
+            <p>{song.kumyoung_number}</p>
           </div>
         </div>
       </div>
