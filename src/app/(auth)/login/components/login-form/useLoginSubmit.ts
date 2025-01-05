@@ -20,7 +20,6 @@ export function useLoginSubmit() {
           description: '로그인되었습니다',
           variant: 'default',
         });
-        console.log(session); // TODO: console.log
       },
       onError: (error) => {
         if (error instanceof Error) {

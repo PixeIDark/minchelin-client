@@ -6,13 +6,13 @@ import { SearchPanel } from '@/app/_components/search-panel';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import { EXCLUDED_SEGMENTS } from '@/app/_components/layout/header-layout/constants/excludedSegments';
 
-const excludedSegments = new Set(EXCLUDED_SEGMENTS);
+// const excludedSegments = new Set(EXCLUDED_SEGMENTS);
 
 function HeaderLayout() {
   const { isSearchOpen, onSearchToggle } = useSearchPanel();
-  const segment = useSelectedLayoutSegment();
-
-  if (segment && excludedSegments.has(segment)) return null;
+  // const segment = useSelectedLayoutSegment();
+  //
+  // if (segment && excludedSegments.has(segment)) return null;
 
   return (
     <div>

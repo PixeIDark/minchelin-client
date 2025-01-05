@@ -7,7 +7,7 @@ function SearchList({ searchList }: { searchList: SearchItems }) {
   return (
     <ul>
       {searchList.map((song) => (
-        <SongCard key={song.id} />
+        <SongCard song={song} key={song.id} />
       ))}
     </ul>
   );

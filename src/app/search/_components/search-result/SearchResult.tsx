@@ -9,7 +9,7 @@ function SearchResult({ searchParams }: { searchParams: SearchParams }) {
   const { data: searchData } = useSearch(searchParams);
 
   console.log(searchData); // TODO: clg 가 왜 클라이언트랑 서버 두 곳에서 뜨는지 도저히 모르겠음
-  if (!searchData) return null; // ToDo: 검색 결과가 없습니다 컴포넌트로 해줘라
+  if (!searchData) return null; // ToDo: 검색 결과가 없습니다 컴포넌트로 해줘라, 로딩 처리랑
 
   return (
     <div>
