@@ -7,7 +7,6 @@ interface SongCardProps {
   song: SearchItem;
 }
 
-// 노래방 번호 데이터가 불확실해. 어케 해야할지 현재에는 무조건 1개는 있어 금영이는 tj든
 function SongCard({ song }: SongCardProps) {
   if (!song) return null;
 

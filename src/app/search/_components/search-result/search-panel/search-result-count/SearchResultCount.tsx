@@ -1,6 +1,6 @@
 import React from 'react';
 import { SearchParams } from '@/types/search';
-import { SEARCH_TYPE_LABEL } from '@/app/search/_components/search-result/search-panel/search-dropdown/_constants/searchType';
+import { SEARCH_TYPE_LABEL } from '@/app/search/_components/search-result/search-panel/_constants/searchType';
 
 interface SearchResultCountProps {
   searchType: SearchParams['searchType'];

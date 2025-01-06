@@ -9,8 +9,8 @@ const searchSortByStyles = {
 
   divider: css({
     w: '1px',
-    h: 'full',
-    borderColor: 'gray.700',
+    h: 'auto',
+    backgroundColor: 'gray.700',
   }),
 
   button: (isActive: boolean) =>
