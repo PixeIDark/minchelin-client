@@ -15,7 +15,7 @@ function Header() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <button onClick={() => router.back()}>
-          <ChevronLeft size={40} className={css({ color: 'gray.600' })} />
+          <ChevronLeft size={40} strokeWidth={1} className={css({ color: 'gray.600' })} />
         </button>
         <button onClick={() => router.push('/')}>
           <Image src={PUBLIC.images.logo} alt='logo' width={105} height={1} priority />

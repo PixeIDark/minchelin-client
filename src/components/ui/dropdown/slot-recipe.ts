@@ -101,13 +101,17 @@ export const dropdown = defineSlotRecipe({
           left: '-13px',
           w: '108px',
           marginTop: '7px',
-          borderBottomRadius: '8px',
           borderTopRadius: '0',
+          borderBottomRadius: '8px',
           borderColor: 'blue_a',
         },
         item: {
           justifyContent: 'center',
+          '&:last-child': {
+            borderBottomRadius: '8px',
+          },
           _hover: {
+            backgroundColor: 'blue.50',
             color: 'blue_a',
           },
         },

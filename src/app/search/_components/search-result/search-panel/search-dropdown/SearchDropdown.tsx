@@ -3,8 +3,7 @@ import { SearchParams } from '@/types/search';
 import { Dispatch, SetStateAction } from 'react';
 import { SEARCH_TYPE_LABEL } from '@/app/search/_components/search-result/search-panel/_constants/searchType';
 import { ChevronDown } from 'lucide-react';
-import { css } from '@/styled-system/css';
-import { flex } from '@/styled-system/patterns';
+import styles from './search-dropdown.styles';
 
 interface SearchDropdownProps {
   searchType: SearchParams['searchType'];
@@ -22,8 +21,8 @@ function SearchDropdown({ searchType, setSearchType }: SearchDropdownProps) {
       onSelect={(value: string) => setSearchType(value as SearchParams['searchType'])}
     >
       <Dropdown.Trigger>
-        <p className={flex({ w: '72px', justifyContent: 'center' })}>{selectedLabel}</p>
-        <ChevronDown className={css({ color: 'gray.700' })} />
+        <p className={styles.label}>{selectedLabel}</p>
+        <ChevronDown className={styles.icon} strokeWidth={1} />
       </Dropdown.Trigger>
       <Dropdown.Menu>
         {searchType === 'both' || <Dropdown.Item value='both'>노래/가수</Dropdown.Item>}
