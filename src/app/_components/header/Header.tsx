@@ -1,12 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import logo from '@/assets/images/logo.svg';
 import { ChevronLeft } from 'lucide-react';
-import { css } from '@/styled-system/css';
 import { useRouter } from 'next/navigation';
-import styles from './header.styles';
 import { AuthIconButton } from '@/app/_components/header/auth-icon-button';
+import { css } from '@/styled-system/css';
+import { PUBLIC } from '@/constants/public';
+import styles from './header.styles';
 
 function Header() {
   const router = useRouter();
@@ -18,7 +18,7 @@ function Header() {
           <ChevronLeft size={40} className={css({ color: 'gray.600' })} />
         </button>
         <button onClick={() => router.push('/')}>
-          <Image src={logo} alt={logo} />
+          <Image src={PUBLIC.images.logo} alt='logo' width={105} height={1} priority />
         </button>
         <AuthIconButton />
       </div>

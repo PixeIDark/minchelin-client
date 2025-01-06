@@ -15,6 +15,7 @@
       <list>
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,12 +55,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Node.js.generateImageConstants.ts.executor": "Run",
     "Node.js.saveFiles.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "js.linters.configure.manually.selectedeslint": "true",
     "jsx.switch.disabled": "true",
-    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/coding test",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-client/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -83,15 +85,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\public" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-result" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\public\icons\social" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\public" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client" />
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-result\search-panel" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-result" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\_components\search" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-list" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -168,6 +171,7 @@
       <workItem from="1736110775867" duration="321000" />
       <workItem from="1736111324885" duration="640000" />
       <workItem from="1736133950964" duration="708000" />
+      <workItem from="1736140856021" duration="6986000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -545,7 +549,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736111955777</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="SearchPanel.tsx 훅 분리, SearchForm.tsx 생성">
+      <option name="closed" value="true" />
+      <created>1736144287668</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1736144287668</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="searchApi 파람 기본값 설정" />
     <MESSAGE value="잔재 제거" />
     <MESSAGE value="헤더 디자인 변경, 플로팅 버튼 제거" />
     <MESSAGE value="기본적인 검색 기능 구현, loadingButton 프롭스 변경, button ui 변경" />
@@ -582,6 +593,7 @@
     <MESSAGE value="서치바 위치 변경" />
     <MESSAGE value="search 페이지 구현 (카드 빼고)" />
     <MESSAGE value="카드 간단한 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="카드 간단한 구현" />
+    <MESSAGE value="SearchPanel.tsx 훅 분리, SearchForm.tsx 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="SearchPanel.tsx 훅 분리, SearchForm.tsx 생성" />
   </component>
 </project>

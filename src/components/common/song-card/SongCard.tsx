@@ -2,6 +2,8 @@ import { SearchItem } from '@/types/search';
 import { Picture } from '@/components/common/picture';
 import { css } from '@/styled-system/css';
 import { flex } from '@/styled-system/patterns';
+import Image from 'next/image';
+import { PUBLIC } from '@/constants/public';
 
 interface SongCardProps {
   song: SearchItem;
@@ -26,15 +28,15 @@ function SongCard({ song }: SongCardProps) {
       <div className={flex({ flexDir: 'column', w: 'full' })}>
         <div className={flex({ justifyContent: 'space-between', w: 'full' })}>
           <h1>{song.title_ko}</h1>
-          <div className={flex({})}>
-            <div />
+          <div className={flex({ gap: '2' })}>
+            <Image src={PUBLIC.icons.karaoke.tj} alt='tj' width={22} height={100} />
             <p>{song.tj_number}</p>
           </div>
         </div>
         <div className={flex({ justifyContent: 'space-between', w: 'full' })}>
           <h2 className={css({ color: 'gray.400' })}>{song.artist_ko}</h2>
-          <div className={flex({})}>
-            <div />
+          <div className={flex({ gap: '2' })}>
+            <Image src={PUBLIC.icons.karaoke.ky} alt='ky' width={22} height={100} />
             <p>{song.kumyoung_number}</p>
           </div>
         </div>
