@@ -25,20 +25,27 @@ function SongCard({ song }: SongCardProps) {
       })}
     >
       <Picture className={css({ w: '11', h: '11', borderRadius: '10px' })} src={img} />
-      <div className={flex({ flexDir: 'column', w: 'full' })}>
-        <div className={flex({ justifyContent: 'space-between', w: 'full' })}>
-          <h1>{song.title_ko}</h1>
-          <div className={flex({ gap: '2' })}>
-            <Image src={PUBLIC.icons.karaoke.tj} alt='tj' width={22} height={100} />
-            <p>{song.tj_number}</p>
-          </div>
+      <div className={flex({ w: 'full', justifyContent: 'space-between' })}>
+        <div className={flex({ flexDir: 'column' })}>
+          <h1 className={css({ fontSize: '18px', fontWeight: 'bold' })}>{song.title_ko}</h1>
+          <h2 className={css({ color: 'gray.400', fontSize: '14px' })}>{song.artist_ko}</h2>
         </div>
-        <div className={flex({ justifyContent: 'space-between', w: 'full' })}>
-          <h2 className={css({ color: 'gray.400' })}>{song.artist_ko}</h2>
-          <div className={flex({ gap: '2' })}>
-            <Image src={PUBLIC.icons.karaoke.ky} alt='ky' width={22} height={100} />
-            <p>{song.kumyoung_number}</p>
-          </div>
+        <div
+          className={flex({ flexDir: 'column', alignItems: 'center', justifyContent: 'center' })}
+        >
+          {song.tj_number && (
+            <div className={flex({ gap: '2', color: '#FF4A01', fontWeight: 'bold' })}>
+              <Image src={PUBLIC.icons.karaoke.tj} alt='tj' width={22} height={100} />
+              <p>{song.tj_number}</p>
+            </div>
+          )}
+          {song.kumyoung_number && (
+            <div className={flex({ gap: '2', color: '#7B6CD9', fontWeight: 'semibold' })}>
+              <Image src={PUBLIC.icons.karaoke.ky} alt='ky' width={22} height={100} />
+              <p>{song.kumyoung_number}</p>
+            </div>
+          )}
+          {!song.tj_number && !song.kumyoung_number && <p className={css({ pr: '4' })}>-</p>}
         </div>
       </div>
     </div>

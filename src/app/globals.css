@@ -8,7 +8,7 @@ body {
     background-color: var(--colors-background);
     transition: background-color 0.3s ease;
     padding: 0 16px;
-    color: #333333
+    color: #4c4c4c
 }
 
 [data-panda-theme='light'] body {
