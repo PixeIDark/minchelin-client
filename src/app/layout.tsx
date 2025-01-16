@@ -9,6 +9,7 @@ import { getThemeConfig } from '@/utils/getThemeConfig';
 import { Toaster } from '@/components/ui/toast/Toaster';
 import { HeaderLayout } from '@/app/_components/layout/header-layout';
 import { Footer } from '@/app/_components/footer';
+import { css } from '@/styled-system/css';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
