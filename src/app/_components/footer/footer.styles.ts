@@ -1,6 +1,10 @@
 import { css } from '@/styled-system/css';
 
 const footerStyles = {
+  footerSpacer: css({
+    h: '63px',
+  }),
+
   wrapper: css({
     display: { base: 'flex', md: 'none' },
     alignItems: 'center',
