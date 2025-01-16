@@ -12,15 +12,18 @@ function Header() {
   const router = useRouter();
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
-        <button onClick={() => router.back()}>
-          <ChevronLeft size={40} strokeWidth={1} className={css({ color: 'gray.600' })} />
-        </button>
-        <button onClick={() => router.push('/')}>
-          <Image src={PUBLIC.images.logo} alt='logo' width={105} height={1} priority />
-        </button>
-        <AuthIconButton />
+    <div>
+      <div className={styles.headerSpacer} />
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <button onClick={() => router.back()}>
+            <ChevronLeft size={40} strokeWidth={1} className={css({ color: 'gray.600' })} />
+          </button>
+          <button onClick={() => router.push('/')}>
+            <Image src={PUBLIC.images.logo} alt='logo' width={105} height={1} priority />
+          </button>
+          <AuthIconButton />
+        </div>
       </div>
     </div>
   );

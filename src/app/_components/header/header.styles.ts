@@ -2,10 +2,17 @@ import { css } from '@/styled-system/css';
 import { flex } from '@/styled-system/patterns';
 
 const headerStyles = {
+  headerSpacer: css({
+    h: '57px',
+  }),
+
   wrapper: css({
     display: { md: 'none' },
+    position: 'fixed',
+    top: '0px',
     borderBottom: '1px solid',
     borderColor: 'gray.200',
+    w: 'full',
     mx: '-4',
   }),
 
