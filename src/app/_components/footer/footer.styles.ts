@@ -2,7 +2,7 @@ import { css } from '@/styled-system/css';
 
 const footerStyles = {
   footerSpacer: css({
-    h: '63px',
+    h: '14',
   }),
 
   wrapper: css({

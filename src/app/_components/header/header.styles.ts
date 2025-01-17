@@ -12,6 +12,7 @@ const headerStyles = {
     top: '0px',
     borderBottom: '1px solid',
     borderColor: 'gray.200',
+    backgroundColor: 'white',
     w: 'full',
     mx: '-4',
   }),

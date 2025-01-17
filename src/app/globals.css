@@ -5,6 +5,7 @@
 }
 
 body {
+    overflow: hidden;  /* body 자체의 스크롤 제거 */
     background-color: var(--colors-background);
     transition: background-color 0.3s ease;
     padding: 0 16px;
@@ -25,4 +26,19 @@ body {
 
 button {
     cursor: pointer;
+}
+
+/* WebKit (Chrome, Safari) 브라우저용 */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 */
+.hide-scrollbar {
+    scrollbar-width: none;
+}
+
+/* IE용 */
+.hide-scrollbar {
+    -ms-overflow-style: none;
 }

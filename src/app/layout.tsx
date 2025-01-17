@@ -44,9 +44,25 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <QueryProvider>
           <SessionProvider session={session}>
-            <HeaderLayout />
-            {children}
-            <Footer />
+            <div
+              className={css({
+                h: '100vh',
+                display: 'flex',
+                flexDir: 'column',
+              })}
+            >
+              <HeaderLayout />
+              <main
+                className={css({
+                  flex: 1,
+                  overflowY: 'auto',
+                  '&::-webkit-scrollbar': { display: 'none' },
+                })}
+              >
+                {children}
+              </main>
+              <Footer />
+            </div>
             <Toaster />
           </SessionProvider>
         </QueryProvider>
