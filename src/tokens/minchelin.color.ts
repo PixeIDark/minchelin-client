@@ -1,3 +1,8 @@
+import { flex } from '@/styled-system/patterns';
+import Image from 'next/image';
+import { PUBLIC } from '@/constants/public';
+import { css } from '@/styled-system/css';
+
 export const minchelinColors = {
   blue: {
     100: { value: '#D6E1FD' },
@@ -27,4 +32,7 @@ export const minchelinColors = {
   place_h: { value: '#B5A6A6' },
   guiding: { value: '#FFFFFF' },
   luring: { value: '#202225' },
+
+  tj: { value: '#FF4A01' },
+  ky: { value: '#7B6CD9' },
 };

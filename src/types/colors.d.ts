@@ -29,6 +29,9 @@ declare module '@pandacss/types' {
       guiding: string;
       luring: string;
 
+      tj: string;
+      ky: string;
+
       // Shadow Panda Colors
       current: string;
       black: string;
