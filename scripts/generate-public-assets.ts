@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
-const publicDir = path.join(process.cwd(), 'public');
-const outputFile = path.join(process.cwd(), 'src/constants/public.ts');
+const publicDir = path.join(process.cwd(), '../public');
+const outputFile = path.join(process.cwd(), '../src/constants/public.ts');
 
 const validExtensions = new Set(['.svg', '.ico', '.png', '.jpg', '.jpeg', '.gif', '.webp']);
 
