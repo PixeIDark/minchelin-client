@@ -40,6 +40,9 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -53,36 +56,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.generateImageConstants.ts.executor": "Run",
-    "Node.js.saveFiles.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "jsx.switch.disabled": "true",
-    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-client/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "settings.sync",
-    "ts.external.directory.path": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.generateImageConstants.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.saveFiles.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;jsx.switch.disabled&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kiki7/Desktop/repository/coding test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\public" />
@@ -172,22 +175,12 @@
       <workItem from="1736111324885" duration="640000" />
       <workItem from="1736133950964" duration="708000" />
       <workItem from="1736140856021" duration="6986000" />
-    </task>
-    <task id="LOCAL-00001" summary="1">
-      <option name="closed" value="true" />
-      <created>1732717876980</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1732717876980</updated>
-    </task>
-    <task id="LOCAL-00002" summary="1">
-      <option name="closed" value="true" />
-      <created>1732956333979</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1732956333979</updated>
+      <workItem from="1736154248575" duration="5474000" />
+      <workItem from="1736160156113" duration="27000" />
+      <workItem from="1736255320703" duration="323000" />
+      <workItem from="1736330723700" duration="37000" />
+      <workItem from="1736397945286" duration="763000" />
+      <workItem from="1736600910887" duration="137000" />
     </task>
     <task id="LOCAL-00003" summary="로그인, 회원가입 훅 추가(불안정)">
       <option name="closed" value="true" />
@@ -557,7 +550,31 @@
       <option name="project" value="LOCAL" />
       <updated>1736144287668</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="public 방식으로 전환, src 경로 자동완성을 위한 객체 생성 스크립트 추가">
+      <option name="closed" value="true" />
+      <created>1736156095966</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1736156095966</updated>
+    </task>
+    <task id="LOCAL-00050" summary="카드 레이아웃 수정, 기본 폰트색 변경">
+      <option name="closed" value="true" />
+      <created>1736158454377</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1736158454378</updated>
+    </task>
+    <task id="LOCAL-00051" summary="dropDown ui 버그 수정">
+      <option name="closed" value="true" />
+      <created>1736159932329</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1736159932329</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,9 +586,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="잔재 제거" />
-    <MESSAGE value="헤더 디자인 변경, 플로팅 버튼 제거" />
-    <MESSAGE value="기본적인 검색 기능 구현, loadingButton 프롭스 변경, button ui 변경" />
     <MESSAGE value="종속성 폴더 명칭 변경" />
     <MESSAGE value="종속성 폴더 위치 변경" />
     <MESSAGE value="cloudinary 도메인 허가" />
@@ -594,6 +608,9 @@
     <MESSAGE value="search 페이지 구현 (카드 빼고)" />
     <MESSAGE value="카드 간단한 구현" />
     <MESSAGE value="SearchPanel.tsx 훅 분리, SearchForm.tsx 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="SearchPanel.tsx 훅 분리, SearchForm.tsx 생성" />
+    <MESSAGE value="public 방식으로 전환, src 경로 자동완성을 위한 객체 생성 스크립트 추가" />
+    <MESSAGE value="카드 레이아웃 수정, 기본 폰트색 변경" />
+    <MESSAGE value="dropDown ui 버그 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="dropDown ui 버그 수정" />
   </component>
 </project>
