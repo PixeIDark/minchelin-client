@@ -1,5 +1,5 @@
 // 이 파일은 자동으로 생성되었습니다. 직접 수정하지 마세요.
-// 마지막 생성: 2025. 1. 6. 오후 6:29:29
+// 마지막 생성: 2025. 1. 18. 오전 1:37:01
 
 export const PUBLIC = {
   icons: {
@@ -12,6 +12,9 @@ export const PUBLIC = {
     },
   },
   images: {
+    error: {
+      song_thumbnail: '/images/error/song_thumbnail.png',
+    },
     logo: '/images/logo.svg',
   },
 } as const;

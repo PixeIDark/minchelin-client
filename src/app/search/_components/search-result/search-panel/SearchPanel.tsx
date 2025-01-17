@@ -10,6 +10,7 @@ import { SearchForm } from '@/app/search/_components/search-result/search-panel/
 import { useSearchSort } from '@/app/search/_components/search-result/search-panel/_hooks/useSearchSort';
 import { useSearchType } from '@/app/search/_components/search-result/search-panel/_hooks/useSearchType';
 
+// TODO: hasSearched 받는 컴포넌트로 분리 가능.
 function SearchPanel({ totalSongs }: { totalSongs: number }) {
   const { isOpen } = useDropdownState('search-dropdown');
   const { searchType, setSearchType, currentSearchType } = useSearchType();
