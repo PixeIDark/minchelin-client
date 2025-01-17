@@ -5,7 +5,6 @@ import { SearchDropdown } from '@/app/search/_components/search-result/search-pa
 import { SearchResultCount } from '@/app/search/_components/search-result/search-panel/search-result-count';
 import { SearchSortBy } from '@/app/search/_components/search-result/search-panel/search-sort-by';
 import { useDropdownState } from '@/components/ui/dropdown/Dropdown';
-import { flex } from '@/styled-system/patterns';
 import { useSearchState } from '@/app/search/_components/search-result/search-panel/_hooks/useSearchState';
 import { SearchForm } from '@/app/search/_components/search-result/search-panel/search-form';
 import { useSearchSort } from '@/app/search/_components/search-result/search-panel/_hooks/useSearchSort';
@@ -24,14 +23,7 @@ function SearchPanel({ totalSongs }: { totalSongs: number }) {
         <SearchForm searchType={searchType} sortBy={sortBy} />
       </div>
       {hasSearched && (
-        <div
-          className={flex({
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            fontSize: '15px',
-            mt: '5',
-          })}
-        >
+        <div className={styles.resultSection}>
           <SearchResultCount searchType={currentSearchType} totalSongs={totalSongs} />
           <SearchSortBy sortBy={sortBy} setSortBy={setSortBy} />
         </div>

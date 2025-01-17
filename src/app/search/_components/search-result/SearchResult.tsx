@@ -1,12 +1,11 @@
 'use client';
 
-import { SearchList } from './search-list';
-import { SearchPanel } from './search-panel';
+import React from 'react';
 import { css } from '@/styled-system/css';
 import { SearchParams } from '@/types/search';
+import { SearchList } from './search-list';
+import { SearchPanel } from './search-panel';
 import { useSearchResult } from '@/app/search/_components/search-result/hooks/useSearchResult';
-import { Loader2 } from 'lucide-react';
-import React from 'react';
 import { LoadingSpinner } from '@/components/common/loading-spinner';
 
 function SearchResult({ searchParams }: { searchParams: SearchParams }) {

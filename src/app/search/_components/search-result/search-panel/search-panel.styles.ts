@@ -27,6 +27,13 @@ const searchPanelStyles = {
     h: 'full',
     textStyle: 'md',
   }),
+
+  resultSection: flex({
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    fontSize: '15px',
+    mt: '5',
+  }),
 } as const;
 
 export default searchPanelStyles;
