@@ -14,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -181,62 +181,7 @@
       <workItem from="1736330723700" duration="37000" />
       <workItem from="1736397945286" duration="763000" />
       <workItem from="1736600910887" duration="137000" />
-    </task>
-    <task id="LOCAL-00003" summary="로그인, 회원가입 훅 추가(불안정)">
-      <option name="closed" value="true" />
-      <created>1733144060418</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1733144060418</updated>
-    </task>
-    <task id="LOCAL-00004" summary="antd =&gt; shadow-panda, custom recipe 설정, 판다 기본 color 와 나의 color 통합">
-      <option name="closed" value="true" />
-      <created>1733480936179</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1733480936179</updated>
-    </task>
-    <task id="LOCAL-00005" summary="코드, 파일 정리">
-      <option name="closed" value="true" />
-      <created>1733496979575</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1733496979575</updated>
-    </task>
-    <task id="LOCAL-00006" summary="로그인 ui 완성. 소셜 로그인, 컴포넌트 분리 남음. 컬러변수명 고려하기">
-      <option name="closed" value="true" />
-      <created>1733504960343</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1733504960343</updated>
-    </task>
-    <task id="LOCAL-00007" summary="컴포넌트 분리">
-      <option name="closed" value="true" />
-      <created>1733733152670</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1733733152670</updated>
-    </task>
-    <task id="LOCAL-00008" summary="함수 분리">
-      <option name="closed" value="true" />
-      <created>1733735035958</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1733735035958</updated>
-    </task>
-    <task id="LOCAL-00009" summary="컨벤션 수정">
-      <option name="closed" value="true" />
-      <created>1733735195087</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1733735195087</updated>
+      <workItem from="1737066476812" duration="8434000" />
     </task>
     <task id="LOCAL-00010" summary="프사 기능 없는 헤더 완성, 세션 검증 훅 추가">
       <option name="closed" value="true" />
@@ -574,7 +519,63 @@
       <option name="project" value="LOCAL" />
       <updated>1736159932329</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="무쓸모 import 삭제">
+      <option name="closed" value="true" />
+      <created>1737067819369</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1737067819373</updated>
+    </task>
+    <task id="LOCAL-00053" summary="header fixed 추가">
+      <option name="closed" value="true" />
+      <created>1737067841724</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1737067841724</updated>
+    </task>
+    <task id="LOCAL-00054" summary="footer fixed 추가">
+      <option name="closed" value="true" />
+      <created>1737067872207</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1737067872207</updated>
+    </task>
+    <task id="LOCAL-00055" summary="스크롤 바 안보이게 수정(모바일 대세임)">
+      <option name="closed" value="true" />
+      <created>1737072008849</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1737072008849</updated>
+    </task>
+    <task id="LOCAL-00056" summary="search query useInfiniteQuery 로 변경, 무한 스크롤 커스텀 훅 구현">
+      <option name="closed" value="true" />
+      <created>1737072090433</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1737072090433</updated>
+    </task>
+    <task id="LOCAL-00057" summary="무한스크롤, searchquery 개선">
+      <option name="closed" value="true" />
+      <created>1737072948046</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1737072948047</updated>
+    </task>
+    <task id="LOCAL-00058" summary="무한스크롤, searchquery 개선">
+      <option name="closed" value="true" />
+      <created>1737073444782</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1737073444782</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,12 +587,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="종속성 폴더 명칭 변경" />
-    <MESSAGE value="종속성 폴더 위치 변경" />
-    <MESSAGE value="cloudinary 도메인 허가" />
-    <MESSAGE value="잔재 삭제" />
-    <MESSAGE value="enabled 자동 조작을 위해 false =&gt; &amp;&amp; text 로 변경" />
-    <MESSAGE value="search 공용 타입 범용성 상향" />
     <MESSAGE value="urlSearchParams 객체로 조정 가능한 유틸 함수 추가" />
     <MESSAGE value="LoadingButton.tsx 범용성 상향" />
     <MESSAGE value="search api createQueryString 유틸 함수 적용" />
@@ -611,6 +606,12 @@
     <MESSAGE value="public 방식으로 전환, src 경로 자동완성을 위한 객체 생성 스크립트 추가" />
     <MESSAGE value="카드 레이아웃 수정, 기본 폰트색 변경" />
     <MESSAGE value="dropDown ui 버그 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="dropDown ui 버그 수정" />
+    <MESSAGE value="무쓸모 import 삭제" />
+    <MESSAGE value="header fixed 추가" />
+    <MESSAGE value="footer fixed 추가" />
+    <MESSAGE value="스크롤 바 안보이게 수정(모바일 대세임)" />
+    <MESSAGE value="search query useInfiniteQuery 로 변경, 무한 스크롤 커스텀 훅 구현" />
+    <MESSAGE value="무한스크롤, searchquery 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="무한스크롤, searchquery 개선" />
   </component>
 </project>
