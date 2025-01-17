@@ -1,20 +1,59 @@
 'use client';
 
-import { SearchParams } from '@/types/search';
+import { useRef } from 'react';
 import { useSearch } from '@/queries/search';
-import { SearchList } from '@/app/search/_components/search-result/search-list';
-import { SearchPanel } from '@/app/search/_components/search-result/search-panel';
+import { SearchList } from './search-list';
+import { SearchPanel } from './search-panel';
+import { useIntersection } from '@/hooks/useIntersection';
+import { css } from '@/styled-system/css';
+import { SearchParams } from '@/types/search';
 
-// ToDo: 페이지 네이션으로 SearchList 할 꺼 생각해야함.
 function SearchResult({ searchParams }: { searchParams: SearchParams }) {
-  const { data: searchData } = useSearch(searchParams);
+  const loaderRef = useRef<HTMLDivElement>(null);
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage } = useSearch(searchParams);
 
-  const totalSongs = searchData?.total ?? 0;
+  useIntersection(loaderRef, {
+    onIntersect: () => {
+      if (hasNextPage && !isFetchingNextPage) {
+        fetchNextPage();
+      }
+    },
+    rootMargin: '100px',
+  });
+
+  const songs = data?.pages.flatMap((page) => page.items) ?? [];
+  const totalSongs = data?.pages[0]?.total ?? 0;
 
   return (
-    <div>
+    <div
+      className={css({
+        h: 'full',
+        display: 'flex',
+        flexDir: 'column',
+      })}
+    >
       <SearchPanel totalSongs={totalSongs} />
-      {searchData && <SearchList searchList={searchData.items} />}
+      <div
+        className={css({
+          flex: 1,
+          overflowY: 'auto',
+          '&::-webkit-scrollbar': { display: 'none' },
+        })}
+      >
+        <SearchList searchList={songs} />
+        <div ref={loaderRef} className={css({ h: '10px', mt: '4' })} />
+        {isFetchingNextPage && (
+          <div
+            className={css({
+              textAlign: 'center',
+              py: '4',
+              color: 'gray.500',
+            })}
+          >
+            로딩중...
+          </div>
+        )}
+      </div>
     </div>
   );
 }

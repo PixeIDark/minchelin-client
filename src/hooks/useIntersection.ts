@@ -1,30 +1,52 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback, useRef } from 'react';
+
+interface UseIntersectionOptions extends IntersectionObserverInit {
+  onIntersect: (entry: IntersectionObserverEntry) => void;
+  onLeave?: (entry: IntersectionObserverEntry) => void;
+}
 
 export function useIntersection(
   targetRef: React.RefObject<HTMLElement>,
-  onIntersect: () => void,
-  enabled = true,
-  options = { threshold: 0.1 }
+  { onIntersect, onLeave, root = null, rootMargin = '0px', threshold = 0 }: UseIntersectionOptions
 ) {
-  const handleObserver = useCallback(
-    (entries: IntersectionObserverEntry[]) => {
-      const [entry] = entries;
-      if (entry.isIntersecting && enabled) {
-        onIntersect();
-      }
-    },
-    [onIntersect, enabled]
-  );
+  const observerRef = useRef<IntersectionObserver>();
+  const callbackRef = useRef({
+    onIntersect,
+    onLeave,
+  });
 
   useEffect(() => {
-    const observer = new IntersectionObserver(handleObserver, options);
-    const element = targetRef.current;
+    callbackRef.current = { onIntersect, onLeave };
+  }, [onIntersect, onLeave]);
 
+  const handleObserver = useCallback((entries: IntersectionObserverEntry[]) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        callbackRef.current.onIntersect?.(entry);
+      } else {
+        callbackRef.current.onLeave?.(entry);
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    const element = targetRef.current;
     if (!element) return;
-    observer.observe(element);
+
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+    }
+
+    observerRef.current = new IntersectionObserver(handleObserver, {
+      root,
+      rootMargin,
+      threshold,
+    });
+
+    observerRef.current.observe(element);
 
     return () => {
-      observer.disconnect();
+      observerRef.current?.disconnect();
     };
-  }, [targetRef, handleObserver, options]);
+  }, [targetRef, handleObserver, root, rootMargin, threshold]);
 }
