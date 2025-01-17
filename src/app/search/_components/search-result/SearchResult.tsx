@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useCallback, useRef } from 'react';
 import { useSearch } from '@/queries/search';
 import { SearchList } from './search-list';
 import { SearchPanel } from './search-panel';
@@ -12,14 +12,13 @@ function SearchResult({ searchParams }: { searchParams: SearchParams }) {
   const loaderRef = useRef<HTMLDivElement>(null);
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage } = useSearch(searchParams);
 
-  useIntersection(loaderRef, {
-    onIntersect: () => {
-      if (hasNextPage && !isFetchingNextPage) {
-        fetchNextPage();
-      }
-    },
-    rootMargin: '100px',
-  });
+  const handleIntersect = useCallback(() => {
+    if (hasNextPage && !isFetchingNextPage) {
+      fetchNextPage();
+    }
+  }, [hasNextPage, isFetchingNextPage, fetchNextPage]);
+
+  useIntersection(loaderRef, { onIntersect: handleIntersect, rootMargin: '100px' });
 
   const songs = data?.pages.flatMap((page) => page.items) ?? [];
   const totalSongs = data?.pages[0]?.total ?? 0;
