@@ -1,8 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { Loader2 } from 'lucide-react';
 import React, { ButtonHTMLAttributes } from 'react';
-import { css } from '@/styled-system/css';
-import { flex } from '@/styled-system/patterns';
+import { LoadingSpinner } from '@/components/common/loading-spinner';
 
 interface LoadingButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
@@ -17,10 +15,7 @@ function LoadingButton({ children, isPending, size = 'default', ...props }: Load
       {!isPending ? (
         children
       ) : (
-        <div className={flex({ alignItems: 'center', gap: '2' })}>
-          <Loader2 className={css({ animation: 'spin' })} />
-          <p>잠시만 기다려주세요</p>
-        </div>
+        <LoadingSpinner isLoading={true}>잠시만 기다려 주세요</LoadingSpinner>
       )}
     </Button>
   );
