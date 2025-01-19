@@ -10,8 +10,11 @@ export interface SignupRequest extends LoginRequest {
   passwordConfirm: string;
 }
 
-export interface AuthResponse {
+export interface TokenResponse {
   accessToken: string;
   refreshToken: string;
+}
+
+export interface AuthResponse extends TokenResponse {
   user: User;
 }
