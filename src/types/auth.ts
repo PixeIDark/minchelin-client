@@ -16,5 +16,7 @@ export interface TokenResponse {
 }
 
 export interface AuthResponse extends TokenResponse {
-  user: User;
+  id: number;
+  email: string;
+  name: string;
 }
