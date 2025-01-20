@@ -11,23 +11,27 @@ export const authOptions: NextAuthOptions = {
       credentials: {
         email: { label: '이메일', type: 'email' },
         password: { label: '비밀번호', type: 'password' },
+        accessToken: { type: 'text' },
+        refreshToken: { type: 'text' },
       },
       async authorize(credentials) {
+        if (credentials?.accessToken && credentials?.refreshToken) {
+          return {
+            id: 0,
+            name: '',
+            email: '',
+            accessToken: credentials.accessToken,
+            refreshToken: credentials.refreshToken,
+          };
+        }
+
         if (!credentials?.email || !credentials?.password) return null;
 
         try {
-          const response = await authApi.login({
+          return await authApi.login({
             email: credentials.email,
             password: credentials.password,
           });
-
-          return {
-            id: response.user.id,
-            name: response.user.name,
-            email: response.user.email,
-            accessToken: response.accessToken,
-            refreshToken: response.refreshToken,
-          };
         } catch (error: unknown) {
           if (error instanceof Error) {
             throw new Error(error.message);
@@ -54,7 +58,7 @@ export const authOptions: NextAuthOptions = {
             refreshToken: account.refresh_token!,
           });
 
-          user.id = response.user.id;
+          user.id = response.id;
           user.accessToken = response.accessToken;
           user.refreshToken = response.refreshToken;
 
@@ -66,13 +70,16 @@ export const authOptions: NextAuthOptions = {
       }
       return true;
     },
+
     async jwt({ token, user }) {
+      // TODO: 실험을 위해 null 로 설정
       if (user) {
         token.accessToken = user.accessToken;
         token.refreshToken = user.refreshToken;
       }
       return token;
     },
+
     async session({ session, token }) {
       // 날짜 기준 한국으로 변환
       const expiresDate = new Date(session.expires);
