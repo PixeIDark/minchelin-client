@@ -7,10 +7,26 @@ import { center, vstack } from '@/styled-system/patterns';
 import { Loader2, ChevronRight, Mail } from 'lucide-react';
 import { css, cx } from '@/styled-system/css';
 import { useLogout } from '@/queries/auth';
+import { authApi } from '@/api/auth';
+import { useSession } from 'next-auth/react';
+import { usersApi } from '@/api/users';
 
 function TestPage() {
   const { theme, toggleTheme } = useToggleTheme();
   const { mutate: logout, isPending } = useLogout();
+  const { data } = useSession();
+
+  const re = async () => {
+    const refresh = data?.refreshToken;
+    if (!refresh) return;
+    const a = await authApi.refresh(refresh);
+  };
+
+  const showProfile = async () => {
+    const profile = await usersApi.getMyProfile();
+
+    console.log(profile);
+  };
 
   return (
     <div className={center({ height: '100vh' })}>
@@ -44,7 +60,9 @@ function TestPage() {
           )}
         </Button>
 
-        <Button variant='link'>Link Style</Button>
+        <Button variant='link' onClick={showProfile}>
+          내 프로필 확인
+        </Button>
 
         <Button variant='outline' size='icon'>
           <ChevronRight
@@ -55,9 +73,9 @@ function TestPage() {
           />
         </Button>
 
-        <Button>
+        <Button onClick={re}>
           <Mail />
-          Login with Email
+          토큰 재발급
         </Button>
 
         <Button asChild>
