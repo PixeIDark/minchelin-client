@@ -109,7 +109,7 @@ class FetchInstance {
       }
 
       if (this.retryCount === this.MAX_RETRY)
-        throw new Error('재시도 횟수 초과, 토큰 자동 재발급 실패');
+        throw new Error('재시도 횟수 초과, 토큰 자동 재발급 실패'); // 나중에 로그인 리다이렉트로 바꿔주자.
 
       this.retryCount = 0;
 

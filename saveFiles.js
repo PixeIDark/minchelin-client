@@ -8,13 +8,16 @@ function saveFilesAsTxt(directory, outputFile) {
   files.forEach((file) => {
     const fullPath = path.join(directory, file);
     const stat = fs.statSync(fullPath);
-    if (stat.isDirectory()) {
+
+    // 'styled-system' 폴더를 건너뛰는 조건 추가
+    if (stat.isDirectory() && file !== 'styled-system') {
       saveFilesAsTxt(fullPath, outputFile); // 재귀적으로 하위 폴더도 탐색
     } else if (
-      file.endsWith('.js') ||
-      file.endsWith('.ts') ||
-      file.endsWith('.jsx') ||
-      file.endsWith('.tsx')
+      !stat.isDirectory() && // 디렉토리는 제외
+      (file.endsWith('.js') ||
+        file.endsWith('.ts') ||
+        file.endsWith('.jsx') ||
+        file.endsWith('.tsx'))
     ) {
       // 파일 확장자 지정
       const fileContent = fs.readFileSync(fullPath, 'utf-8');
