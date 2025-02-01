@@ -21,7 +21,7 @@ export const dropdown = defineSlotRecipe({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      zIndex: '50',
+      zIndex: 'dropdown',
       marginTop: '2',
       width: '56',
       backgroundColor: 'white',

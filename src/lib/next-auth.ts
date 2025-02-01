@@ -72,7 +72,6 @@ export const authOptions: NextAuthOptions = {
     },
 
     async jwt({ token, user }) {
-      // TODO: 실험을 위해 null 로 설정
       if (user) {
         token.accessToken = user.accessToken;
         token.refreshToken = user.refreshToken;
