@@ -64,7 +64,7 @@
     "git-widget-placeholder": "dev",
     "js.linters.configure.manually.selectedeslint": "true",
     "jsx.switch.disabled": "true",
-    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-client",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -183,22 +183,11 @@
       <workItem from="1736600910887" duration="137000" />
       <workItem from="1737066476812" duration="8434000" />
       <workItem from="1737124912120" duration="1982000" />
-    </task>
-    <task id="LOCAL-00010" summary="프사 기능 없는 헤더 완성, 세션 검증 훅 추가">
-      <option name="closed" value="true" />
-      <created>1733850023523</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1733850023523</updated>
-    </task>
-    <task id="LOCAL-00011" summary="회원가입 완성. 체크박스, 컴포넌트 분리 만하면됨">
-      <option name="closed" value="true" />
-      <created>1733852805427</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1733852805427</updated>
+      <workItem from="1737320366891" duration="90000" />
+      <workItem from="1737592658315" duration="1177000" />
+      <workItem from="1737608649773" duration="57000" />
+      <workItem from="1737723117562" duration="278000" />
+      <workItem from="1738388821817" duration="12225000" />
     </task>
     <task id="LOCAL-00012" summary="다듬기">
       <option name="closed" value="true" />
@@ -576,7 +565,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737073444782</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="modal 완성, 계정 설정 이동만 추가">
+      <option name="closed" value="true" />
+      <created>1738399780804</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1738399780804</updated>
+    </task>
+    <task id="LOCAL-00060" summary="5">
+      <option name="closed" value="true" />
+      <created>1738399801133</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1738399801133</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,10 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="urlSearchParams 객체로 조정 가능한 유틸 함수 추가" />
-    <MESSAGE value="LoadingButton.tsx 범용성 상향" />
-    <MESSAGE value="search api createQueryString 유틸 함수 적용" />
-    <MESSAGE value="SearchPage 검색기능 완성" />
     <MESSAGE value="dropdown ui 완성" />
     <MESSAGE value="dropdown ui 타입 수정" />
     <MESSAGE value="search dropdown 구현" />
@@ -613,6 +614,10 @@
     <MESSAGE value="스크롤 바 안보이게 수정(모바일 대세임)" />
     <MESSAGE value="search query useInfiniteQuery 로 변경, 무한 스크롤 커스텀 훅 구현" />
     <MESSAGE value="무한스크롤, searchquery 개선" />
-    <option name="LAST_COMMIT_MESSAGE" value="무한스크롤, searchquery 개선" />
+    <MESSAGE value="토큰 재발급 api 추가" />
+    <MESSAGE value="jxt-decode 라이브러리 설치, next-auth 세션 콜백 토큰 재발급 기능 추가, 401 시 세션 콜백." />
+    <MESSAGE value="modal 완성, 계정 설정 이동만 추가" />
+    <MESSAGE value="5" />
+    <option name="LAST_COMMIT_MESSAGE" value="5" />
   </component>
 </project>

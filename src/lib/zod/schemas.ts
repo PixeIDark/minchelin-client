@@ -42,24 +42,17 @@ export const signupSchema = z
     path: ['passwordConfirm'],
   });
 
-export const settingSchema = z.object({
-  name: z
-    .string()
-    .min(2, '닉네임은 2자 이상이어야 합니다')
-    .max(20, '닉네임은 20자 이하여야 합니다')
-    .optional(),
-  currentPassword: z
-    .string()
-    .min(1, '현재 비밀번호를 입력해주세요')
-    .min(8, '비밀번호는 최소 8자 이상이어야 합니다'),
-  newPassword: z
-    .string()
-    .min(8, '비밀번호는 최소 8자 이상이어야 합니다')
-    .regex(/[0-9]/, '숫자를 포함해야 합니다')
-    .regex(/[a-zA-Z]/, '영문을 포함해야 합니다')
-    .optional(),
-});
+export const updateSchema = z
+  .object({
+    name: nameSchema.optional(),
+    password: signupPasswordSchema,
+    passwordConfirm: z.string().min(1, '비밀번호 확인을 입력해주세요'),
+  })
+  .refine((data) => data.password === data.passwordConfirm, {
+    message: '비밀번호가 일치하지 않습니다',
+    path: ['passwordConfirm'],
+  });
 
 export type LoginFormData = z.infer<typeof loginSchema>;
 export type SignupFormData = z.infer<typeof signupSchema>;
-export type SettingFormData = z.infer<typeof settingSchema>;
+export type UpdateFormData = z.infer<typeof updateSchema>;

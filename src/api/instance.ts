@@ -91,7 +91,6 @@ class FetchInstance {
       if (response.status === 401 && this.retryCount < this.MAX_RETRY) {
         this.retryCount++;
         const session = await getSession();
-        console.log(session);
         if (session?.refreshToken) {
           await authApi.refresh(session.refreshToken);
 

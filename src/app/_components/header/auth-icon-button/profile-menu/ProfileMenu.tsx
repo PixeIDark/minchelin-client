@@ -29,10 +29,7 @@ function ProfileMenu({ isOpen, onClose }: ProfileMenuProps) {
           <X onClick={onClose} />
         </div>
         <div className={flex({ flexDir: 'column' })}>
-          <button
-            onClick={() => handleNavigate('/account/settings')}
-            className={flex({ gap: '4' })}
-          >
+          <button onClick={() => handleNavigate('/account/setting')} className={flex({ gap: '4' })}>
             <p>아이콘</p>
             <p>계정 설정</p>
           </button>
