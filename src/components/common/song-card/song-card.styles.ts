@@ -4,10 +4,9 @@ import { flex } from '@/styled-system/patterns';
 const songCardStyles = {
   wrapper: flex({
     py: '4',
-    borderBottom: '1px Solid',
-    borderColor: 'gray.300',
     gap: '4',
     alignItems: 'center',
+    w: 'full',
   }),
 
   imageContainer: css({
