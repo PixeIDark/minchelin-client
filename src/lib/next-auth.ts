@@ -98,7 +98,7 @@ export const authOptions: NextAuthOptions = {
   },
   session: {
     strategy: 'jwt',
-    maxAge: 30 * 60,
+    maxAge: 7 * 24 * 60 * 60,
   },
   secret: process.env.NEXTAUTH_SECRET,
   // cookies: { 세션 영구히 쿠키에 저장하는 NextAuth의 고유 기능.
