@@ -15,13 +15,9 @@ export interface FavoriteSong {
   thumbnail_url?: string;
 }
 
-export interface GetFavoriteListsResponse {
-  items: FavoriteList[];
-}
+export type GetFavoriteListsResponse = FavoriteList[];
 
-export interface GetFavoriteListSongsResponse {
-  items: FavoriteSong[];
-}
+export type GetFavoriteListSongsResponse = FavoriteSong[];
 
 export interface ReorderSongRequest {
   favoriteId: number;
