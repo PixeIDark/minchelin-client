@@ -5,6 +5,7 @@ import { PUBLIC } from '@/constants/public';
 import styles from './song-card.styles';
 import { processSongCard } from '@/components/common/song-card/utils/processSongCard';
 import { BookmarkCheck } from 'lucide-react';
+import { FavoriteSheet } from '@/components/common/song-card/favorite-sheet';
 
 interface SongCardProps {
   song: SearchItem;
@@ -42,9 +43,7 @@ function SongCard({ song }: SongCardProps) {
           </div>
         </div>
       </div>
-      <div className={styles.bookmarkWrapper}>
-        <BookmarkCheck strokeWidth={1} className={styles.bookmark} />
-      </div>
+      <FavoriteSheet />
     </div>
   );
 }

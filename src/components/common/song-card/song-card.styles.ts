@@ -78,18 +78,6 @@ const songCardStyles = {
     borderBottom: '1px Solid',
     borderColor: 'gray.100',
   }),
-
-  bookmarkWrapper: flex({
-    minW: '9',
-    justifyContent: 'center',
-    alignItems: 'center',
-    cursor: 'pointer',
-    _hover: { color: 'gray.600' },
-  }),
-
-  bookmark: css({
-    color: 'gray.500',
-  }),
 } as const;
 
 export default songCardStyles;
