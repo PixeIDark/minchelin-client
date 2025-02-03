@@ -82,6 +82,7 @@ class FetchInstance {
         ...authHeaders,
         ...options.headers,
       };
+      console.log(authHeaders);
 
       const response = await fetch(`${this.baseURL}${url}`, {
         ...options,

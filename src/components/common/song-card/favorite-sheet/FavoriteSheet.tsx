@@ -4,6 +4,7 @@ import {
   Sheet,
   SheetContent,
   SheetDescription,
+  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -12,10 +13,11 @@ import { BookmarkCheck } from 'lucide-react';
 import { flex } from '@/styled-system/patterns';
 import { css } from '@/styled-system/css';
 import { FavoriteList } from '@/components/common/song-card/favorite-sheet/favorite-list';
+import { Button } from '@/components/ui/button';
 
 // 유저의 즐겨찾기 목록이 떠야해
 // 조회하기를 써야겠지?
-function FavoriteSheet() {
+function FavoriteSheet({ songId }: { songId: number }) {
   return (
     <Sheet side='bottom'>
       <SheetTrigger
@@ -34,7 +36,10 @@ function FavoriteSheet() {
             className={css({ borderTop: '1px solid', borderTopColor: 'red', mx: '-4' })}
           />
         </SheetHeader>
-        <FavoriteList />
+        <FavoriteList songId={songId} />
+        <SheetFooter className={css({ mt: '4' })}>
+          <Button>즐겨찾기 생성</Button>
+        </SheetFooter>
       </SheetContent>
     </Sheet>
   );

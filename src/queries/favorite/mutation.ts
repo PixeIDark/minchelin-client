@@ -1,6 +1,7 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useToast } from '@/components/ui/toast/useToast';
 import { favoritesApi } from '@/api/favorites';
+import { FAVORITE_KEYS } from '@/queries/favorite/key';
 
 export const useFavoriteMutations = (listId?: number) => {
   const queryClient = useQueryClient();
@@ -32,7 +33,8 @@ export const useFavoriteMutations = (listId?: number) => {
   });
 
   const addSong = useMutation({
-    mutationFn: (songId: number) => favoritesApi.addSong(listId!, songId),
+    mutationFn: ({ listId, songId }: { listId: number; songId: number }) =>
+      favoritesApi.addSong(listId, songId),
     onSuccess: () => {
       if (listId) {
         queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.songs(listId) });

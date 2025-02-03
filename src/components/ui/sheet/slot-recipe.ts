@@ -137,6 +137,15 @@ export const sheet = defineSlotRecipe({
           bottom: '5',
           borderTop: 'base',
           mx: 'auto',
+        },
+
+        footer: {
+          display: 'flex',
+          flexDirection: 'column-reverse',
+          md: {
+            flexDirection: 'column-reverse',
+            justifyContent: 'center',
+          },
 
           '&[data-state=open]': {
             slideInFromBottom: '100%',

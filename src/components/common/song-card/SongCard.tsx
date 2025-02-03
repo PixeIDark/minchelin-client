@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { PUBLIC } from '@/constants/public';
 import styles from './song-card.styles';
 import { processSongCard } from '@/components/common/song-card/utils/processSongCard';
-import { BookmarkCheck } from 'lucide-react';
 import { FavoriteSheet } from '@/components/common/song-card/favorite-sheet';
 
 interface SongCardProps {
@@ -43,7 +42,7 @@ function SongCard({ song }: SongCardProps) {
           </div>
         </div>
       </div>
-      <FavoriteSheet />
+      <FavoriteSheet songId={song.id} />
     </div>
   );
 }
