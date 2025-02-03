@@ -21,25 +21,26 @@ export const sheet = defineSlotRecipe({
       position: 'fixed',
       inset: '0',
       zIndex: '50',
-      bga: 'background/80',
-      backdropBlur: 'sm',
+      opacity: '0.7',
+      bg: 'black',
 
       '&[data-state=open]': {
         animateIn: true,
         fadeIn: 0,
-      } as any,
+      },
 
       '&[data-state=closed]': {
         animateOut: true,
         fadeOut: 0,
-      } as any,
-    },
+      },
+    } as any,
     content: {
+      borderRadius: '8',
       position: 'fixed',
       zIndex: '50',
       gap: '4',
       bg: 'background',
-      p: '6',
+      p: '4',
       shadow: 'lg',
       transition: 'common',
       transitionTimingFunction: 'ease-in-out',
@@ -47,13 +48,13 @@ export const sheet = defineSlotRecipe({
       '&[data-state=open]': {
         animateIn: true,
         transitionDuration: '500ms',
-      } as any,
+      },
 
       '&[data-state=closed]': {
         animateOut: true,
         transitionDuration: '300ms',
-      } as any,
-    },
+      },
+    } as any,
     contentClose: {
       cursor: 'pointer',
       position: 'absolute',
@@ -106,6 +107,7 @@ export const sheet = defineSlotRecipe({
       textStyle: 'lg',
       fontWeight: 'semibold',
       color: 'foreground',
+      textAlign: 'left',
     },
     description: {
       textStyle: 'sm',
@@ -132,8 +134,9 @@ export const sheet = defineSlotRecipe({
       bottom: {
         content: {
           insetX: '0',
-          bottom: '0',
+          bottom: '5',
           borderTop: 'base',
+          mx: 'auto',
 
           '&[data-state=open]': {
             slideInFromBottom: '100%',
