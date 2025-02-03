@@ -33,7 +33,7 @@ const songCardStyles = {
   title: css({
     fontSize: '18px',
     fontWeight: 'bold',
-    maxW: '200px',
+    maxW: 'calc(152px + (187 - 152) * ((100vw - 365px) / (400 - 365)))',
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis',
     overflow: 'hidden',
@@ -42,7 +42,7 @@ const songCardStyles = {
   artist: css({
     color: 'gray.400',
     fontSize: '14px',
-    maxW: '200px',
+    maxW: 'calc(152px + (187 - 152) * ((100vw - 365px) / (400 - 365)))',
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis',
     overflow: 'hidden',
@@ -72,6 +72,23 @@ const songCardStyles = {
 
   noNumber: css({
     pr: '4',
+  }),
+
+  container: flex({
+    borderBottom: '1px Solid',
+    borderColor: 'gray.100',
+  }),
+
+  bookmarkWrapper: flex({
+    minW: '9',
+    justifyContent: 'center',
+    alignItems: 'center',
+    cursor: 'pointer',
+    _hover: { color: 'gray.600' },
+  }),
+
+  bookmark: css({
+    color: 'gray.500',
   }),
 } as const;
 

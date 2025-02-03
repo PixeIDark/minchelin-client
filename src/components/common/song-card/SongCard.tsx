@@ -4,8 +4,6 @@ import Image from 'next/image';
 import { PUBLIC } from '@/constants/public';
 import styles from './song-card.styles';
 import { processSongCard } from '@/components/common/song-card/utils/processSongCard';
-import { css } from '@/styled-system/css';
-import { flex } from '@/styled-system/patterns';
 import { BookmarkCheck } from 'lucide-react';
 
 interface SongCardProps {
@@ -16,7 +14,7 @@ function SongCard({ song }: SongCardProps) {
   const { songTitle, artistTitle, thumbnailUrl, karaokeNumbers } = processSongCard(song);
 
   return (
-    <div className={flex({ borderBottom: '1px Solid', borderColor: 'gray.100' })}>
+    <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.imageContainer}>
           <Picture
@@ -44,8 +42,8 @@ function SongCard({ song }: SongCardProps) {
           </div>
         </div>
       </div>
-      <div className={flex({ minW: '9', justifyContent: 'center', alignItems: 'center' })}>
-        <BookmarkCheck strokeWidth={1} className={css({ color: 'gray.500' })} />
+      <div className={styles.bookmarkWrapper}>
+        <BookmarkCheck strokeWidth={1} className={styles.bookmark} />
       </div>
     </div>
   );
