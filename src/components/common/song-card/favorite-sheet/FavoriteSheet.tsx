@@ -13,7 +13,7 @@ import { BookmarkCheck } from 'lucide-react';
 import { flex } from '@/styled-system/patterns';
 import { css } from '@/styled-system/css';
 import { FavoriteList } from '@/components/common/song-card/favorite-sheet/favorite-list';
-import { Button } from '@/components/ui/button';
+import { FavoritePopover } from '@/components/common/song-card/favorite-sheet/favorite-popover';
 
 function FavoriteSheet({ songId }: { songId: number }) {
   return (
@@ -36,7 +36,7 @@ function FavoriteSheet({ songId }: { songId: number }) {
         </SheetHeader>
         <FavoriteList songId={songId} />
         <SheetFooter className={css({ mt: '4' })}>
-          <Button>즐겨찾기 생성</Button>
+          <FavoritePopover />
         </SheetFooter>
       </SheetContent>
     </Sheet>
