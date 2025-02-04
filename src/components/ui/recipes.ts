@@ -22,6 +22,7 @@ import { icon } from '@/components/ui/icon/recipe';
 import { checkbox } from '@/components/ui/checkbox/slot-recipe';
 import { dropdown } from '@/components/ui/dropdown/slot-recipe';
 import { sheet } from '@/components/ui/sheet/slot-recipe';
+import { popover } from '@/components/ui/popover/slot-recipe';
 
 export const recipes = {
   button,
@@ -41,6 +42,7 @@ export const recipes = {
   input,
   icon,
   label,
+  popover,
   toast,
   toastViewport,
   sheet,

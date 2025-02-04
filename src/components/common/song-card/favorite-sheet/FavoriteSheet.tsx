@@ -8,7 +8,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet/Sheet';
+} from '@/components/ui/sheet';
 import { BookmarkCheck } from 'lucide-react';
 import { flex } from '@/styled-system/patterns';
 import { css } from '@/styled-system/css';
