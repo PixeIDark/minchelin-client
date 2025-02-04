@@ -1,21 +1,11 @@
-import { useFavoriteLists, useFavoriteMutations } from '@/queries/favorite';
-import FavoriteItem from '@/components/common/song-card/favorite-sheet/favorite-list/favorite-item/FavoriteItem';
+import { useFavoriteLists } from '@/queries/favorite';
 import { flex } from '@/styled-system/patterns';
+import { FavoriteItem } from '@/components/common/song-card/favorite-sheet/favorite-list/favorite-item';
+import { useToggleFavoriteSong } from '@/components/common/song-card/favorite-sheet/favorite-list/_hooks/useToggleFavoriteSong';
 
 function FavoriteList({ songId }: { songId: number }) {
   const { data: favoriteLists } = useFavoriteLists();
-  const { addSong, removeSong } = useFavoriteMutations();
-
-  const handleFavorite = (listId: number, checked: boolean) => {
-    if (checked) {
-      addSong.mutate({
-        listId,
-        songId,
-      });
-    } else {
-      removeSong.mutate(3);
-    }
-  };
+  const handleFavorite = useToggleFavoriteSong(songId);
 
   return (
     <ul className={flex({ flexDir: 'column', gap: '2', mt: '4' })}>

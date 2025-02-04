@@ -1,5 +1,6 @@
 import { fetchInstance } from './instance';
 import {
+  FavoriteAddSongResponse,
   GetFavoriteListSongsResponse,
   GetFavoriteListsResponse,
   ReorderSongRequest,
@@ -25,7 +26,7 @@ export const favoritesApi = {
 
   // 즐겨찾기에 곡 추가
   addSong: (listId: number, songId: number) =>
-    fetchInstance.post(`/favorites/lists/${listId}/songs`, { songId }),
+    fetchInstance.post<FavoriteAddSongResponse>(`/favorites/lists/${listId}/songs`, { songId }),
 
   // 즐겨찾기에서 곡 제거
   removeSong: (favoriteId: number) => fetchInstance.delete(`/favorites/songs/${favoriteId}`),

@@ -3,19 +3,24 @@ import { useToast } from '@/components/ui/toast/useToast';
 import { favoritesApi } from '@/api/favorites';
 import { FAVORITE_KEYS } from '@/queries/favorite/key';
 
-export const useFavoriteMutations = (listId?: number) => {
+export function useCreateFavoriteList() {
   const queryClient = useQueryClient();
   const { toast } = useToast();
 
-  const createList = useMutation({
+  return useMutation({
     mutationFn: (name: string) => favoritesApi.createList(name),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.lists() });
       toast({ title: '즐겨찾기 목록이 생성되었습니다' });
     },
   });
+}
 
-  const updateList = useMutation({
+export function useUpdateFavoriteList() {
+  const queryClient = useQueryClient();
+  const { toast } = useToast();
+
+  return useMutation({
     mutationFn: ({ listId, name }: { listId: number; name: string }) =>
       favoritesApi.updateList(listId, name),
     onSuccess: () => {
@@ -23,37 +28,63 @@ export const useFavoriteMutations = (listId?: number) => {
       toast({ title: '즐겨찾기 목록이 수정되었습니다' });
     },
   });
+}
 
-  const deleteList = useMutation({
+export function useDeleteFavoriteList() {
+  const queryClient = useQueryClient();
+  const { toast } = useToast();
+
+  return useMutation({
     mutationFn: (listId: number) => favoritesApi.deleteList(listId),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.lists() });
       toast({ title: '즐겨찾기 목록이 삭제되었습니다' });
     },
   });
+}
 
-  const addSong = useMutation({
+export function useAddFavoriteSong() {
+  const queryClient = useQueryClient();
+  const { toast } = useToast();
+
+  return useMutation({
     mutationFn: ({ listId, songId }: { listId: number; songId: number }) =>
       favoritesApi.addSong(listId, songId),
-    onSuccess: () => {
-      if (listId) {
-        queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.songs(listId) });
+    onSuccess: (data, variables) => {
+      if (variables.listId) {
+        queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.songs(variables.listId) });
       }
       toast({ title: '곡이 즐겨찾기에 추가되었습니다' });
+      return data;
+    },
+    onError: (error) => {
+      toast({
+        title: error instanceof Error ? error.message : '즐겨찾기 추가 중 오류가 발생했습니다',
+        variant: 'destructive',
+      });
     },
   });
+}
 
-  const removeSong = useMutation({
+export function useRemoveFavoriteSong() {
+  const queryClient = useQueryClient();
+  const { toast } = useToast();
+
+  return useMutation({
     mutationFn: (favoriteId: number) => favoritesApi.removeSong(favoriteId),
-    onSuccess: () => {
-      if (listId) {
-        queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.songs(listId) });
+    onSuccess: (_data, favoriteId) => {
+      if (favoriteId) {
+        queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.songs(favoriteId) });
       }
       toast({ title: '곡이 즐겨찾기에서 제거되었습니다' });
     },
   });
+}
 
-  const reorderSong = useMutation({
+export function useReorderFavoriteSong(listId?: number) {
+  const queryClient = useQueryClient();
+
+  return useMutation({
     mutationFn: ({ favoriteId, newOrder }: { favoriteId: number; newOrder: number }) =>
       favoritesApi.reorderSong({ favoriteId, newOrder }),
     onSuccess: () => {
@@ -62,13 +93,4 @@ export const useFavoriteMutations = (listId?: number) => {
       }
     },
   });
-
-  return {
-    createList,
-    updateList,
-    deleteList,
-    addSong,
-    removeSong,
-    reorderSong,
-  };
-};
+}

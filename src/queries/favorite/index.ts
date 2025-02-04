@@ -1,2 +1,2 @@
-export { useFavoriteMutations } from './mutation';
+export * from './mutations';
 export { useFavoriteLists, useFavoriteListSongs } from './queries';

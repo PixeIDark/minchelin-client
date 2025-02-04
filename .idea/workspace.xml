@@ -56,43 +56,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.generateImageConstants.ts.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.saveFiles.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;jsx.switch.disabled&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kiki7/Desktop/repository/minchelin-server&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.generateImageConstants.ts.executor": "Run",
+    "Node.js.saveFiles.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "jsx.switch.disabled": "true",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "pnpm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "settings.sync",
+    "ts.external.directory.path": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\components\common\song-card\favorite-sheet\favorite-list" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\account\setting" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\account\setting\_components" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\public" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-result" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\account\setting\_components\delete-account-modal" />
@@ -191,102 +191,10 @@
       <workItem from="1737723117562" duration="278000" />
       <workItem from="1738388821817" duration="12225000" />
       <workItem from="1738402608907" duration="4486000" />
-    </task>
-    <task id="LOCAL-00014" summary="지도연결">
-      <option name="closed" value="true" />
-      <created>1733917836849</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1733917836849</updated>
-    </task>
-    <task id="LOCAL-00015" summary="위치지도">
-      <option name="closed" value="true" />
-      <created>1733918445909</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1733918445910</updated>
-    </task>
-    <task id="LOCAL-00016" summary="푸터 ui">
-      <option name="closed" value="true" />
-      <created>1734111819302</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1734111819302</updated>
-    </task>
-    <task id="LOCAL-00017" summary="header css 수정">
-      <option name="closed" value="true" />
-      <created>1734219663883</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1734219663883</updated>
-    </task>
-    <task id="LOCAL-00018" summary="9">
-      <option name="closed" value="true" />
-      <created>1734775083375</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1734775083375</updated>
-    </task>
-    <task id="LOCAL-00019" summary="recipe, 이미지 변환 api 추가">
-      <option name="closed" value="true" />
-      <created>1734783474362</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1734783474362</updated>
-    </task>
-    <task id="LOCAL-00020" summary="SocialLogins.tsx =&gt; callbackUrl 정리">
-      <option name="closed" value="true" />
-      <created>1735705460982</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1735705460982</updated>
-    </task>
-    <task id="LOCAL-00021" summary="잔재 제거, search 쿼리 세팅">
-      <option name="closed" value="true" />
-      <created>1735706594476</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1735706594476</updated>
-    </task>
-    <task id="LOCAL-00022" summary="잔재 제거, search 쿼리 세팅">
-      <option name="closed" value="true" />
-      <created>1735706600734</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1735706600734</updated>
-    </task>
-    <task id="LOCAL-00023" summary="searchApi 파람 기본값 설정">
-      <option name="closed" value="true" />
-      <created>1735706806282</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1735706806282</updated>
-    </task>
-    <task id="LOCAL-00024" summary="잔재 제거">
-      <option name="closed" value="true" />
-      <created>1735707137428</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1735707137428</updated>
-    </task>
-    <task id="LOCAL-00025" summary="헤더 디자인 변경, 플로팅 버튼 제거">
-      <option name="closed" value="true" />
-      <created>1735708014659</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1735708014659</updated>
+      <workItem from="1738570191071" duration="9081000" />
+      <workItem from="1738587233379" duration="14192000" />
+      <workItem from="1738603151523" duration="13000" />
+      <workItem from="1738655832257" duration="74000" />
     </task>
     <task id="LOCAL-00026" summary="기본적인 검색 기능 구현, loadingButton 프롭스 변경, button ui 변경">
       <option name="closed" value="true" />
@@ -584,7 +492,103 @@
       <option name="project" value="LOCAL" />
       <updated>1738412136535</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="SongCard.tsx 즐겨찾기 css 추가">
+      <option name="closed" value="true" />
+      <created>1738577210955</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1738577210956</updated>
+    </task>
+    <task id="LOCAL-00064" summary="favorites api, type 추가">
+      <option name="closed" value="true" />
+      <created>1738578311988</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1738578311988</updated>
+    </task>
+    <task id="LOCAL-00065" summary="SongCard.tsx css 리메이크">
+      <option name="closed" value="true" />
+      <created>1738582615328</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1738582615328</updated>
+    </task>
+    <task id="LOCAL-00066" summary="session 기한 refresh 토큰에 맞춰서 7일로 상향">
+      <option name="closed" value="true" />
+      <created>1738583807006</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1738583807006</updated>
+    </task>
+    <task id="LOCAL-00067" summary="sheet ui 추가">
+      <option name="closed" value="true" />
+      <created>1738584744706</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1738584744706</updated>
+    </task>
+    <task id="LOCAL-00068" summary="sheet open 시, body px 옵션 사라지는 현상 해결">
+      <option name="closed" value="true" />
+      <created>1738584797039</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1738584797039</updated>
+    </task>
+    <task id="LOCAL-00069" summary="favorite 쿼리 추가">
+      <option name="closed" value="true" />
+      <created>1738598468604</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1738598468604</updated>
+    </task>
+    <task id="LOCAL-00070" summary="favorite type 수정">
+      <option name="closed" value="true" />
+      <created>1738598487976</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1738598487976</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Sheet.tsx css 수정">
+      <option name="closed" value="true" />
+      <created>1738598514110</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1738598514110</updated>
+    </task>
+    <task id="LOCAL-00072" summary="SongCard.tsx 요소 대체">
+      <option name="closed" value="true" />
+      <created>1738598543455</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1738598543456</updated>
+    </task>
+    <task id="LOCAL-00073" summary="FavoriteSheet.tsx 완성">
+      <option name="closed" value="true" />
+      <created>1738598583431</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1738598583431</updated>
+    </task>
+    <task id="LOCAL-00074" summary="노래 추가, 삭제 기능 완성 =&gt; 삭제 기능 백엔드 코드 쿼리 값 수정 필요, 추가 기능 백엔드 코드 중복 방지 기능 필요">
+      <option name="closed" value="true" />
+      <created>1738602916953</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1738602916953</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,18 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="search dropdown 구현" />
-    <MESSAGE value="SearchPanel.tsx css 수정" />
-    <MESSAGE value="input recipe 긴가민가 주석처리" />
-    <MESSAGE value="Picture.tsx 추가, clg 제거" />
-    <MESSAGE value="푸터 ui 수정" />
-    <MESSAGE value="헤더 수정" />
-    <MESSAGE value="서치바 위치 변경" />
-    <MESSAGE value="search 페이지 구현 (카드 빼고)" />
-    <MESSAGE value="카드 간단한 구현" />
-    <MESSAGE value="SearchPanel.tsx 훅 분리, SearchForm.tsx 생성" />
-    <MESSAGE value="public 방식으로 전환, src 경로 자동완성을 위한 객체 생성 스크립트 추가" />
-    <MESSAGE value="카드 레이아웃 수정, 기본 폰트색 변경" />
     <MESSAGE value="dropDown ui 버그 수정" />
     <MESSAGE value="무쓸모 import 삭제" />
     <MESSAGE value="header fixed 추가" />
@@ -621,6 +613,18 @@
     <MESSAGE value="5" />
     <MESSAGE value="스키마 확장" />
     <MESSAGE value="마이페이지 폼 제외 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="마이페이지 폼 제외 기능 구현" />
+    <MESSAGE value="SongCard.tsx 즐겨찾기 css 추가" />
+    <MESSAGE value="favorites api, type 추가" />
+    <MESSAGE value="SongCard.tsx css 리메이크" />
+    <MESSAGE value="session 기한 refresh 토큰에 맞춰서 7일로 상향" />
+    <MESSAGE value="sheet ui 추가" />
+    <MESSAGE value="sheet open 시, body px 옵션 사라지는 현상 해결" />
+    <MESSAGE value="favorite 쿼리 추가" />
+    <MESSAGE value="favorite type 수정" />
+    <MESSAGE value="Sheet.tsx css 수정" />
+    <MESSAGE value="SongCard.tsx 요소 대체" />
+    <MESSAGE value="FavoriteSheet.tsx 완성" />
+    <MESSAGE value="노래 추가, 삭제 기능 완성 =&gt; 삭제 기능 백엔드 코드 쿼리 값 수정 필요, 추가 기능 백엔드 코드 중복 방지 기능 필요" />
+    <option name="LAST_COMMIT_MESSAGE" value="노래 추가, 삭제 기능 완성 =&gt; 삭제 기능 백엔드 코드 쿼리 값 수정 필요, 추가 기능 백엔드 코드 중복 방지 기능 필요" />
   </component>
 </project>

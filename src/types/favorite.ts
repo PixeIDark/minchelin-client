@@ -19,6 +19,11 @@ export type GetFavoriteListsResponse = FavoriteList[];
 
 export type GetFavoriteListSongsResponse = FavoriteSong[];
 
+export interface FavoriteAddSongResponse {
+  favorite_id: number;
+  message: string;
+}
+
 export interface ReorderSongRequest {
   favoriteId: number;
   newOrder: number;

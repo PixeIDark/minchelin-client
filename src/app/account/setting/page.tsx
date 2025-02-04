@@ -12,7 +12,7 @@ import { PasswordField } from '@/app/(auth)/components/password-field';
 import { useForm } from 'react-hook-form';
 import { UpdateFormData, updateSchema } from '@/lib/zod/schemas';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useDeleteAccount } from '@/queries/user/mutation';
+import { useDeleteAccount } from '@/queries/user/mutations';
 
 function SettingPage() {
   const { mutate: logout, isPending: isLoggingOut } = useLogout();

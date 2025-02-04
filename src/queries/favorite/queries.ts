@@ -10,7 +10,6 @@ export const useFavoriteLists = () => {
   });
 };
 
-// 즐겨찾기 곡 목록 조회
 export const useFavoriteListSongs = (listId: number) => {
   return useQuery({
     queryKey: FAVORITE_KEYS.songs(listId),
