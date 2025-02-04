@@ -3,13 +3,12 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { css } from '@/styled-system/css';
 import { flex } from '@/styled-system/patterns';
 
-function FavoriteItem({
-  favoriteItem,
-  onFavoriteChange,
-}: {
+interface FavoriteItemProps {
   favoriteItem: FavoriteList;
   onFavoriteChange: (checked: boolean) => void;
-}) {
+}
+
+function FavoriteItem({ favoriteItem, onFavoriteChange }: FavoriteItemProps) {
   return (
     <li className={flex({ gap: '2' })}>
       <Checkbox onCheckedChange={onFavoriteChange} />

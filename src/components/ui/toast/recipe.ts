@@ -12,16 +12,14 @@ export const toastViewport = defineRecipe({
     w: 'full',
     flexDirection: 'column-reverse',
     p: '4',
+    insetX: '0',
 
-    sm: {
+    md: {
+      insetX: 'auto',
+      maxW: '420px',
       bottom: '0',
       right: '0',
       top: 'auto',
-      flexDirection: 'column',
-    },
-
-    md: {
-      maxW: '420px',
     },
   },
 });
