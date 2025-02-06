@@ -1,8 +1,8 @@
 'use client';
 
 import { useForm } from 'react-hook-form';
-import { SignupFormData } from '@/lib/zod/schemas';
-import { signupSchema } from '@/lib/zod/schemas';
+import { SignupFormData } from '@/lib/zod/auth';
+import { signupSchema } from '@/lib/zod/auth';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Form } from '@/components/ui/form';
 import { styled } from '@/styled-system/jsx';

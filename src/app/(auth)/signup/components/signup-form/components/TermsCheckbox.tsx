@@ -3,7 +3,7 @@
 import { FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Control } from 'react-hook-form';
-import { SignupFormData } from '@/lib/zod/schemas';
+import { SignupFormData } from '@/lib/zod/auth';
 
 interface TermsCheckboxProps {
   control: Control<SignupFormData>;
