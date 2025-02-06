@@ -1,8 +1,9 @@
-import { NextAuthOptions } from 'next-auth';
+import { NextAuthOptions, User } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import { authApi } from '@/api/auth';
 import KakaoProvider from 'next-auth/providers/kakao';
 import { oauthApi } from '@/api/oauth';
+import { usersApi } from '@/api/users';
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -16,22 +17,26 @@ export const authOptions: NextAuthOptions = {
       },
       async authorize(credentials) {
         if (credentials?.accessToken && credentials?.refreshToken) {
+          const userData = await usersApi.getMyProfile();
+
           return {
-            id: 0,
-            name: '',
-            email: '',
+            user: {
+              id: userData.id,
+              name: userData.name,
+              email: userData.email,
+            },
             accessToken: credentials.accessToken,
             refreshToken: credentials.refreshToken,
-          };
+          } as User;
         }
 
         if (!credentials?.email || !credentials?.password) return null;
 
         try {
-          return await authApi.login({
+          return (await authApi.login({
             email: credentials.email,
             password: credentials.password,
-          });
+          })) as User;
         } catch (error: unknown) {
           if (error instanceof Error) {
             throw new Error(error.message);
@@ -48,7 +53,6 @@ export const authOptions: NextAuthOptions = {
 
   callbacks: {
     async signIn({ user, account }) {
-      // 카카오
       if (account?.provider === 'kakao') {
         try {
           const response = await oauthApi.saveKakaoUser({
@@ -58,7 +62,11 @@ export const authOptions: NextAuthOptions = {
             refreshToken: account.refresh_token!,
           });
 
-          user.id = response.id;
+          user.user = {
+            id: response.user.id,
+            name: response.user.name,
+            email: response.user.email,
+          };
           user.accessToken = response.accessToken;
           user.refreshToken = response.refreshToken;
 
@@ -73,6 +81,7 @@ export const authOptions: NextAuthOptions = {
 
     async jwt({ token, user }) {
       if (user) {
+        token.user = user.user;
         token.accessToken = user.accessToken;
         token.refreshToken = user.refreshToken;
       }
@@ -80,26 +89,27 @@ export const authOptions: NextAuthOptions = {
     },
 
     async session({ session, token }) {
-      // 날짜 기준 한국으로 변환
       const expiresDate = new Date(session.expires);
       expiresDate.setHours(expiresDate.getHours() + 9);
-      session.expires = expiresDate.toISOString();
 
       return {
+        user: token.user,
         accessToken: token.accessToken,
         refreshToken: token.refreshToken,
-        expires: session.expires,
-        user: {
-          name: session.user.name,
-          email: session.user.email,
-        },
+        expires: expiresDate.toISOString(),
       };
     },
   },
+
+  pages: {
+    signIn: '/login',
+  },
+
   session: {
     strategy: 'jwt',
     maxAge: 7 * 24 * 60 * 60,
   },
+
   secret: process.env.NEXTAUTH_SECRET,
   // cookies: { 세션 영구히 쿠키에 저장하는 NextAuth의 고유 기능.
   //   sessionToken: {
