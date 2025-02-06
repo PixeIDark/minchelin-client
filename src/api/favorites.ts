@@ -15,7 +15,8 @@ export const favoritesApi = {
     fetchInstance.get<GetFavoriteListSongsResponse>(`/favorites/lists/${listId}/songs`),
 
   // 즐겨찾기 목록 생성
-  createList: (favoriteName: string) => fetchInstance.post('/favorites/lists', favoriteName),
+  createList: (favoriteName: string) =>
+    fetchInstance.post('/favorites/lists', { name: favoriteName }),
 
   // 즐겨찾기 목록 이름 수정
   updateList: (listId: number, favoriteName: string) =>
