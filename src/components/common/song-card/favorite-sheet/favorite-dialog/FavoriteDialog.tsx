@@ -37,7 +37,7 @@ function FavoriteDialog() {
             />
             <DialogFooter className={styles.footer}>
               <DialogClose asChild>
-                <Button type='button' variant='ghost' className={css({ w: 'full' })}>
+                <Button type='button' variant='ghost' className={styles.button}>
                   취소
                 </Button>
               </DialogClose>
