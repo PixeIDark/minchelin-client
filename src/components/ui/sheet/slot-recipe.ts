@@ -90,14 +90,14 @@ export const sheet = defineSlotRecipe({
       flexDirection: 'column',
       spaceY: '2',
       textAlign: 'center',
-      sm: {
+      md: {
         textAlign: 'left',
       },
     },
     footer: {
       display: 'flex',
       flexDirection: 'column-reverse',
-      sm: {
+      md: {
         flexDirection: 'row',
         justifyContent: 'flex-end',
         spaceX: '2',
@@ -163,8 +163,9 @@ export const sheet = defineSlotRecipe({
           h: 'full',
           w: '3/4',
           borderRight: 'base',
+          borderLeftRadius: '0',
 
-          sm: {
+          md: {
             maxW: 'sm',
           },
 
@@ -184,8 +185,9 @@ export const sheet = defineSlotRecipe({
           h: 'full',
           w: '3/4',
           borderLeft: 'base',
+          borderRightRadius: '0',
 
-          sm: {
+          md: {
             maxW: 'sm',
           },
 

@@ -10,7 +10,6 @@ import {
 import { TextField } from '@/app/(auth)/components/text-field';
 import { Form } from '@/components/ui/form';
 import { DialogClose } from '@radix-ui/react-dialog';
-import { css } from '@/styled-system/css';
 import { LoadingButton } from '@/components/common/loading-button';
 import styles from './favorite-dialog.styles';
 import { useFavoriteDialog } from '@/components/common/song-card/favorite-sheet/favorite-dialog/_hooks/useFavoriteDialog';
@@ -31,7 +30,7 @@ function FavoriteDialog() {
             </DialogHeader>
             <TextField
               control={form.control}
-              name='favorite name'
+              name='name'
               placeholder='이름을 입력해주세요'
               size='sm'
             />
