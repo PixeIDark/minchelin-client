@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ToastActionElement, ToastProps } from '@/components/ui/toast';
 
+// TODO: REMOVE_DELAY 토스 띄운 창 포커싱 상태 기준으로 시간 적용됨. 어케할지 생각좀..
 const TOAST_LIMIT = 1;
 const TOAST_REMOVE_DELAY = 3000;
 

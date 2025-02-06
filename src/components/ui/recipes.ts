@@ -23,6 +23,7 @@ import { checkbox } from '@/components/ui/checkbox/slot-recipe';
 import { dropdown } from '@/components/ui/dropdown/slot-recipe';
 import { sheet } from '@/components/ui/sheet/slot-recipe';
 import { popover } from '@/components/ui/popover/slot-recipe';
+import { dialog } from '@/components/ui/dialog/slot-recipe';
 
 export const recipes = {
   button,
@@ -34,6 +35,7 @@ export const recipes = {
   cardFooter,
   checkbox,
   dropdown,
+  dialog,
   formLabel,
   formItem,
   formControl,
