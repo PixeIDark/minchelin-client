@@ -13,6 +13,13 @@ export function useCreateFavoriteList() {
       queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.lists() });
       toast({ title: '즐겨찾기 목록이 생성되었습니다' });
     },
+    onError: (error) => {
+      toast({
+        title: '즐겨찾기 생성 실패',
+        description: error.message,
+        variant: 'destructive',
+      });
+    },
   });
 }
 
