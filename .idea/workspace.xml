@@ -56,36 +56,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.generateImageConstants.ts.executor": "Run",
-    "Node.js.saveFiles.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "jsx.switch.disabled": "true",
-    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/coding test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "settings.sync",
-    "ts.external.directory.path": "C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.generateImageConstants.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.saveFiles.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;jsx.switch.disabled&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kiki7/Desktop/repository/coding test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\prettier&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\kiki7\\Desktop\\repository\\minchelin-client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\components\common\song-card\favorite-sheet\favorite-list" />
@@ -197,62 +197,7 @@
       <workItem from="1738655832257" duration="74000" />
       <workItem from="1738659340282" duration="11656000" />
       <workItem from="1738689577494" duration="164000" />
-    </task>
-    <task id="LOCAL-00030" summary="잔재 삭제">
-      <option name="closed" value="true" />
-      <created>1735788044413</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1735788044413</updated>
-    </task>
-    <task id="LOCAL-00031" summary="enabled 자동 조작을 위해 false =&gt; &amp;&amp; text 로 변경">
-      <option name="closed" value="true" />
-      <created>1735794063102</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1735794063102</updated>
-    </task>
-    <task id="LOCAL-00032" summary="search 공용 타입 범용성 상향">
-      <option name="closed" value="true" />
-      <created>1735794090610</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1735794090610</updated>
-    </task>
-    <task id="LOCAL-00033" summary="urlSearchParams 객체로 조정 가능한 유틸 함수 추가">
-      <option name="closed" value="true" />
-      <created>1735794155736</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1735794155736</updated>
-    </task>
-    <task id="LOCAL-00034" summary="LoadingButton.tsx 범용성 상향">
-      <option name="closed" value="true" />
-      <created>1735794182923</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1735794182923</updated>
-    </task>
-    <task id="LOCAL-00035" summary="search api createQueryString 유틸 함수 적용">
-      <option name="closed" value="true" />
-      <created>1735794219844</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1735794219844</updated>
-    </task>
-    <task id="LOCAL-00036" summary="SearchPage 검색기능 완성">
-      <option name="closed" value="true" />
-      <created>1735795357799</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1735795357799</updated>
+      <workItem from="1738807734818" duration="8241000" />
     </task>
     <task id="LOCAL-00037" summary="dropdown ui 완성">
       <option name="closed" value="true" />
@@ -590,7 +535,63 @@
       <option name="project" value="LOCAL" />
       <updated>1738689396069</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="createList api 고침">
+      <option name="closed" value="true" />
+      <created>1738819656191</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1738819656191</updated>
+    </task>
+    <task id="LOCAL-00080" summary="useCreateFavoriteList mutation onError 바운딩 추가">
+      <option name="closed" value="true" />
+      <created>1738819709166</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1738819709166</updated>
+    </task>
+    <task id="LOCAL-00081" summary="스키마 저장 파일 이름 변경">
+      <option name="closed" value="true" />
+      <created>1738819751927</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1738819751927</updated>
+    </task>
+    <task id="LOCAL-00082" summary="즐겨찾기 스키마 파일 생성">
+      <option name="closed" value="true" />
+      <created>1738819774135</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1738819774135</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Dialog.tsx 생성">
+      <option name="closed" value="true" />
+      <created>1738819834166</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1738819834167</updated>
+    </task>
+    <task id="LOCAL-00084" summary="FavoriteDialog.tsx 생성">
+      <option name="closed" value="true" />
+      <created>1738819883501</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1738819883501</updated>
+    </task>
+    <task id="LOCAL-00085" summary="as">
+      <option name="closed" value="true" />
+      <created>1738819957527</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1738819957527</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,13 +603,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="스크롤 바 안보이게 수정(모바일 대세임)" />
-    <MESSAGE value="search query useInfiniteQuery 로 변경, 무한 스크롤 커스텀 훅 구현" />
-    <MESSAGE value="무한스크롤, searchquery 개선" />
-    <MESSAGE value="토큰 재발급 api 추가" />
-    <MESSAGE value="jxt-decode 라이브러리 설치, next-auth 세션 콜백 토큰 재발급 기능 추가, 401 시 세션 콜백." />
-    <MESSAGE value="modal 완성, 계정 설정 이동만 추가" />
-    <MESSAGE value="5" />
     <MESSAGE value="스키마 확장" />
     <MESSAGE value="마이페이지 폼 제외 기능 구현" />
     <MESSAGE value="SongCard.tsx 즐겨찾기 css 추가" />
@@ -627,6 +621,13 @@
     <MESSAGE value="Toast 수명 3초로 하향, css 변경" />
     <MESSAGE value="popover 추가" />
     <MESSAGE value="즐겨찾기 만들기 기본 토대" />
-    <option name="LAST_COMMIT_MESSAGE" value="즐겨찾기 만들기 기본 토대" />
+    <MESSAGE value="createList api 고침" />
+    <MESSAGE value="useCreateFavoriteList mutation onError 바운딩 추가" />
+    <MESSAGE value="스키마 저장 파일 이름 변경" />
+    <MESSAGE value="즐겨찾기 스키마 파일 생성" />
+    <MESSAGE value="Dialog.tsx 생성" />
+    <MESSAGE value="FavoriteDialog.tsx 생성" />
+    <MESSAGE value="as" />
+    <option name="LAST_COMMIT_MESSAGE" value="as" />
   </component>
 </project>

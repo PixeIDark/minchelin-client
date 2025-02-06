@@ -1,33 +1,36 @@
-'use client';
-
-import styles from './profile-menu.styles';
-import { Portal } from '@/components/ui/portal';
-import { X } from 'lucide-react';
+import React from 'react';
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
 import { css } from '@/styled-system/css';
+import { CircleUserRound } from 'lucide-react';
 import { flex } from '@/styled-system/patterns';
 import { useRouter } from 'next/navigation';
 
-interface ProfileMenuProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
-
-// TODO: "구조 조정 필요"
-function ProfileMenu({ isOpen, onClose }: ProfileMenuProps) {
+function ProfileSheet({ userName }: { userName: string }) {
   const router = useRouter();
 
   const handleNavigate = (path: string) => {
-    onClose();
     router.replace(path);
   };
-
   return (
-    <Portal>
-      <div className={styles.wrapper} style={{ display: isOpen ? 'block' : 'none' }}>
-        <div className={flex({ justifyContent: 'space-between', alignItems: 'center' })}>
-          <p>이름</p>
-          <X onClick={onClose} />
-        </div>
+    <Sheet>
+      <SheetTrigger asChild>
+        <CircleUserRound size={40} strokeWidth={1} className={css({ color: 'blue.600' })} />
+      </SheetTrigger>
+      <SheetContent>
+        <SheetHeader>
+          <SheetTitle>{userName} The First!</SheetTitle>
+          <SheetDescription>
+            This action cannot be undone. This will permanently delete your account and remove your
+            data from our servers.
+          </SheetDescription>
+        </SheetHeader>
         <div className={flex({ flexDir: 'column' })}>
           <button onClick={() => handleNavigate('/account/setting')} className={flex({ gap: '4' })}>
             <p>아이콘</p>
@@ -46,9 +49,9 @@ function ProfileMenu({ isOpen, onClose }: ProfileMenuProps) {
             <p>로그아웃</p>
           </button>
         </div>
-      </div>
-    </Portal>
+      </SheetContent>
+    </Sheet>
   );
 }
 
-export default ProfileMenu;
+export default ProfileSheet;
