@@ -10,7 +10,7 @@ import { styled } from '@/styled-system/jsx';
 import { TextField } from '@/app/(auth)/components/text-field';
 import { PasswordField } from '@/app/(auth)/components/password-field';
 import { useForm } from 'react-hook-form';
-import { UpdateFormData, updateSchema } from '@/lib/zod/schemas';
+import { UpdateFormData, updateSchema } from '@/lib/zod/auth';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useDeleteAccount } from '@/queries/user/mutations';
 

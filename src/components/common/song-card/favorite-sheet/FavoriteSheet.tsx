@@ -13,7 +13,7 @@ import { BookmarkCheck } from 'lucide-react';
 import { flex } from '@/styled-system/patterns';
 import { css } from '@/styled-system/css';
 import { FavoriteList } from '@/components/common/song-card/favorite-sheet/favorite-list';
-import { FavoritePopover } from '@/components/common/song-card/favorite-sheet/favorite-popover';
+import { FavoriteDialog } from '@/components/common/song-card/favorite-sheet/favorite-dialog';
 
 function FavoriteSheet({ songId }: { songId: number }) {
   return (
@@ -36,7 +36,7 @@ function FavoriteSheet({ songId }: { songId: number }) {
         </SheetHeader>
         <FavoriteList songId={songId} />
         <SheetFooter className={css({ mt: '4' })}>
-          <FavoritePopover />
+          <FavoriteDialog />
         </SheetFooter>
       </SheetContent>
     </Sheet>

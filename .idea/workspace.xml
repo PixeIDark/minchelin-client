@@ -64,7 +64,7 @@
     "git-widget-placeholder": "dev",
     "js.linters.configure.manually.selectedeslint": "true",
     "jsx.switch.disabled": "true",
-    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/minchelin-server",
+    "last_opened_file_path": "C:/Users/kiki7/Desktop/repository/coding test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -95,11 +95,11 @@
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\search\_components\search-result" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\components\common\song-card\favorite-sheet" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\account\setting\_components\delete-account-modal" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\src\app\account\setting\_components\setting-form" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\public\icons\social" />
       <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client\public" />
-      <recent name="C:\Users\kiki7\Desktop\repository\minchelin-client" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -195,38 +195,8 @@
       <workItem from="1738587233379" duration="14192000" />
       <workItem from="1738603151523" duration="13000" />
       <workItem from="1738655832257" duration="74000" />
-    </task>
-    <task id="LOCAL-00026" summary="기본적인 검색 기능 구현, loadingButton 프롭스 변경, button ui 변경">
-      <option name="closed" value="true" />
-      <created>1735733797046</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1735733797046</updated>
-    </task>
-    <task id="LOCAL-00027" summary="종속성 폴더 명칭 변경">
-      <option name="closed" value="true" />
-      <created>1735734560288</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1735734560288</updated>
-    </task>
-    <task id="LOCAL-00028" summary="종속성 폴더 위치 변경">
-      <option name="closed" value="true" />
-      <created>1735735126758</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1735735126758</updated>
-    </task>
-    <task id="LOCAL-00029" summary="cloudinary 도메인 허가">
-      <option name="closed" value="true" />
-      <created>1735787276376</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1735787276376</updated>
+      <workItem from="1738659340282" duration="11656000" />
+      <workItem from="1738689577494" duration="164000" />
     </task>
     <task id="LOCAL-00030" summary="잔재 삭제">
       <option name="closed" value="true" />
@@ -588,7 +558,39 @@
       <option name="project" value="LOCAL" />
       <updated>1738602916953</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="즐겨찾기 노래 추가 구현">
+      <option name="closed" value="true" />
+      <created>1738665160449</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1738665160449</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Toast 수명 3초로 하향, css 변경">
+      <option name="closed" value="true" />
+      <created>1738668668308</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1738668668309</updated>
+    </task>
+    <task id="LOCAL-00077" summary="popover 추가">
+      <option name="closed" value="true" />
+      <created>1738669434113</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1738669434113</updated>
+    </task>
+    <task id="LOCAL-00078" summary="즐겨찾기 만들기 기본 토대">
+      <option name="closed" value="true" />
+      <created>1738689396069</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1738689396069</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,10 +602,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dropDown ui 버그 수정" />
-    <MESSAGE value="무쓸모 import 삭제" />
-    <MESSAGE value="header fixed 추가" />
-    <MESSAGE value="footer fixed 추가" />
     <MESSAGE value="스크롤 바 안보이게 수정(모바일 대세임)" />
     <MESSAGE value="search query useInfiniteQuery 로 변경, 무한 스크롤 커스텀 훅 구현" />
     <MESSAGE value="무한스크롤, searchquery 개선" />
@@ -625,6 +623,10 @@
     <MESSAGE value="SongCard.tsx 요소 대체" />
     <MESSAGE value="FavoriteSheet.tsx 완성" />
     <MESSAGE value="노래 추가, 삭제 기능 완성 =&gt; 삭제 기능 백엔드 코드 쿼리 값 수정 필요, 추가 기능 백엔드 코드 중복 방지 기능 필요" />
-    <option name="LAST_COMMIT_MESSAGE" value="노래 추가, 삭제 기능 완성 =&gt; 삭제 기능 백엔드 코드 쿼리 값 수정 필요, 추가 기능 백엔드 코드 중복 방지 기능 필요" />
+    <MESSAGE value="즐겨찾기 노래 추가 구현" />
+    <MESSAGE value="Toast 수명 3초로 하향, css 변경" />
+    <MESSAGE value="popover 추가" />
+    <MESSAGE value="즐겨찾기 만들기 기본 토대" />
+    <option name="LAST_COMMIT_MESSAGE" value="즐겨찾기 만들기 기본 토대" />
   </component>
 </project>
