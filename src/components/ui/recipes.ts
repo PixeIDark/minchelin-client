@@ -24,8 +24,10 @@ import { dropdown } from '@/components/ui/dropdown/slot-recipe';
 import { sheet } from '@/components/ui/sheet/slot-recipe';
 import { popover } from '@/components/ui/popover/slot-recipe';
 import { dialog } from '@/components/ui/dialog/slot-recipe';
+import { accordion } from '@/components/ui/accordion/recipe';
 
 export const recipes = {
+  accordion,
   button,
   card,
   cardHeader,
