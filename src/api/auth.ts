@@ -18,7 +18,6 @@ export const authApi = {
       });
 
       const data = await response.json();
-      console.log('data:', data);
       if (data.accessToken && data.refreshToken) {
         const currentSession = await getSession();
 
