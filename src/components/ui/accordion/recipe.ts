@@ -43,11 +43,11 @@ export const accordion = defineSlotRecipe({
       transition: 'all',
 
       '&[data-state=closed]': {
-        animation: 'accordion-up',
+        animation: 'accordion-up 0.2s ease-out',
       },
 
       '&[data-state=open]': {
-        animation: 'accordion-down',
+        animation: 'accordion-down 0.2s ease-out',
       },
 
       '& > div': {

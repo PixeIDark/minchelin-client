@@ -25,10 +25,10 @@ function Footer() {
         <Link href='/search'>
           <Search size={28} />
         </Link>
-        <Link href='/'>
+        <Link href='/account/favorite'>
           <BookMarked size={28} />
         </Link>
-        <Link href='/'>
+        <Link href='/account/history'>
           <History size={28} />
         </Link>
       </div>
