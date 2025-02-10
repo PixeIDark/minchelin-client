@@ -1,6 +1,6 @@
 import { AuthResponse, LoginRequest, SignupRequest, TokenResponse } from '@/types/auth';
 import { fetchInstance } from './instance';
-import { signIn } from 'next-auth/react';
+import { getSession, signIn } from 'next-auth/react';
 
 export const authApi = {
   login: (data: LoginRequest) => fetchInstance.post<AuthResponse>('/auth/login', data),
@@ -18,9 +18,12 @@ export const authApi = {
       });
 
       const data = await response.json();
-
+      console.log('data:', data);
       if (data.accessToken && data.refreshToken) {
+        const currentSession = await getSession();
+
         await signIn('credentials', {
+          userData: JSON.stringify(currentSession?.user),
           accessToken: data.accessToken,
           refreshToken: data.refreshToken,
           redirect: false,

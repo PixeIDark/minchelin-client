@@ -3,7 +3,6 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import { authApi } from '@/api/auth';
 import KakaoProvider from 'next-auth/providers/kakao';
 import { oauthApi } from '@/api/oauth';
-import { usersApi } from '@/api/users';
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -14,17 +13,13 @@ export const authOptions: NextAuthOptions = {
         password: { label: '비밀번호', type: 'password' },
         accessToken: { type: 'text' },
         refreshToken: { type: 'text' },
+        userData: { type: 'object' },
       },
       async authorize(credentials) {
-        if (credentials?.accessToken && credentials?.refreshToken) {
-          const userData = await usersApi.getMyProfile();
-
+        if (credentials?.accessToken && credentials?.refreshToken && credentials.userData) {
+          console.log('userData:', credentials.userData);
           return {
-            user: {
-              id: userData.id,
-              name: userData.name,
-              email: userData.email,
-            },
+            user: JSON.parse(credentials.userData),
             accessToken: credentials.accessToken,
             refreshToken: credentials.refreshToken,
           } as User;
