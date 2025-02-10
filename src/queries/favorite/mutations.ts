@@ -73,17 +73,27 @@ export function useAddFavoriteSong() {
   });
 }
 
-export function useRemoveFavoriteSong() {
+export function useRemoveFavoriteSong(listId?: number) {
   const queryClient = useQueryClient();
   const { toast } = useToast();
 
   return useMutation({
     mutationFn: (favoriteId: number) => favoritesApi.removeSong(favoriteId),
-    onSuccess: (_data, favoriteId) => {
-      if (favoriteId) {
-        queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.songs(favoriteId) });
+    onSuccess: () => {
+      // 특정 리스트의 쿼리를 무효화
+      if (listId) {
+        queryClient.invalidateQueries({
+          queryKey: FAVORITE_KEYS.songs(listId),
+        });
       }
       toast({ title: '곡이 즐겨찾기에서 제거되었습니다' });
+    },
+    onError: (error) => {
+      toast({
+        title: '곡 삭제 실패',
+        description: error instanceof Error ? error.message : '삭제 중 오류가 발생했습니다',
+        variant: 'destructive',
+      });
     },
   });
 }

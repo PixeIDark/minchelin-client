@@ -198,54 +198,7 @@
       <workItem from="1738659340282" duration="11656000" />
       <workItem from="1738689577494" duration="164000" />
       <workItem from="1738807734818" duration="8241000" />
-    </task>
-    <task id="LOCAL-00037" summary="dropdown ui 완성">
-      <option name="closed" value="true" />
-      <created>1735878896162</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1735878896162</updated>
-    </task>
-    <task id="LOCAL-00038" summary="dropdown ui 타입 수정">
-      <option name="closed" value="true" />
-      <created>1735879184953</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1735879184953</updated>
-    </task>
-    <task id="LOCAL-00039" summary="search dropdown 구현">
-      <option name="closed" value="true" />
-      <created>1735888304378</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1735888304378</updated>
-    </task>
-    <task id="LOCAL-00040" summary="SearchPanel.tsx css 수정">
-      <option name="closed" value="true" />
-      <created>1735888809968</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1735888809968</updated>
-    </task>
-    <task id="LOCAL-00041" summary="input recipe 긴가민가 주석처리">
-      <option name="closed" value="true" />
-      <created>1735888863429</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1735888863429</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Picture.tsx 추가, clg 제거">
-      <option name="closed" value="true" />
-      <created>1736051620086</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1736051620086</updated>
+      <workItem from="1739175300903" duration="3182000" />
     </task>
     <task id="LOCAL-00043" summary="푸터 ui 수정">
       <option name="closed" value="true" />
@@ -591,7 +544,55 @@
       <option name="project" value="LOCAL" />
       <updated>1738819957527</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="accordion 열닫 키 프레임 추가로 해결">
+      <option name="closed" value="true" />
+      <created>1739177777614</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1739177777615</updated>
+    </task>
+    <task id="LOCAL-00087" summary="favorite 쿼리 범용성 상향">
+      <option name="closed" value="true" />
+      <created>1739177811617</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1739177811617</updated>
+    </task>
+    <task id="LOCAL-00088" summary="토큰 재발급 오류 수정">
+      <option name="closed" value="true" />
+      <created>1739177847911</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1739177847911</updated>
+    </task>
+    <task id="LOCAL-00089" summary="토큰 재발급 오류 수정">
+      <option name="closed" value="true" />
+      <created>1739177857138</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1739177857138</updated>
+    </task>
+    <task id="LOCAL-00090" summary="토큰 재발급 오류 수정">
+      <option name="closed" value="true" />
+      <created>1739177894496</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1739177894497</updated>
+    </task>
+    <task id="LOCAL-00091" summary="즐겨찾기 대충">
+      <option name="closed" value="true" />
+      <created>1739177970923</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1739177970923</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,10 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="스키마 확장" />
-    <MESSAGE value="마이페이지 폼 제외 기능 구현" />
-    <MESSAGE value="SongCard.tsx 즐겨찾기 css 추가" />
-    <MESSAGE value="favorites api, type 추가" />
     <MESSAGE value="SongCard.tsx css 리메이크" />
     <MESSAGE value="session 기한 refresh 토큰에 맞춰서 7일로 상향" />
     <MESSAGE value="sheet ui 추가" />
@@ -628,6 +625,10 @@
     <MESSAGE value="Dialog.tsx 생성" />
     <MESSAGE value="FavoriteDialog.tsx 생성" />
     <MESSAGE value="as" />
-    <option name="LAST_COMMIT_MESSAGE" value="as" />
+    <MESSAGE value="accordion 열닫 키 프레임 추가로 해결" />
+    <MESSAGE value="favorite 쿼리 범용성 상향" />
+    <MESSAGE value="토큰 재발급 오류 수정" />
+    <MESSAGE value="즐겨찾기 대충" />
+    <option name="LAST_COMMIT_MESSAGE" value="즐겨찾기 대충" />
   </component>
 </project>

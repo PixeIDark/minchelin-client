@@ -1,26 +1,36 @@
+'use client';
+
 import { AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { FavoriteList } from '@/types/favorite';
 import { useFavoriteListSongs } from '@/queries/favorite';
+import { FavoriteList } from '@/types/favorite';
+import { useState } from 'react';
 import { FavoriteListAccordionContent } from '@/app/account/favorite/_components/favorite-list-accordion/favorite-list-accordion-item/favorite-list-accordion-content';
 
 function FavoriteListAccordionItem({ list }: { list: FavoriteList }) {
-  const { data: favoriteSongs } = useFavoriteListSongs(list.id);
+  const [isOpen, setIsOpen] = useState(false);
+  const { data: favoriteSongs } = useFavoriteListSongs(list.id, {
+    enabled: isOpen,
+  });
 
-  if (!favoriteSongs) return null;
+  const handleAccordionChange = (isOpen: boolean) => {
+    setIsOpen(isOpen);
+  };
 
   return (
-    <>
-      <AccordionItem value={list.id.toString()}>
-        <AccordionTrigger>{list.name}</AccordionTrigger>
-        {favoriteSongs.map((favoriteSong) => (
+    <AccordionItem value={list.id.toString()}>
+      <AccordionTrigger onPointerDown={() => handleAccordionChange(!isOpen)}>
+        {list.name}
+      </AccordionTrigger>
+      {isOpen &&
+        favoriteSongs &&
+        favoriteSongs.map((favoriteSong) => (
           <FavoriteListAccordionContent
             key={favoriteSong.favorite_id}
             favoriteSong={favoriteSong}
+            listId={list.id}
           />
         ))}
-      </AccordionItem>
-    </>
+    </AccordionItem>
   );
 }
-
 export default FavoriteListAccordionItem;

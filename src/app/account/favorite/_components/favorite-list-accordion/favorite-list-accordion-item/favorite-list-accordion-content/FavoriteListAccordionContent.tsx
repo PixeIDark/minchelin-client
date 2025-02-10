@@ -3,13 +3,15 @@ import { FavoriteSong } from '@/types/favorite';
 import { flex } from '@/styled-system/patterns';
 import { useRemoveFavoriteSong } from '@/queries/favorite';
 
+interface FavoriteListAccordionContentProps {
+  favoriteSong: FavoriteSong;
+  listId: number;
+}
+
 // 노래방 번호도 보이게 어케 해봐라 가수랑
-// 노래 제거 <= ui 즉시 업데이트 안됨
-// 1. 유지 이펙트
-// 2. 쿼리키 수정
-function FavoriteListAccordionContent({ favoriteSong }: { favoriteSong: FavoriteSong }) {
+function FavoriteListAccordionContent({ favoriteSong, listId }: FavoriteListAccordionContentProps) {
   const songTitle = favoriteSong.title_ko || favoriteSong.title_ja;
-  const { mutate: removeSong } = useRemoveFavoriteSong();
+  const { mutate: removeSong } = useRemoveFavoriteSong(listId);
 
   return (
     <AccordionContent>
