@@ -3,6 +3,7 @@ import { useToast } from '@/components/ui/toast/useToast';
 import { useRouter } from 'next/navigation';
 import { usersApi } from '@/api/users';
 import { signOut } from 'next-auth/react';
+import { UpdateProfileRequest } from '@/types/user';
 
 export function useDeleteAccount() {
   const queryClient = useQueryClient();
@@ -24,6 +25,22 @@ export function useDeleteAccount() {
       toast({
         title: '회원 탈퇴 실패',
         description: error instanceof Error ? error.message : '회원 탈퇴 중 오류가 발생했습니다.',
+        variant: 'destructive',
+      });
+    },
+  });
+}
+
+export function useUpdateProfile() {
+  const { toast } = useToast();
+
+  return useMutation({
+    mutationFn: (data: UpdateProfileRequest) => usersApi.updateProfile(data),
+    onError: (error) => {
+      toast({
+        title: '프로필 업데이트 실패',
+        description:
+          error instanceof Error ? error.message : '프로필 업데이트 중 오류가 발생했습니다.',
         variant: 'destructive',
       });
     },
