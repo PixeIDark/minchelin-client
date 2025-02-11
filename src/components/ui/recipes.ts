@@ -25,6 +25,7 @@ import { sheet } from '@/components/ui/sheet/slot-recipe';
 import { popover } from '@/components/ui/popover/slot-recipe';
 import { dialog } from '@/components/ui/dialog/slot-recipe';
 import { accordion } from '@/components/ui/accordion/recipe';
+import { tabs } from '@/components/ui/tabs/slot-recipe';
 
 export const recipes = {
   accordion,
@@ -47,6 +48,7 @@ export const recipes = {
   icon,
   label,
   popover,
+  tabs,
   toast,
   toastViewport,
   sheet,
