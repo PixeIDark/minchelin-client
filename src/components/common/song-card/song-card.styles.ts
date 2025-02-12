@@ -23,11 +23,13 @@ const songCardStyles = {
 
   contentWrapper: flex({
     w: 'full',
+    h: 'full',
     justifyContent: 'space-between',
   }),
 
   textContent: flex({
     flexDir: 'column',
+    justifyContent: 'space-between',
   }),
 
   title: css({
