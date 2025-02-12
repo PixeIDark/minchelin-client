@@ -1,11 +1,11 @@
 'use client';
 
-import { AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { useFavoriteListSongs } from '@/queries/favorite';
 import { FavoriteList } from '@/types/favorite';
-import { FavoriteListAccordionContent } from '@/app/account/favorite/_components/favorite-list-accordion/favorite-list-accordion-item/favorite-list-accordion-content';
 import { useDragAndDrop } from '@/app/account/favorite/_components/favorite-list-accordion/favorite-list-accordion-item/_hook/useDragAndDrop';
 import { useToggleContent } from '@/app/account/favorite/_components/favorite-list-accordion/favorite-list-accordion-item/_hook/useToggleContent';
+import { FavoriteCard } from '@/components/common/favorite-card';
 
 function FavoriteListAccordionItem({ list }: { list: FavoriteList }) {
   const { isOpen, handleToggleContent } = useToggleContent();
@@ -19,18 +19,20 @@ function FavoriteListAccordionItem({ list }: { list: FavoriteList }) {
   return (
     <AccordionItem value={list.id.toString()}>
       <AccordionTrigger onPointerDown={handleToggleContent}>{list.name}</AccordionTrigger>
-      {favoriteSongs &&
-        favoriteSongs.map((favoriteSong) => (
-          <FavoriteListAccordionContent
-            key={favoriteSong.favorite_id}
-            favoriteSong={favoriteSong}
-            listId={list.id}
-            onDragStart={handleDragStart}
-            onDragEnter={handleDragEnter}
-            onDragEnd={handleDragEnd}
-            onDragOver={handleDragOver}
-          />
-        ))}
+      <AccordionContent>
+        {favoriteSongs &&
+          favoriteSongs.map((favoriteSong) => (
+            <FavoriteCard
+              key={favoriteSong.id}
+              favoriteSong={favoriteSong}
+              listId={list.id}
+              onDragStart={handleDragStart}
+              onDragEnter={handleDragEnter}
+              onDragEnd={handleDragEnd}
+              onDragOver={handleDragOver}
+            />
+          ))}
+      </AccordionContent>
     </AccordionItem>
   );
 }
