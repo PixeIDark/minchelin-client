@@ -2,6 +2,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useToast } from '@/components/ui/toast/useToast';
 import { favoritesApi } from '@/api/favorites';
 import { FAVORITE_KEYS } from '@/queries/favorite/key';
+import { GetFavoriteListSongsResponse } from '@/types/favorite';
 
 export function useCreateFavoriteList() {
   const queryClient = useQueryClient();
@@ -79,21 +80,40 @@ export function useRemoveFavoriteSong(listId?: number) {
 
   return useMutation({
     mutationFn: (favoriteId: number) => favoritesApi.removeSong(favoriteId),
-    onSuccess: () => {
-      // 특정 리스트의 쿼리를 무효화
-      if (listId) {
-        queryClient.invalidateQueries({
-          queryKey: FAVORITE_KEYS.songs(listId),
-        });
+    onMutate: async (favoriteId: number) => {
+      if (!listId) {
+        return { previousSongs: [] };
       }
-      toast({ title: '곡이 즐겨찾기에서 제거되었습니다' });
+
+      await queryClient.cancelQueries({ queryKey: FAVORITE_KEYS.songs(listId) });
+
+      const previousSongs =
+        queryClient.getQueryData<GetFavoriteListSongsResponse>(FAVORITE_KEYS.songs(listId)) ?? [];
+
+      queryClient.setQueryData(
+        FAVORITE_KEYS.songs(listId),
+        (old: GetFavoriteListSongsResponse | undefined) =>
+          old ? old.filter((song) => song.id !== favoriteId) : []
+      );
+
+      return { previousSongs };
     },
-    onError: (error) => {
+    onError: (err, newTodo, context) => {
+      if (listId && context) {
+        queryClient.setQueryData(FAVORITE_KEYS.songs(listId), context.previousSongs);
+      }
+
       toast({
         title: '곡 삭제 실패',
-        description: error instanceof Error ? error.message : '삭제 중 오류가 발생했습니다',
+        description: err instanceof Error ? err.message : '삭제 중 오류가 발생했습니다',
         variant: 'destructive',
       });
+    },
+    onSuccess: () => {
+      if (listId) {
+        queryClient.invalidateQueries({ queryKey: FAVORITE_KEYS.songs(listId) });
+      }
+      toast({ title: '곡이 즐겨찾기에서 제거되었습니다' });
     },
   });
 }
