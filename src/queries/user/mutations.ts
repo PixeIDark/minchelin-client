@@ -32,17 +32,7 @@ export function useDeleteAccount() {
 }
 
 export function useUpdateProfile() {
-  const { toast } = useToast();
-
   return useMutation({
     mutationFn: (data: UpdateProfileRequest) => usersApi.updateProfile(data),
-    onError: (error) => {
-      toast({
-        title: '프로필 업데이트 실패',
-        description:
-          error instanceof Error ? error.message : '프로필 업데이트 중 오류가 발생했습니다.',
-        variant: 'destructive',
-      });
-    },
   });
 }

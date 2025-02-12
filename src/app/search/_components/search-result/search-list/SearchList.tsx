@@ -3,10 +3,8 @@
 import { SearchItems } from '@/types/search';
 import { SongCard } from '@/components/common/song-card';
 import { css } from '@/styled-system/css';
-import { getSession } from 'next-auth/react';
 
 function SearchList({ searchList }: { searchList: SearchItems }) {
-  console.log(getSession());
   return (
     <ul className={css({ mt: '4' })}>
       {searchList.map((song) => (

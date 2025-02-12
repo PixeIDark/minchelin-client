@@ -11,26 +11,30 @@ export function useIntersection(
 ) {
   const observerRef = useMemo(
     () =>
-      new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            onIntersect(entry);
-          } else {
-            onLeave?.(entry);
-          }
-        });
-      }, observerOptions),
+      typeof window !== 'undefined'
+        ? new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                onIntersect(entry);
+              } else {
+                onLeave?.(entry);
+              }
+            });
+          }, observerOptions)
+        : null,
     [onIntersect, onLeave, observerOptions]
   );
 
   useEffect(() => {
     const element = targetRef.current;
-    if (!element) return;
+    const observer = observerRef;
 
-    observerRef.observe(element);
+    if (!element || !observer) return;
+
+    observer.observe(element);
 
     return () => {
-      observerRef.disconnect();
+      observer.disconnect();
     };
   }, [targetRef, observerRef]);
 }

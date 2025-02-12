@@ -2,7 +2,6 @@ import { AccordionContent } from '@/components/ui/accordion';
 import { FavoriteSong } from '@/types/favorite';
 import { flex } from '@/styled-system/patterns';
 import { useRemoveFavoriteSong } from '@/queries/favorite';
-import { useDragAndDrop } from '@/app/account/favorite/_components/favorite-list-accordion/favorite-list-accordion-item/_hook/useDragAndDrop';
 import { css } from '@/styled-system/css';
 
 interface FavoriteListAccordionContentProps {
