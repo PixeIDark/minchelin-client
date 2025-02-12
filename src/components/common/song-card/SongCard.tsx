@@ -20,7 +20,7 @@ function SongCard({ song }: SongCardProps) {
           <Picture
             className={styles.image}
             src={thumbnailUrl}
-            alt={`${song.title_ja} 이미지`}
+            alt={`${songTitle} 이미지`}
             fallbackSrc={PUBLIC.images.error.song_thumbnail}
           />
         </div>
@@ -38,7 +38,6 @@ function SongCard({ song }: SongCardProps) {
               <Image src={PUBLIC.icons.karaoke.ky} alt='ky' width={22} height={100} />
               <p className={styles.numberWidth}>{karaokeNumbers.ky}</p>
             </div>
-            {!song.tj_number && !song.kumyoung_number && <p className={styles.noNumber}>-</p>}
           </div>
         </div>
       </div>
