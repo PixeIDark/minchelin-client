@@ -1,6 +1,6 @@
 export interface SearchParams {
-  text: string;
-  searchType: 'both' | 'artist' | 'title' | 'lyrics';
+  text?: string;
+  searchType?: 'both' | 'artist' | 'title' | 'lyrics';
   sort?: 'latest' | 'popular';
   limit?: number;
   page?: number;
