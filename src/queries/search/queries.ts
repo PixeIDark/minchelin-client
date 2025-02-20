@@ -3,9 +3,13 @@ import { searchApi } from '@/api/search';
 import { SearchParams } from '@/types/search';
 import { SEARCH_KEYS } from './key';
 
-export const useSearch = (params: SearchParams) => {
+interface SearchQueryOptions {
+  enabled?: boolean;
+}
+
+export const useSearch = (params?: SearchParams, options?: SearchQueryOptions) => {
   return useInfiniteQuery({
-    queryKey: SEARCH_KEYS.result(params),
+    queryKey: params ? SEARCH_KEYS.result(params) : SEARCH_KEYS.all,
     queryFn: ({ pageParam = 1 }) =>
       searchApi({
         ...params,
@@ -17,6 +21,6 @@ export const useSearch = (params: SearchParams) => {
       return lastPage.page < totalPages ? lastPage.page + 1 : undefined;
     },
     initialPageParam: 1,
-    enabled: Boolean(params.text),
+    ...options,
   });
 };
