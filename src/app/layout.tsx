@@ -7,9 +7,9 @@ import SessionProvider from '@/providers/SessionProvider';
 import { authOptions } from '@/lib/next-auth';
 import { getThemeConfig } from '@/utils/getThemeConfig';
 import { Toaster } from '@/components/ui/toast/Toaster';
-import { HeaderLayout } from '@/app/_components/layout/header-layout';
-import { Footer } from '@/app/_components/footer';
 import { css } from '@/styled-system/css';
+import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -51,7 +51,7 @@ export default async function RootLayout({
                 flexDir: 'column',
               })}
             >
-              <HeaderLayout />
+              <Header />
               <main
                 className={css({
                   flex: 1,

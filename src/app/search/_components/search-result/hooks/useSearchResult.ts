@@ -3,7 +3,9 @@ import { SearchParams } from '@/types/search';
 import { useInfiniteScroll } from '@/hooks/useInfiniteScroll';
 
 export function useSearchResult(searchParams: SearchParams) {
-  const { data, fetchNextPage, hasNextPage, isFetchingNextPage } = useSearch(searchParams);
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage } = useSearch(searchParams, {
+    enabled: Boolean(searchParams.text),
+  });
 
   const { loaderRef, isFetchingNextPage: isLoading } = useInfiniteScroll({
     hasNextPage,

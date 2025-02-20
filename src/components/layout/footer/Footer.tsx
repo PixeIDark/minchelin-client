@@ -4,7 +4,6 @@ import { BookMarked, History, Home, Search } from 'lucide-react';
 import styles from './footer.styles';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import Link from 'next/link';
-import { css } from '@/styled-system/css';
 
 function Footer() {
   const segment = useSelectedLayoutSegment();

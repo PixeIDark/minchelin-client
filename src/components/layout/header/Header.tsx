@@ -3,10 +3,10 @@
 import Image from 'next/image';
 import { ChevronLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { AuthIconButton } from '@/app/_components/header/auth-icon-button';
 import { css } from '@/styled-system/css';
 import { PUBLIC } from '@/constants/public';
 import styles from './header.styles';
+import { AuthIconButton } from '@/components/layout/header/auth-icon-button';
 
 function Header() {
   const router = useRouter();
